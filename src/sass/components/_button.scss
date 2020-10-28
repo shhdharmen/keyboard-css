@@ -1,3 +1,72 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.keyboard-button {
+  backface-visibility: hidden;
+  background-color: #fff;
+  border: 0;
+  border-radius: 16px;
+
+  box-shadow: 25px 50px 150px 0 #dfdfdf, 5px 10px 10px 0 #b0b0b0,
+    0 11px 0 #e0e0e0, 0 10px 0 #e0e0e0, 0 9px 0 #e0e0e0,
+    0 8px 0 #e0e0e0, 0 7px 0 #e0e0e0, 0 6px 0 #e0e0e0,
+    0 5px 0 #e0e0e0, 0 4px 0 #e0e0e0, 0 3px 0 #e0e0e0,
+    0 2px 0 #e0e0e0, 0 1px 0 #e0e0e0, 0 -1px 3px 0 #e0e0e0;
+  color: #a7a7a7;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  height: 100px;
+  padding: 8px;
+  padding-top: 78px;
+  position: relative;
+  text-align: center;
+  text-align: right;
+  transform: translate3d(0, 0, 11px);
+  transform-style: preserve-3d;
+  transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
+  width: 100px;
+
+  &:hover,
+  &:focus {
+    background-color: #fafafa;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #fafafa;
+  }
+
+  icon {
+    backface-visibility: hidden;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    transform-style: preserve-3d;
+  }
+
+  &:active {
+    box-shadow: 0 0 1px 1px #c7c7c7, 0 2px 0 #c7c7c7, 0 1px 0 #c7c7c7;
+    transform: translate3d(0, 11px, 0);
+
+    &::after,
+    &::before {
+      transform: translate3d(0, -11px, 0);
+    }
+  }
+
+  &::after {
+    border: 4px solid #a0a0a0;
+    border-radius: 20px;
+    content: '';
+    display: block;
+    height: 106px;
+    left: -7px;
+    position: absolute;
+    top: 4px;
+    transform: translate3d(0, 0, -11px);
+    transform-style: preserve-3d;
+    transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
+    width: 106px;
+  }
+}

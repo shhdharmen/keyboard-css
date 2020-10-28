@@ -1,4 +1,7 @@
 {
   "extends": "stylelint-config-sass-guidelines",
-  "plugins": ["stylelint-a11y", "stylelint-high-performance-animation"]
+  "plugins": ["stylelint-a11y", "stylelint-high-performance-animation"],
+  "rules": {
+    "max-nesting-depth": 3
+  }
 }
