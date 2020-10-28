@@ -1,6 +1,6 @@
 {
   "name": "@keyboard-css/core",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "description": "A CSS to show keyboard keys.",
   "main": "index.js",
   "private": true,
@@ -10,11 +10,12 @@
     "start": "gulp watch",
     "build": "gulp",
     "postbuild": "cpx \"{README.md,package.json}\" \"dist\"",
-    "pack": "npm pack --prefix=dist"
+    "pack": "npm pack --prefix=dist",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shhdharmen/keyboard-css.git"
+    "url": "https://github.com/shhdharmen/keyboard-css.git"
   },
   "keywords": [],
   "author": "Dharmen Shah",
@@ -26,6 +27,7 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@semantic-release/changelog": "^5.0.1",
     "autoprefixer": "^10.0.1",
     "browser-sync": "^2.26.13",
     "cpx": "^1.5.0",
@@ -48,6 +50,7 @@
     "node-sass": "^4.14.1",
     "postcss": "^8.1.4",
     "prettier": "2.1.2",
+    "semantic-release": "^17.2.1",
     "stylelint": "^13.7.2",
     "stylelint-a11y": "^1.2.3",
     "stylelint-config-sass-guidelines": "^7.1.0",
@@ -71,5 +74,8 @@
     "*.{scss,css}": "prettier --write",
     "*.md": "markdownlint"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "publishConfig": {
+    "access": "restricted"
+  }
 }

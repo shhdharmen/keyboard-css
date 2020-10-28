@@ -1,0 +1,25 @@
+on:
+  push:
+    branches:
+      - development
+      - main
+  pull_request:
+    branches:
+      - development
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    name: A job to make a release tag
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: 12.x
+      - run: npm ci
+      - run: npm run build
+      - run: npx semantic-release
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
