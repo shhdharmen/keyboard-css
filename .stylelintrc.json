@@ -1,0 +1,4 @@
+{
+  "extends": "stylelint-config-sass-guidelines",
+  "plugins": ["stylelint-a11y", "stylelint-high-performance-animation"]
+}
