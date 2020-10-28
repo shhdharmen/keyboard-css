@@ -7,7 +7,7 @@
     "commit": "cz",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp watch",
-    "prebuild": "cpx README.d dist",
+    "prebuild": "cpx README.md src/copy/",
     "build": "gulp",
     "semantic-release": "semantic-release",
     "postpublish": "cpx dist/package.json . && cpx dist/npm-shrinkwrap.json ."
