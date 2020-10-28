@@ -2,71 +2,73 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 .keyboard-button {
+  align-items: flex-end;
   backface-visibility: hidden;
-  background-color: #fff;
-  border: 0;
-  border-radius: 16px;
-
-  box-shadow: 25px 50px 150px 0 #dfdfdf, 5px 10px 10px 0 #b0b0b0,
-    0 11px 0 #e0e0e0, 0 10px 0 #e0e0e0, 0 9px 0 #e0e0e0,
-    0 8px 0 #e0e0e0, 0 7px 0 #e0e0e0, 0 6px 0 #e0e0e0,
-    0 5px 0 #e0e0e0, 0 4px 0 #e0e0e0, 0 3px 0 #e0e0e0,
-    0 2px 0 #e0e0e0, 0 1px 0 #e0e0e0, 0 -1px 3px 0 #e0e0e0;
-  color: #a7a7a7;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
-  height: 100px;
-  padding: 8px;
-  padding-top: 78px;
+  background-color: $kbc-key-bg-color;
+  border: 1px solid #e0e0e0;
+  border-radius: $kbc-key-border-radius;
+  box-shadow: $kbc-key-box-shadow;
+  color: $kbc-key-font-color;
+  cursor: $kbc-key-cursor;
+  display: inline-flex;
+  font-family: $kbc-key-font-family;
+  font-size: $kbc-key-font-size;
+  font-weight: $kbc-key-font-weight;
+  height: $kbc-key-height;
+  justify-content: flex-end;
+  margin: $kbc-key-margin;
+  padding: $kbc-key-padding;
   position: relative;
-  text-align: center;
-  text-align: right;
-  transform: translate3d(0, 0, 11px);
+  text-align: $kbc-key-text-align;
+  transform: translate3d(0, 0, #{$kbc-key-depth}px);
   transform-style: preserve-3d;
   transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
-  width: 100px;
+  //   vertical-align: bottom;
+  width: $kbc-key-width;
 
   &:hover,
   &:focus {
-    background-color: #fafafa;
+    background-color: $kbc-key-focus-bg-color;
+    box-shadow: $kbc-key-focus-box-shadow;
     outline: none;
+    transform: translate3d(0, 1px, #{$kbc-key-depth}px);
+
+    &::after {
+      transform: translate3d(0, -1px, -#{$kbc-key-depth}px);
+    }
   }
 
   &:active {
-    background-color: #fafafa;
+    background-color: $kbc-key-active-bg-color;
+    box-shadow: $kbc-key-active-box-shadow;
+    transform: translate3d(0, #{$kbc-key-depth}px, 0);
+
+    &::after {
+      transform: translate3d(0, -#{$kbc-key-depth}px, 0);
+    }
   }
 
   icon {
     backface-visibility: hidden;
     position: absolute;
-    right: 8px;
-    top: 8px;
+    right: $kbc-key-icon-right;
+    top: $kbc-key-icon-top;
     transform-style: preserve-3d;
-  }
-
-  &:active {
-    box-shadow: 0 0 1px 1px #c7c7c7, 0 2px 0 #c7c7c7, 0 1px 0 #c7c7c7;
-    transform: translate3d(0, 11px, 0);
-
-    &::after,
-    &::before {
-      transform: translate3d(0, -11px, 0);
-    }
   }
 
   &::after {
-    border: 4px solid #a0a0a0;
-    border-radius: 20px;
+    border: $kbc-key-after-border-width $kbc-key-after-border-style
+      $kbc-key-after-border-color;
+    border-radius: $kbc-key-after-border-radius;
     content: '';
     display: block;
-    height: 106px;
-    left: -7px;
+    height: $kbc-key-after-height;
+    left: $kbc-key-after-left;
     position: absolute;
-    top: 4px;
-    transform: translate3d(0, 0, -11px);
+    top: $kbc-key-after-top;
+    transform: translate3d(0, 0, -#{$kbc-key-depth}px);
     transform-style: preserve-3d;
     transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
-    width: 106px;
+    width: $kbc-key-after-width;
   }
 }

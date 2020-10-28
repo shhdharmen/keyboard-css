@@ -1,3 +1,45 @@
-// -----------------------------------------------------------------------------
-// This file contains all application-wide Sass variables.
-// -----------------------------------------------------------------------------
+$kbc-key-size: 100px !default;
+$kbc-key-depth: 11 !default;
+$kbc-key-height: $kbc-key-size !default;
+$kbc-key-width: $kbc-key-size !default;
+$kbc-key-font-size: 14px !default;
+$kbc-key-font-weight: 600 !default;
+$kbc-key-font-family: 'Arial, Helvetica, sans-serif' !default;
+$kbc-key-border-radius: ($kbc-key-size / 25 * 4) !default;
+$kbc-key-bg-color: #fff;
+$kbc-key-font-color: #a7a7a7;
+$kbc-key-box-shadow: 0 11px 0 #e0e0e0, 0 10px 0 #e0e0e0, 0 9px 0 #e0e0e0,
+  0 8px 0 #e0e0e0, 0 7px 0 #e0e0e0, 0 6px 0 #e0e0e0, 0 5px 0 #e0e0e0,
+  0 4px 0 #e0e0e0, 0 3px 0 #e0e0e0, 0 2px 0 #e0e0e0, 0 1px 0 #e0e0e0,
+  2px 6px 4px #e0e0e0 !default;
+$kbc-key-cursor: pointer !default;
+$kbc-key-padding: 8px !default;
+$kbc-key-text-align: right !default;
+
+$kbc-key-hover-bg-color: #fafafa !default;
+
+$kbc-key-focus-bg-color: $kbc-key-hover-bg-color !default;
+$kbc-key-focus-box-shadow: 0 10px 0 #e0e0e0, 0 9px 0 #e0e0e0, 0 8px 0 #e0e0e0,
+  0 7px 0 #e0e0e0, 0 6px 0 #e0e0e0, 0 5px 0 #e0e0e0, 0 4px 0 #e0e0e0,
+  0 3px 0 #e0e0e0, 0 2px 0 #e0e0e0, 0 1px 0 #e0e0e0, 1px 4px 3px #e0e0e0 !default;
+
+$kbc-key-active-bg-color: $kbc-key-hover-bg-color !default;
+$kbc-key-active-box-shadow: 0 0 1px 1px #c7c7c7 !default;
+
+$kbc-key-after-border-width: 2px !default;
+$kbc-key-after-border-style: solid !default;
+$kbc-key-after-border-color: #a0a0a0 !default;
+$kbc-key-after-border-radius: ($kbc-key-border-radius + 4px) !default;
+$kbc-key-after-height: (
+  $kbc-key-height + $kbc-key-after-border-width + 2px
+) !default;
+$kbc-key-after-width: (
+  $kbc-key-width + $kbc-key-after-border-width + 2px
+) !default;
+$kbc-key-after-left: -5px !default;
+$kbc-key-after-top: 6px !default;
+
+$kbc-key-icon-right: 8px !default;
+$kbc-key-icon-top: 8px !default;
+
+$kbc-key-margin: ($kbc-key-after-border-width + 4px) !default;

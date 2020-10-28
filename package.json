@@ -1,5 +1,5 @@
 {
-  "name": "@keyboard-css/core",
+  "name": "keyboard-css",
   "version": "0.0.0-development",
   "description": "A CSS to show keyboard keys.",
   "main": "index.js",
