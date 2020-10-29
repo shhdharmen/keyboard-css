@@ -1,74 +1,132 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
-.keyboard-button {
+.kbc-button {
+  @include button-size(
+    $kbc-btn-padding-y,
+    $kbc-btn-padding-x,
+    $kbc-btn-font-size,
+    $kbc-btn-line-height,
+    $kbc-btn-after-bottom,
+    $kbc-btn-after-left,
+    $kbc-btn-after-right,
+    $kbc-btn-after-top,
+    $kbc-btn-depth,
+    $kbc-btn-after-border-width,
+    $kbc-btn-after-border-radius
+  );
+
   align-items: flex-end;
   backface-visibility: hidden;
-  background-color: $kbc-key-bg-color;
-  border: 1px solid #e0e0e0;
-  border-radius: $kbc-key-border-radius;
-  box-shadow: $kbc-key-box-shadow;
-  color: $kbc-key-font-color;
-  cursor: $kbc-key-cursor;
+  background-color: $kbc-btn-bg-color;
+  border: $kbc-btn-border-width solid $kbc-btn-border-color;
+  border-radius: $kbc-btn-border-radius;
+  color: $kbc-btn-font-color;
+  cursor: $kbc-btn-cursor;
   display: inline-flex;
-  font-family: $kbc-key-font-family;
-  font-size: $kbc-key-font-size;
-  font-weight: $kbc-key-font-weight;
-  height: $kbc-key-height;
+  font-family: $kbc-btn-font-family;
+  font-weight: $kbc-btn-font-weight;
   justify-content: flex-end;
-  margin: $kbc-key-margin;
-  padding: $kbc-key-padding;
   position: relative;
-  text-align: $kbc-key-text-align;
-  transform: translate3d(0, 0, #{$kbc-key-depth}px);
+  text-align: $kbc-btn-text-align;
+  transform: translate3d(0, 0, #{$kbc-btn-depth}px);
   transform-style: preserve-3d;
   transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
-  //   vertical-align: bottom;
-  width: $kbc-key-width;
+  width: $kbc-btn-width;
+
+  &-xxs {
+    @include button-size(
+      $kbc-btn-padding-y-xxs,
+      $kbc-btn-padding-x-xxs,
+      $kbc-btn-font-size-xxs,
+      $kbc-btn-line-height-xxs,
+      $kbc-btn-after-bottom-xxs,
+      $kbc-btn-after-left-xxs,
+      $kbc-btn-after-right-xxs,
+      $kbc-btn-after-top-xxs,
+      $kbc-btn-depth-xxs,
+      $kbc-btn-after-border-width-xxs,
+      $kbc-btn-after-border-radius-xxs
+    );
+  }
+
+  &-xs {
+    @include button-size(
+      $kbc-btn-padding-y-xs,
+      $kbc-btn-padding-x-xs,
+      $kbc-btn-font-size-xs,
+      $kbc-btn-line-height-xs,
+      $kbc-btn-after-bottom-xs,
+      $kbc-btn-after-left-xs,
+      $kbc-btn-after-right-xs,
+      $kbc-btn-after-top-xs,
+      $kbc-btn-depth-xs,
+      $kbc-btn-after-border-width-xs,
+      $kbc-btn-after-border-radius-xs
+    );
+  }
+
+  &-sm {
+    @include button-size(
+      $kbc-btn-padding-y-sm,
+      $kbc-btn-padding-x-sm,
+      $kbc-btn-font-size-sm,
+      $kbc-btn-line-height-sm,
+      $kbc-btn-after-bottom-sm,
+      $kbc-btn-after-left-sm,
+      $kbc-btn-after-right-sm,
+      $kbc-btn-after-top-sm,
+      $kbc-btn-depth-sm,
+      $kbc-btn-after-border-width-sm,
+      $kbc-btn-after-border-radius-sm
+    );
+  }
+
+  &-lg {
+    @include button-size(
+      $kbc-btn-padding-y-lg,
+      $kbc-btn-padding-x-lg,
+      $kbc-btn-font-size-lg,
+      $kbc-btn-line-height-lg,
+      $kbc-btn-after-bottom-lg,
+      $kbc-btn-after-left-lg,
+      $kbc-btn-after-right-lg,
+      $kbc-btn-after-top-lg,
+      $kbc-btn-depth-lg,
+      $kbc-btn-after-border-width-lg,
+      $kbc-btn-after-border-radius-lg
+    );
+  }
 
   &:hover,
   &:focus {
-    background-color: $kbc-key-focus-bg-color;
-    box-shadow: $kbc-key-focus-box-shadow;
+    background-color: $kbc-btn-focus-bg-color;
     outline: none;
-    transform: translate3d(0, 1px, #{$kbc-key-depth}px);
-
-    &::after {
-      transform: translate3d(0, -1px, -#{$kbc-key-depth}px);
-    }
   }
 
   &:active {
-    background-color: $kbc-key-active-bg-color;
-    box-shadow: $kbc-key-active-box-shadow;
-    transform: translate3d(0, #{$kbc-key-depth}px, 0);
-
-    &::after {
-      transform: translate3d(0, -#{$kbc-key-depth}px, 0);
-    }
+    background-color: $kbc-btn-active-bg-color;
+    box-shadow: $kbc-btn-active-box-shadow;
   }
 
   icon {
     backface-visibility: hidden;
     position: absolute;
-    right: $kbc-key-icon-right;
-    top: $kbc-key-icon-top;
+    right: $kbc-btn-icon-right;
+    top: $kbc-btn-icon-top;
     transform-style: preserve-3d;
   }
 
-  &::after {
-    border: $kbc-key-after-border-width $kbc-key-after-border-style
-      $kbc-key-after-border-color;
-    border-radius: $kbc-key-after-border-radius;
-    content: '';
-    display: block;
-    height: $kbc-key-after-height;
-    left: $kbc-key-after-left;
-    position: absolute;
-    top: $kbc-key-after-top;
-    transform: translate3d(0, 0, -#{$kbc-key-depth}px);
-    transform-style: preserve-3d;
-    transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
-    width: $kbc-key-after-width;
+  &:not(.no-container) {
+    &::after {
+      border-color: $kbc-btn-after-border-color;
+      border-style: solid;
+      box-sizing: content-box;
+      content: '';
+      display: block;
+      position: absolute;
+      transform-style: preserve-3d;
+      transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
+    }
   }
 }

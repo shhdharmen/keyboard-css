@@ -1,3 +1,16 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass functions.
 // -----------------------------------------------------------------------------
+@function calculate-box-shadow($depth) {
+  $box-shadow: 0 0 #e0e0e0;
+
+  @for $i from 0 through $depth {
+    $box-shadow: #{$box-shadow}, 0 #{$i}px #e0e0e0;
+  }
+
+  @return $box-shadow;
+
+  //   @return 0 11px 0 #e0e0e0, 0 10px 0 #e0e0e0, 0 9px 0 #e0e0e0, 0 8px 0 #e0e0e0,
+  //     0 7px 0 #e0e0e0, 0 6px 0 #e0e0e0, 0 5px 0 #e0e0e0, 0 4px 0 #e0e0e0,
+  //     0 3px 0 #e0e0e0, 0 2px 0 #e0e0e0, 0 1px 0 #e0e0e0;
+}

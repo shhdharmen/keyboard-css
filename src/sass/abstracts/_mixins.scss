@@ -1,3 +1,68 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
+
+// Shadow
+@mixin button-shadow($depth) {
+  box-shadow: calculate-box-shadow($depth), 2px #{$depth / 2}px 4px #e0e0e0,
+    0 -1px #{$depth / 2}px #e0e0e0;
+}
+
+// Button sizes
+@mixin button-size(
+  $padding-y,
+  $padding-x,
+  $font-size,
+  $line-height,
+  $after-bottom,
+  $after-left,
+  $after-right,
+  $after-top,
+  $depth,
+  $after-border-width,
+  $after-border-radius
+) {
+  @include button-shadow($depth);
+
+  font-size: $font-size;
+  line-height: $line-height;
+  margin: $after-border-width + 0.25rem;
+  padding: $padding-y $padding-x;
+
+  &:hover,
+  &:focus {
+    @include button-shadow($depth - 1);
+
+    transform: translate3d(0, 1px, #{$depth}px);
+
+    &:not(.no-container) {
+      &::after {
+        transform: translate3d(0, -1px, -#{$depth}px);
+      }
+    }
+  }
+
+  &:active {
+    border-color: transparent;
+    box-shadow: none;
+    transform: translate3d(0, #{$depth}px, 0);
+
+    &:not(.no-container) {
+      &::after {
+        transform: translate3d(0, -#{$depth}px, 0);
+      }
+    }
+  }
+
+  &:not(.no-container) {
+    &::after {
+      border-radius: $after-border-radius;
+      border-width: $after-border-width;
+      bottom: $after-bottom;
+      left: $after-left;
+      right: $after-right;
+      top: $after-top;
+      transform: translate3d(0, 0, -#{$depth}px);
+    }
+  }
+}

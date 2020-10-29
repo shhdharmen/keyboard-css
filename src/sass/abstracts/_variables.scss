@@ -1,45 +1,132 @@
-$kbc-key-size: 100px !default;
-$kbc-key-depth: 11 !default;
-$kbc-key-height: $kbc-key-size !default;
-$kbc-key-width: $kbc-key-size !default;
-$kbc-key-font-size: 14px !default;
-$kbc-key-font-weight: 600 !default;
-$kbc-key-font-family: 'Arial, Helvetica, sans-serif' !default;
-$kbc-key-border-radius: ($kbc-key-size / 25 * 4) !default;
-$kbc-key-bg-color: #fff;
-$kbc-key-font-color: #a7a7a7;
-$kbc-key-box-shadow: 0 11px 0 #e0e0e0, 0 10px 0 #e0e0e0, 0 9px 0 #e0e0e0,
-  0 8px 0 #e0e0e0, 0 7px 0 #e0e0e0, 0 6px 0 #e0e0e0, 0 5px 0 #e0e0e0,
-  0 4px 0 #e0e0e0, 0 3px 0 #e0e0e0, 0 2px 0 #e0e0e0, 0 1px 0 #e0e0e0,
-  2px 6px 4px #e0e0e0 !default;
-$kbc-key-cursor: pointer !default;
-$kbc-key-padding: 8px !default;
-$kbc-key-text-align: right !default;
+// Components
+//
+// Define common padding and border radius sizes and more.
+$kbc-line-height-lg: 1.5 !default;
+$kbc-line-height-sm: 1.5 !default;
+$kbc-line-height-xs: 1.5 !default;
+$kbc-line-height-xxs: 1.5 !default;
 
-$kbc-key-hover-bg-color: #fafafa !default;
+$kbc-border-width: 1px !default;
+$kbc-border-color: #e0e0e0 !default;
 
-$kbc-key-focus-bg-color: $kbc-key-hover-bg-color !default;
-$kbc-key-focus-box-shadow: 0 10px 0 #e0e0e0, 0 9px 0 #e0e0e0, 0 8px 0 #e0e0e0,
-  0 7px 0 #e0e0e0, 0 6px 0 #e0e0e0, 0 5px 0 #e0e0e0, 0 4px 0 #e0e0e0,
-  0 3px 0 #e0e0e0, 0 2px 0 #e0e0e0, 0 1px 0 #e0e0e0, 1px 4px 3px #e0e0e0 !default;
+$kbc-border-radius: 0.25rem !default;
+$kbc-border-radius-lg: 0.3rem !default;
+$kbc-border-radius-sm: 0.2rem !default;
 
-$kbc-key-active-bg-color: $kbc-key-hover-bg-color !default;
-$kbc-key-active-box-shadow: 0 0 1px 1px #c7c7c7 !default;
+$kbc-box-shadow-sm: 0 0.125rem 0.25rem rgba(#000, 0.075) !default;
+$kbc-box-shadow: 0 0.5rem 1rem rgba(#000, 0.15) !default;
+$kbc-box-shadow-lg: 0 1rem 3rem rgba(#000, 0.175) !default;
 
-$kbc-key-after-border-width: 2px !default;
-$kbc-key-after-border-style: solid !default;
-$kbc-key-after-border-color: #a0a0a0 !default;
-$kbc-key-after-border-radius: ($kbc-key-border-radius + 4px) !default;
-$kbc-key-after-height: (
-  $kbc-key-height + $kbc-key-after-border-width + 2px
-) !default;
-$kbc-key-after-width: (
-  $kbc-key-width + $kbc-key-after-border-width + 2px
-) !default;
-$kbc-key-after-left: -5px !default;
-$kbc-key-after-top: 6px !default;
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
 
-$kbc-key-icon-right: 8px !default;
-$kbc-key-icon-top: 8px !default;
+$kbc-font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
+$kbc-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  'Liberation Mono', 'Courier New', monospace !default;
+$kbc-font-family-base: $kbc-font-family-sans-serif !default;
 
-$kbc-key-margin: ($kbc-key-after-border-width + 4px) !default;
+$kbc-font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$kbc-font-size-lg: $kbc-font-size-base * 1.25 !default;
+$kbc-font-size-sm: $kbc-font-size-base * 0.875 !default;
+$kbc-font-size-xs: $kbc-font-size-base * 0.725 !default;
+$kbc-font-size-xxs: $kbc-font-size-base * 0.7 !default;
+
+$kbc-font-weight-lighter: lighter !default;
+$kbc-font-weight-light: 300 !default;
+$kbc-font-weight-normal: 400 !default;
+$kbc-font-weight-bold: 700 !default;
+$kbc-font-weight-bolder: bolder !default;
+
+$kbc-font-weight-base: $kbc-font-weight-normal !default;
+$kbc-line-height-base: 1.5 !default;
+
+$kbc-small-font-size: 80% !default;
+
+// Buttons
+
+$kbc-btn-border-width: $kbc-border-width !default;
+$kbc-btn-border-color: $kbc-border-color !default;
+$kbc-btn-disabled-opacity: 0.65 !default;
+$kbc-btn-line-height: $kbc-line-height-base !default;
+$kbc-btn-width: auto !default;
+$kbc-btn-font-size: $kbc-font-size-base !default;
+$kbc-btn-font-weight: $kbc-font-weight-base !default;
+$kbc-btn-font-family: $kbc-font-family-sans-serif !default;
+$kbc-btn-border-radius: $kbc-border-radius !default;
+$kbc-btn-bg-color: #fff;
+$kbc-btn-font-color: #a7a7a7;
+
+$kbc-btn-after-border-color: #a0a0a0 !default;
+
+$kbc-btn-cursor: pointer !default;
+$kbc-btn-text-align: right !default;
+$kbc-btn-icon-right: 0.5rem !default;
+$kbc-btn-icon-top: 0.5rem !default;
+
+$kbc-btn-hover-bg-color: #fafafa !default;
+$kbc-btn-focus-bg-color: $kbc-btn-hover-bg-color !default;
+$kbc-btn-active-bg-color: $kbc-btn-hover-bg-color !default;
+$kbc-btn-active-box-shadow: 0 0 1px 1px #c7c7c7 !default;
+
+$kbc-btn-padding-y: 0.375rem !default;
+$kbc-btn-padding-x: 0.75rem !default;
+$kbc-btn-font-size: $kbc-font-size-base !default;
+$kbc-btn-line-height: $kbc-line-height-base !default;
+$kbc-btn-depth: 5 !default;
+$kbc-btn-after-border-width: 0.125rem !default;
+$kbc-btn-after-left: -($kbc-btn-after-border-width * 2) - 0.0625rem !default;
+$kbc-btn-after-top: #{$kbc-btn-depth - 5}px !default;
+$kbc-btn-after-bottom: -#{$kbc-btn-depth + 5}px !default;
+$kbc-btn-after-right: -($kbc-btn-after-border-width * 2) - 0.0625rem !default;
+$kbc-btn-after-border-radius: ($kbc-btn-border-radius + 0.25rem) !default;
+
+$kbc-btn-padding-y-sm: 0.25rem !default;
+$kbc-btn-padding-x-sm: 0.5rem !default;
+$kbc-btn-font-size-sm: $kbc-font-size-sm !default;
+$kbc-btn-line-height-sm: $kbc-line-height-sm !default;
+$kbc-btn-depth-sm: 3 !default;
+$kbc-btn-after-border-width-sm: 0.09375rem !default;
+$kbc-btn-after-left-sm: -($kbc-btn-after-border-width-sm * 2) - 0.0625rem !default;
+$kbc-btn-after-top-sm: #{$kbc-btn-depth-sm - 4}px !default;
+$kbc-btn-after-bottom-sm: -#{$kbc-btn-depth-sm + 4}px !default;
+$kbc-btn-after-right-sm: -($kbc-btn-after-border-width-sm * 2) - 0.0625rem !default;
+$kbc-btn-after-border-radius-sm: ($kbc-btn-border-radius + 0.125rem) !default;
+
+$kbc-btn-padding-y-xs: 0.175rem !default;
+$kbc-btn-padding-x-xs: 0.5rem !default;
+$kbc-btn-font-size-xs: $kbc-font-size-xs !default;
+$kbc-btn-line-height-xs: $kbc-line-height-xs !default;
+$kbc-btn-depth-xs: 2 !default;
+$kbc-btn-after-border-width-xs: 0.0625rem !default;
+$kbc-btn-after-left-xs: -($kbc-btn-after-border-width-xs * 2) - 0.125rem !default;
+$kbc-btn-after-top-xs: #{$kbc-btn-depth-xs - 4}px !default;
+$kbc-btn-after-bottom-xs: -#{$kbc-btn-depth-xs + 4}px !default;
+$kbc-btn-after-right-xs: -($kbc-btn-after-border-width-xs * 2) - 0.125rem !default;
+$kbc-btn-after-border-radius-xs: ($kbc-btn-border-radius + 0.125rem) !default;
+
+$kbc-btn-padding-y-xxs: 0.1rem !default;
+$kbc-btn-padding-x-xxs: 0.3rem !default;
+$kbc-btn-font-size-xxs: $kbc-font-size-xxs !default;
+$kbc-btn-line-height-xxs: $kbc-line-height-xxs !default;
+$kbc-btn-depth-xxs: 2 !default;
+$kbc-btn-after-border-width-xxs: 0.0625rem !default;
+$kbc-btn-after-left-xxs: -($kbc-btn-after-border-width-xxs * 2) - 0.125rem !default;
+$kbc-btn-after-top-xxs: #{$kbc-btn-depth-xxs - 4}px !default;
+$kbc-btn-after-bottom-xxs: -#{$kbc-btn-depth-xxs + 4}px !default;
+$kbc-btn-after-right-xxs: -($kbc-btn-after-border-width-xxs * 2) - 0.125rem !default;
+$kbc-btn-after-border-radius-xxs: ($kbc-btn-border-radius + 0.125rem) !default;
+
+$kbc-btn-padding-y-lg: 0.5rem !default;
+$kbc-btn-padding-x-lg: 1rem !default;
+$kbc-btn-font-size-lg: $kbc-font-size-lg !default;
+$kbc-btn-line-height-lg: $kbc-line-height-lg !default;
+$kbc-btn-depth-lg: 8 !default;
+$kbc-btn-after-border-width-lg: 0.125rem !default;
+$kbc-btn-after-left-lg: -($kbc-btn-after-border-width-lg * 2) - 0.125rem !default;
+$kbc-btn-after-top-lg: #{$kbc-btn-depth-lg - 5}px !default;
+$kbc-btn-after-bottom-lg: -#{$kbc-btn-depth-lg + 5}px !default;
+$kbc-btn-after-right-lg: -($kbc-btn-after-border-width-lg * 2) - 0.125rem !default;
+$kbc-btn-after-border-radius-lg: ($kbc-btn-border-radius + 0.25rem) !default;
