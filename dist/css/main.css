@@ -1,0 +1,267 @@
+/*! keyboard-css v0.0.0-development | (c) 2020  | MIT License | https://github.com/shhdharmen/keyboard-css.git */
+/* line 4, src/sass/components/_button.scss */
+.kbc-button {
+  box-shadow: 0 0 #e0e0e0, 0 0px #e0e0e0, 0 1px #e0e0e0, 0 2px #e0e0e0, 0 3px #e0e0e0, 0 4px #e0e0e0, 0 5px #e0e0e0, 2px 2.5px 4px #e0e0e0, 0 -1px 2.5px #e0e0e0;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  align-items: flex-end;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.25rem;
+  color: #a7a7a7;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+  justify-content: flex-end;
+  position: relative;
+  text-align: right;
+  transform: translate3d(0, 0, 5px);
+  transform-style: preserve-3d;
+  transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
+  width: auto;
+}
+
+/* line 32, src/sass/abstracts/_mixins.scss */
+.kbc-button:hover, .kbc-button:focus {
+  box-shadow: 0 0 #e0e0e0, 0 0px #e0e0e0, 0 1px #e0e0e0, 0 2px #e0e0e0, 0 3px #e0e0e0, 0 4px #e0e0e0, 2px 2px 4px #e0e0e0, 0 -1px 2px #e0e0e0;
+  transform: translate3d(0, 1px, 5px);
+}
+
+/* line 39, src/sass/abstracts/_mixins.scss */
+.kbc-button:hover:not(.no-container)::after, .kbc-button:focus:not(.no-container)::after {
+  transform: translate3d(0, -1px, -5px);
+}
+
+/* line 45, src/sass/abstracts/_mixins.scss */
+.kbc-button:active {
+  border-color: transparent;
+  box-shadow: none;
+  transform: translate3d(0, 5px, 0);
+}
+
+/* line 51, src/sass/abstracts/_mixins.scss */
+.kbc-button:active:not(.no-container)::after {
+  transform: translate3d(0, -5px, 0);
+}
+
+/* line 58, src/sass/abstracts/_mixins.scss */
+.kbc-button:not(.no-container)::after {
+  border-radius: 0.5rem;
+  border-width: 0.125rem;
+  bottom: -10px;
+  left: -0.3125rem;
+  right: -0.3125rem;
+  top: 0px;
+  transform: translate3d(0, 0, -5px);
+}
+
+/* line 37, src/sass/components/_button.scss */
+.kbc-button-xxs {
+  box-shadow: 0 0 #e0e0e0, 0 0px #e0e0e0, 0 1px #e0e0e0, 0 2px #e0e0e0, 2px 1px 4px #e0e0e0, 0 -1px 1px #e0e0e0;
+  font-size: 0.7rem;
+  line-height: 1.5;
+  margin: 0.3125rem;
+  padding: 0.1rem 0.3rem;
+}
+
+/* line 32, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs:hover, .kbc-button-xxs:focus {
+  box-shadow: 0 0 #e0e0e0, 0 0px #e0e0e0, 0 1px #e0e0e0, 2px 0.5px 4px #e0e0e0, 0 -1px 0.5px #e0e0e0;
+  transform: translate3d(0, 1px, 2px);
+}
+
+/* line 39, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs:hover:not(.no-container)::after, .kbc-button-xxs:focus:not(.no-container)::after {
+  transform: translate3d(0, -1px, -2px);
+}
+
+/* line 45, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs:active {
+  border-color: transparent;
+  box-shadow: none;
+  transform: translate3d(0, 2px, 0);
+}
+
+/* line 51, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs:active:not(.no-container)::after {
+  transform: translate3d(0, -2px, 0);
+}
+
+/* line 58, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs:not(.no-container)::after {
+  border-radius: 0.375rem;
+  border-width: 0.0625rem;
+  bottom: -6px;
+  left: -0.25rem;
+  right: -0.25rem;
+  top: -2px;
+  transform: translate3d(0, 0, -2px);
+}
+
+/* line 53, src/sass/components/_button.scss */
+.kbc-button-xs {
+  box-shadow: 0 0 #e0e0e0, 0 0px #e0e0e0, 0 1px #e0e0e0, 0 2px #e0e0e0, 2px 1px 4px #e0e0e0, 0 -1px 1px #e0e0e0;
+  font-size: 0.725rem;
+  line-height: 1.5;
+  margin: 0.3125rem;
+  padding: 0.175rem 0.5rem;
+}
+
+/* line 32, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs:hover, .kbc-button-xs:focus {
+  box-shadow: 0 0 #e0e0e0, 0 0px #e0e0e0, 0 1px #e0e0e0, 2px 0.5px 4px #e0e0e0, 0 -1px 0.5px #e0e0e0;
+  transform: translate3d(0, 1px, 2px);
+}
+
+/* line 39, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs:hover:not(.no-container)::after, .kbc-button-xs:focus:not(.no-container)::after {
+  transform: translate3d(0, -1px, -2px);
+}
+
+/* line 45, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs:active {
+  border-color: transparent;
+  box-shadow: none;
+  transform: translate3d(0, 2px, 0);
+}
+
+/* line 51, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs:active:not(.no-container)::after {
+  transform: translate3d(0, -2px, 0);
+}
+
+/* line 58, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs:not(.no-container)::after {
+  border-radius: 0.375rem;
+  border-width: 0.0625rem;
+  bottom: -6px;
+  left: -0.25rem;
+  right: -0.25rem;
+  top: -2px;
+  transform: translate3d(0, 0, -2px);
+}
+
+/* line 69, src/sass/components/_button.scss */
+.kbc-button-sm {
+  box-shadow: 0 0 #e0e0e0, 0 0px #e0e0e0, 0 1px #e0e0e0, 0 2px #e0e0e0, 0 3px #e0e0e0, 2px 1.5px 4px #e0e0e0, 0 -1px 1.5px #e0e0e0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0.34375rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* line 32, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm:hover, .kbc-button-sm:focus {
+  box-shadow: 0 0 #e0e0e0, 0 0px #e0e0e0, 0 1px #e0e0e0, 0 2px #e0e0e0, 2px 1px 4px #e0e0e0, 0 -1px 1px #e0e0e0;
+  transform: translate3d(0, 1px, 3px);
+}
+
+/* line 39, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm:hover:not(.no-container)::after, .kbc-button-sm:focus:not(.no-container)::after {
+  transform: translate3d(0, -1px, -3px);
+}
+
+/* line 45, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm:active {
+  border-color: transparent;
+  box-shadow: none;
+  transform: translate3d(0, 3px, 0);
+}
+
+/* line 51, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm:active:not(.no-container)::after {
+  transform: translate3d(0, -3px, 0);
+}
+
+/* line 58, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm:not(.no-container)::after {
+  border-radius: 0.375rem;
+  border-width: 0.09375rem;
+  bottom: -7px;
+  left: -0.25rem;
+  right: -0.25rem;
+  top: -1px;
+  transform: translate3d(0, 0, -3px);
+}
+
+/* line 85, src/sass/components/_button.scss */
+.kbc-button-lg {
+  box-shadow: 0 0 #e0e0e0, 0 0px #e0e0e0, 0 1px #e0e0e0, 0 2px #e0e0e0, 0 3px #e0e0e0, 0 4px #e0e0e0, 0 5px #e0e0e0, 0 6px #e0e0e0, 0 7px #e0e0e0, 0 8px #e0e0e0, 2px 4px 4px #e0e0e0, 0 -1px 4px #e0e0e0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0.375rem;
+  padding: 0.5rem 1rem;
+}
+
+/* line 32, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg:hover, .kbc-button-lg:focus {
+  box-shadow: 0 0 #e0e0e0, 0 0px #e0e0e0, 0 1px #e0e0e0, 0 2px #e0e0e0, 0 3px #e0e0e0, 0 4px #e0e0e0, 0 5px #e0e0e0, 0 6px #e0e0e0, 0 7px #e0e0e0, 2px 3.5px 4px #e0e0e0, 0 -1px 3.5px #e0e0e0;
+  transform: translate3d(0, 1px, 8px);
+}
+
+/* line 39, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg:hover:not(.no-container)::after, .kbc-button-lg:focus:not(.no-container)::after {
+  transform: translate3d(0, -1px, -8px);
+}
+
+/* line 45, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg:active {
+  border-color: transparent;
+  box-shadow: none;
+  transform: translate3d(0, 8px, 0);
+}
+
+/* line 51, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg:active:not(.no-container)::after {
+  transform: translate3d(0, -8px, 0);
+}
+
+/* line 58, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg:not(.no-container)::after {
+  border-radius: 0.5rem;
+  border-width: 0.125rem;
+  bottom: -13px;
+  left: -0.375rem;
+  right: -0.375rem;
+  top: 3px;
+  transform: translate3d(0, 0, -8px);
+}
+
+/* line 101, src/sass/components/_button.scss */
+.kbc-button:hover, .kbc-button:focus {
+  background-color: #fafafa;
+  outline: none;
+}
+
+/* line 107, src/sass/components/_button.scss */
+.kbc-button:active {
+  background-color: #fafafa;
+  box-shadow: 0 0 1px 1px #c7c7c7;
+}
+
+/* line 112, src/sass/components/_button.scss */
+.kbc-button icon {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  transform-style: preserve-3d;
+}
+
+/* line 121, src/sass/components/_button.scss */
+.kbc-button:not(.no-container)::after {
+  border-color: #a0a0a0;
+  border-style: solid;
+  box-sizing: content-box;
+  content: '';
+  display: block;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
+}
