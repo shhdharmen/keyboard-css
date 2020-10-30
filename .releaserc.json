@@ -31,6 +31,12 @@
       {
         "assets": ["package.json", "npm-shrinkwrap.json", "CHANGELOG.md"]
       }
+    ],
+    [
+      "@qiwi/semantic-release-gh-pages-plugin",
+      {
+        "src": "dist"
+      }
     ]
   ]
 }
