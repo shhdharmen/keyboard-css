@@ -19,7 +19,6 @@
       {
         "assets": [
           "dist/**/*.*",
-          "docs",
           "package.json",
           "npm-shrinkwrap.json"
         ],
