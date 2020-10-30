@@ -15,14 +15,10 @@
       }
     ],
     [
-      "@semantic-release/git",
+      "@semantic-release/github",
       {
-        "assets": [
-          "dist/**/*.*",
-          "package.json",
-          "npm-shrinkwrap.json"
-        ],
-        "message": "chore(release): <%= nextRelease.version %> <%= new Date().toLocaleString('en-IN', {year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' }) %> [skip ci]\n\n<%= nextRelease.notes %>"
+        "assets": ["dist/**/*.*"],
+        "message": "chore(release): ${nextRelease.version} ${new Date().toLocaleString('en-IN', {year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' })} [skip ci]\n\n${nextRelease.notes}"
       }
     ]
   ]
