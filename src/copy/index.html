@@ -44,7 +44,7 @@
     >
       <a class="navbar-brand" href="#">
         <h1 class="display-4 d-inline-block">
-          <img src="./logo.png" class="mt-n3" />Keyboard CSS
+          <img src="./assets/logo.png" class="mt-n3" />Keyboard CSS
         </h1>
       </a>
       <button
@@ -64,8 +64,27 @@
           <li class="nav-item">
             <a class="nav-link" href="#getting-started">Getting Started</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#usage">Usage</a>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Usage
+            </a>
+            <div class="dropdown-menu shadow-sm" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#basic">Basic</a>
+              <a class="dropdown-item" href="#remove-border">Remove Border</a>
+              <a class="dropdown-item" href="#sizing">Sizing</a>
+              <a class="dropdown-item" href="#states">States</a>
+              <a class="dropdown-item" href="#colors">Colors</a>
+              <!-- <div class="dropdown-divider"></div> -->
+              <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+            </div>
           </li>
         </ul>
         <ul class="navbar-nav">
@@ -116,7 +135,7 @@
       <hr class="my-4" />
       <button class="btn btn-outline-primary btn-lg">Getting Started</button>
     </div>
-    <div class="container-fluid">
+    <div class="container mb-5">
       <section class="mb-3">
         <h4 id="getting-started">Getting Started</h4>
         <p id="link">
@@ -152,7 +171,7 @@
               <button class="kbc-button">K</button>
             </pre>
         </div>
-        <h5 id="basic">Remove Surface Border</h5>
+        <h5 id="remove-border">Remove Surface Border</h5>
         <p>
           To remove surface border, simply add
           <code><b>no-container</b></code> class.
@@ -167,7 +186,7 @@
               <button class="kbc-button no-container">K</button>
             </pre>
         </div>
-        <h5 id="basic">Sizing</h5>
+        <h5 id="sizing">Sizing</h5>
         <p>
           Total 5 sizes are available. You can respective classes to see the
           effect.
@@ -190,7 +209,7 @@
               <button class="kbc-button kbc-button-lg">LG</button>
             </pre>
         </div>
-        <h5 id="basic">States</h5>
+        <h5 id="states">States</h5>
         <p>
           Like all buttons, this also have 3 states: <code>:hover</code>,
           <code>:focus</code>, <code>:active</code>, and <code>:disabled</code>.
@@ -212,7 +231,7 @@
               <button class="kbc-button disabled">Disabled</button>
             </pre>
         </div>
-        <h5 id="Colors">Colors</h5>
+        <h5 id="colors">Colors</h5>
         <p>
           Colors are directly inspired from
           <a
@@ -235,7 +254,7 @@
                 &lt;button class="kbc-button kbc-button-dark"&gt;Dark&lt;/button&gt;
               </code>
             </pre>
-          <pre class="d-flex px-5 py-2">
+          <pre>
               <button class="kbc-button">Default</button>
               <button class="kbc-button kbc-button-primary">Primary</button>
               <button class="kbc-button kbc-button-secondary">Secondary</button>
@@ -248,75 +267,92 @@
         </div>
       </section>
     </div>
-    <div class="footer bg-light mt-3 border-top py-5">
+    <div class="footer bg-dark border-top py-5">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-6">
-            <ul class="list-unstyled d-flex">
-              <li>
+            <button class="kbc-button kbc-button-lg d-block mb-3">
+              Developed by
+              <img
+                class="rounded-circle border mt-n1"
+                height="36"
+                src="https://avatars3.githubusercontent.com/u/6831283?v=4?s=36"
+              />
+              Dharmen Shah
+            </button>
+            <div class="row no-gutters">
+              <div class="col-auto mb-2">
                 <a
                   href="https://github.com/shhdharmen/keyboard-css"
                   target="_blank"
-                  class="kbc-button kbc-button-sm kbc-button-dark"
+                  class="kbc-button kbc-button-xs kbc-button-dark"
                   >Github</a
                 >
-              </li>
-              <li>
+              </div>
+              <div class="col-auto mb-2">
                 <a
                   href="https://npmjs.com/package/keyboard-css"
                   target="_blank"
-                  class="kbc-button kbc-button-sm kbc-button-danger"
+                  class="kbc-button kbc-button-xs kbc-button-danger"
                   >NPM</a
                 >
-              </li>
-            </ul>
-            <p class="ml-1">
-              Current Version: <b>{{ version }}</b> | Code licensed
-              <b
-                ><a
-                  class="text-dark"
-                  href="https://github.com/shhdharmen/keyboard-css/blob/main/LICENSE"
-                  >MIT</a
-                ></b
-              >
-            </p>
-          </div>
-          <div class="col-6">
-            <p>Developed by Dharmen Shah</p>
-            <ul class="list-unstyled d-flex">
-              <li class="mr-2">
+              </div>
+              <div class="col-auto mb-2">
                 <a
                   href="http://twitter.com/shhdharmen"
                   target="_blank"
                   rel="noopener noreferrer"
+                  class="kbc-button kbc-button-xs kbc-button-info"
                   >Twitter</a
                 >
-              </li>
-              <li class="mx-2">
-                <a
-                  href="http://github.com/shhdharmen"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Github</a
-                >
-              </li>
-              <li class="mx-2">
+              </div>
+              <div class="col-auto mb-2">
                 <a
                   href="http://shhdharmen.me"
                   target="_blank"
                   rel="noopener noreferrer"
+                  class="kbc-button kbc-button-xs kbc-button-success"
                   >Website</a
                 >
-              </li>
-              <li class="ml-2">
+              </div>
+              <div class="col-auto mb-2">
                 <a
                   href="http://blog.shhdharmen.me"
                   target="_blank"
                   rel="noopener noreferrer"
+                  class="kbc-button kbc-button-xs kbc-button-secondary"
                   >Blogs</a
                 >
-              </li>
-            </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 text-center">
+            <div class="border rounded shadow-sm p-3 text-white">
+              <p class="ml-1 mb-0">
+                Current Version
+                <a
+                  href="https://www.npmjs.com/package/keyboard-css"
+                  target="_blank"
+                >
+                  <img
+                    class="mt-n1"
+                    src="https://img.shields.io/npm/v/keyboard-css?style=flat-square"
+                    alt="Keyboard CSS Version"
+                  />
+                </a>
+                <br />Code licensed
+                <a
+                  href="https://github.com/shhdharmen/keyboard-css/blob/main/LICENSE"
+                  target="_blank"
+                >
+                  <img
+                    class="mt-n1"
+                    src="https://img.shields.io/github/license/shhdharmen/keyboard-css?style=flat-square"
+                    alt="Keyboard CSS License"
+                  />
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -331,6 +367,7 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+
     <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/prism.min.js"
