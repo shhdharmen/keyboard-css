@@ -17,8 +17,19 @@
     [
       "@semantic-release/github",
       {
-        "assets": ["dist/**/*.*"],
+        "assets": [
+          {
+            "path": "dist/**/*.*",
+            "label": "keyboard-css@${nextRelease.version}"
+          }
+        ],
         "message": "chore(release): ${nextRelease.version} ${new Date().toLocaleString('en-IN', {year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' })} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": ["package.json", "npm-shrinkwrap.json", "CHANGELOG.md"]
       }
     ]
   ]
