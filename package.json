@@ -1,6 +1,6 @@
 {
   "name": "keyboard-css",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A CSS to show keyboard keys.",
   "main": "css/main.min.css",
   "scripts": {

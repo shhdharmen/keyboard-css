@@ -1,7 +1,7 @@
 
 <!-- markdownlint-disable -->
 <p align="center">
-    <img src="src/copy/logo.png" alt="Keyboard CSS Logo">
+    <img src="src/copy/assets/logo.png" alt="Keyboard CSS Logo">
 </p>
 
 <p align="center">
@@ -9,13 +9,13 @@
 </p>
 
 <p align="center">
-    <img src="src/copy/demo.gif" alt="Keyboard CSS Demo">
+    <img src="src/copy/assets/demo.gif" alt="Keyboard CSS Demo">
 </p>
 <!-- markdownlint-restore -->
 
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
-![npm](https://img.shields.io/npm/v/keyboard-css)
+[![npm](https://img.shields.io/npm/v/keyboard-css?style=flat-square)](https://www.npmjs.com/package/keyboard-css)
 [![GitHub license](https://img.shields.io/github/license/shhdharmen/keyboard-css?style=flat-square)](https://github.com/shhdharmen/keyboard-css/blob/main/LICENSE)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
@@ -42,7 +42,7 @@ npm i keyboard-css
 
 ## Usage
 
-Visit TBA.
+Visit <https://shhdharmen.github.io/keyboard-css/#usage>.
 
 ## Contributors ✨
 

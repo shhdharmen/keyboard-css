@@ -3,11 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Keyboard CSS</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <title>
+      Keyboard CSS | Show off your keyboard shortcuts with style 🦄.
+    </title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/site.webmanifest" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -24,11 +40,11 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-md navbar-light bg-white fixed-top border-bottom shadow-sm"
+      class="navbar navbar-expand-md navbar-light bg-white border-bottom shadow-sm mb-3"
     >
       <a class="navbar-brand" href="#">
         <h1 class="display-4 d-inline-block">
-          <img src="./logo.png" class="mt-n3" />Keyboard CSS
+          <img src="./assets/logo.png" class="mt-n3" />Keyboard CSS
         </h1>
       </a>
       <button
@@ -48,8 +64,27 @@
           <li class="nav-item">
             <a class="nav-link" href="#getting-started">Getting Started</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#usage">Usage</a>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Usage
+            </a>
+            <div class="dropdown-menu shadow-sm" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#basic">Basic</a>
+              <a class="dropdown-item" href="#remove-border">Remove Border</a>
+              <a class="dropdown-item" href="#sizing">Sizing</a>
+              <a class="dropdown-item" href="#states">States</a>
+              <a class="dropdown-item" href="#colors">Colors</a>
+              <!-- <div class="dropdown-divider"></div> -->
+              <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+            </div>
           </li>
         </ul>
         <ul class="navbar-nav">
@@ -74,97 +109,90 @@
         </form> -->
       </div>
     </nav>
-    <div
-      data-spy="scroll"
-      data-target="#navbar-example2"
-      class="container-fluid mt-5"
-    >
-      <div class="py-4"></div>
-      <div class="jumbotron text-center">
-        <div class="container-fluid px-0">
-          <div class="row justify-content-center">
-            <div class="col-auto">
-              <button class="kbc-button kbc-button-lg">K</button>
-              <button class="kbc-button kbc-button-lg">E</button>
-              <button class="kbc-button kbc-button-lg">Y</button>
-              <button class="kbc-button kbc-button-lg">B</button>
-              <button class="kbc-button kbc-button-lg">O</button>
-              <button class="kbc-button kbc-button-lg">A</button>
-              <button class="kbc-button kbc-button-lg">R</button>
-              <button class="kbc-button kbc-button-lg">D</button>
-            </div>
-            <div class="col-auto">
-              <button class="kbc-button kbc-button-lg">C</button>
-              <button class="kbc-button kbc-button-lg">S</button>
-              <button class="kbc-button kbc-button-lg">S</button>
-            </div>
+    <div class="jumbotron text-center">
+      <div class="container-fluid px-0">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <button class="kbc-button kbc-button-lg">K</button>
+            <button class="kbc-button kbc-button-lg">E</button>
+            <button class="kbc-button kbc-button-lg">Y</button>
+            <button class="kbc-button kbc-button-lg">B</button>
+            <button class="kbc-button kbc-button-lg">O</button>
+            <button class="kbc-button kbc-button-lg">A</button>
+            <button class="kbc-button kbc-button-lg">R</button>
+            <button class="kbc-button kbc-button-lg">D</button>
+          </div>
+          <div class="col-auto">
+            <button class="kbc-button kbc-button-lg">C</button>
+            <button class="kbc-button kbc-button-lg">S</button>
+            <button class="kbc-button kbc-button-lg">S</button>
           </div>
         </div>
-        <p class="lead mt-2">
-          <b><i>Show off your keyboard shortcuts with style 🦄.</i></b>
-        </p>
-        <hr class="my-4" />
-        <button class="btn btn-outline-primary btn-lg">Getting Started</button>
       </div>
-      <div class="container-fluid">
-        <section class="mb-3">
-          <h4 id="getting-started">Getting Started</h4>
-          <p id="link">
-            Simplest way to use this is through <code>link</code> tag (thanks to
-            <a href="https://unpkg.com/">https://unpkg.com/</a>):
-          </p>
-          <div class="px-3 py-2 bg-dark rounded shadow-sm mb-3">
-            <code
-              >&lt;link rel="stylesheet"
-              href="https://unpkg.com/keyboard-css@1.0.0-beta.3/css/main.min.css"
-              /&gt;</code
-            >
-          </div>
-          <p id="npm">You can also install it from npm:</p>
-          <div class="px-3 py-2 bg-dark rounded shadow-sm mb-3">
-            <code>npm i keyboard-css</code>
-          </div>
-        </section>
-        <hr />
-        <section class="mb-3">
-          <h4 id="usage">Usage</h4>
-          <p>
-            You just have to add a single class to apply the related styles,
-            i.e. <code><b>kbc-button</b></code>
-          </p>
-          <h5 id="basic">Basic Usage</h5>
-          <div class="border mb-3">
-            <div class="bg-light">
-              <pre><code class="language-html">
+      <p class="lead mt-2">
+        <b><i>Show off your keyboard shortcuts with style 🦄.</i></b>
+      </p>
+      <hr class="my-4" />
+      <button class="btn btn-outline-primary btn-lg">Getting Started</button>
+    </div>
+    <div class="container mb-5">
+      <section class="mb-3">
+        <h4 id="getting-started">Getting Started</h4>
+        <p id="link">
+          Simplest way to use this is through <code>link</code> tag (thanks to
+          <a href="https://unpkg.com/">https://unpkg.com/</a>):
+        </p>
+        <div class="px-3 py-2 bg-dark rounded shadow-sm mb-3">
+          <code
+            >&lt;link rel="stylesheet" href="https://unpkg.com/keyboard-css@{{
+            version }}/css/main.min.css" /&gt;</code
+          >
+        </div>
+        <p id="npm">You can also install it from npm:</p>
+        <div class="px-3 py-2 bg-dark rounded shadow-sm mb-3">
+          <code>npm i keyboard-css</code>
+        </div>
+      </section>
+      <hr />
+      <section class="mb-3">
+        <h4 id="usage">Usage</h4>
+        <p>
+          You just have to add a single class to apply the related styles, i.e.
+          <code><b>kbc-button</b></code>
+        </p>
+        <h5 id="basic">Basic Usage</h5>
+        <div class="border mb-3">
+          <div class="bg-light">
+            <pre><code class="language-html">
                 &lt;button class="kbc-button"&gt;K&lt;/button&gt;
               </code></pre>
-            </div>
-            <pre>
+          </div>
+          <pre>
               <button class="kbc-button">K</button>
             </pre>
-          </div>
-          <h5 id="basic">Remove Surface Border</h5>
-          <p>
-            To remove surface border, simply add
-            <code><b>no-container</b></code> class.
-          </p>
-          <div class="border mb-3">
-            <div class="bg-light">
-              <pre><code class="language-html">
+        </div>
+        <h5 id="remove-border">Remove Surface Border</h5>
+        <p>
+          To remove surface border, simply add
+          <code><b>no-container</b></code> class.
+        </p>
+        <div class="border mb-3">
+          <div class="bg-light">
+            <pre><code class="language-html">
                 &lt;button class="kbc-button no-container"&gt;K&lt;/button&gt;
               </code></pre>
-            </div>
-            <pre>
+          </div>
+          <pre>
               <button class="kbc-button no-container">K</button>
             </pre>
-          </div>
-          <h5 id="basic">Sizing</h5>
-          <p>
-            Total 5 sizes are available. You can respective classes to see the
-            effect.
-          </p>
-          <div class="border bg-light mb-3">
-            <pre>
+        </div>
+        <h5 id="sizing">Sizing</h5>
+        <p>
+          Total 5 sizes are available. You can respective classes to see the
+          effect.
+        </p>
+        <div class="border bg-light mb-3">
+          <pre>
               <code class="language-html">
                 &lt;button class="kbc-button kbc-button-xxs"&gt;XXS&lt;/button&gt;
                 &lt;button class="kbc-button kbc-button-xs"&gt;XS&lt;/button&gt;
@@ -173,23 +201,22 @@
                 &lt;button class="kbc-button kbc-button-lg"&gt;LG&lt;/button&gt;
               </code>
             </pre>
-            <pre>
+          <pre>
               <button class="kbc-button kbc-button-xxs">XXS</button>
               <button class="kbc-button kbc-button-xs">XS</button>
               <button class="kbc-button kbc-button-sm">SM</button>
               <button class="kbc-button">MD</button>
               <button class="kbc-button kbc-button-lg">LG</button>
             </pre>
-          </div>
-          <h5 id="basic">States</h5>
-          <p>
-            Like all buttons, this also have 3 states: <code>:hover</code>,
-            <code>:focus</code>, <code>:active</code>, and
-            <code>:disabled</code>. You can add classes with same state name to
-            see it statically.
-          </p>
-          <div class="border mb-3">
-            <pre>
+        </div>
+        <h5 id="states">States</h5>
+        <p>
+          Like all buttons, this also have 3 states: <code>:hover</code>,
+          <code>:focus</code>, <code>:active</code>, and <code>:disabled</code>.
+          You can add classes with same state name to see it statically.
+        </p>
+        <div class="border mb-3">
+          <pre>
               <code class="language-html">
                 &lt;button class="kbc-button hover"&gt;Hovered&lt;/button&gt;
                 &lt;button class="kbc-button focus"&gt;Focused&lt;/button&gt;
@@ -197,25 +224,25 @@
                 &lt;button class="kbc-button disabled"&gt;Disabled&lt;/button&gt;
               </code>
             </pre>
-            <pre>
+          <pre>
               <button class="kbc-button hover">Hovered</button>
               <button class="kbc-button focus">Focused</button>
               <button class="kbc-button active">Active</button>
               <button class="kbc-button disabled">Disabled</button>
             </pre>
-          </div>
-          <h5 id="Colors">Colors</h5>
-          <p>
-            Colors are directly inspired from
-            <a
-              href="https://getbootstrap.com"
-              rel="noopener noreferrer"
-              target="_blank"
-              >Bootstrap</a
-            >.
-          </p>
-          <div class="border mb-3">
-            <pre>
+        </div>
+        <h5 id="colors">Colors</h5>
+        <p>
+          Colors are directly inspired from
+          <a
+            href="https://getbootstrap.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Bootstrap</a
+          >.
+        </p>
+        <div class="border mb-3">
+          <pre>
               <code class="language-html">
                 &lt;button class="kbc-button"&gt;Default&lt;/button&gt;
                 &lt;button class="kbc-button kbc-button-primary"&gt;Primary&lt;/button&gt;
@@ -227,7 +254,7 @@
                 &lt;button class="kbc-button kbc-button-dark"&gt;Dark&lt;/button&gt;
               </code>
             </pre>
-            <pre class="d-flex px-5 py-2">
+          <pre>
               <button class="kbc-button">Default</button>
               <button class="kbc-button kbc-button-primary">Primary</button>
               <button class="kbc-button kbc-button-secondary">Secondary</button>
@@ -237,79 +264,95 @@
               <button class="kbc-button kbc-button-light">Light</button>
               <button class="kbc-button kbc-button-dark">Dark</button>
             </pre>
-          </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </div>
-    <div class="footer bg-light mt-3 border-top py-5">
+    <div class="footer bg-dark border-top py-5">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-6">
-            <ul class="list-unstyled d-flex">
-              <li>
+            <button class="kbc-button kbc-button-lg d-block mb-3">
+              Developed by
+              <img
+                class="rounded-circle border mt-n1"
+                height="36"
+                src="https://avatars3.githubusercontent.com/u/6831283?v=4?s=36"
+              />
+              Dharmen Shah
+            </button>
+            <div class="row no-gutters">
+              <div class="col-auto mb-2">
                 <a
                   href="https://github.com/shhdharmen/keyboard-css"
                   target="_blank"
-                  class="kbc-button kbc-button-sm kbc-button-dark"
+                  class="kbc-button kbc-button-xs kbc-button-dark"
                   >Github</a
                 >
-              </li>
-              <li>
+              </div>
+              <div class="col-auto mb-2">
                 <a
                   href="https://npmjs.com/package/keyboard-css"
                   target="_blank"
-                  class="kbc-button kbc-button-sm kbc-button-danger"
+                  class="kbc-button kbc-button-xs kbc-button-danger"
                   >NPM</a
                 >
-              </li>
-            </ul>
-            <p class="ml-1">
-              Current Version: <b>1.0.0-beta.3</b> | Code licensed
-              <b
-                ><a
-                  class="text-dark"
-                  href="https://github.com/shhdharmen/keyboard-css/blob/main/LICENSE"
-                  >MIT</a
-                ></b
-              >
-            </p>
-          </div>
-          <div class="col-6">
-            <p>Developed by Dharmen Shah</p>
-            <ul class="list-unstyled d-flex">
-              <li class="mr-2">
+              </div>
+              <div class="col-auto mb-2">
                 <a
                   href="http://twitter.com/shhdharmen"
                   target="_blank"
                   rel="noopener noreferrer"
+                  class="kbc-button kbc-button-xs kbc-button-info"
                   >Twitter</a
                 >
-              </li>
-              <li class="mx-2">
-                <a
-                  href="http://github.com/shhdharmen"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Github</a
-                >
-              </li>
-              <li class="mx-2">
+              </div>
+              <div class="col-auto mb-2">
                 <a
                   href="http://shhdharmen.me"
                   target="_blank"
                   rel="noopener noreferrer"
+                  class="kbc-button kbc-button-xs kbc-button-success"
                   >Website</a
                 >
-              </li>
-              <li class="ml-2">
+              </div>
+              <div class="col-auto mb-2">
                 <a
                   href="http://blog.shhdharmen.me"
                   target="_blank"
                   rel="noopener noreferrer"
+                  class="kbc-button kbc-button-xs kbc-button-secondary"
                   >Blogs</a
                 >
-              </li>
-            </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 text-center">
+            <div class="border rounded shadow-sm p-3 text-white">
+              <p class="ml-1 mb-0">
+                Current Version
+                <a
+                  href="https://www.npmjs.com/package/keyboard-css"
+                  target="_blank"
+                >
+                  <img
+                    class="mt-n1"
+                    src="https://img.shields.io/npm/v/keyboard-css?style=flat-square"
+                    alt="Keyboard CSS Version"
+                  />
+                </a>
+                <br />Code licensed
+                <a
+                  href="https://github.com/shhdharmen/keyboard-css/blob/main/LICENSE"
+                  target="_blank"
+                >
+                  <img
+                    class="mt-n1"
+                    src="https://img.shields.io/github/license/shhdharmen/keyboard-css?style=flat-square"
+                    alt="Keyboard CSS License"
+                  />
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -324,6 +367,7 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+
     <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/prism.min.js"
