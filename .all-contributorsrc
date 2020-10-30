@@ -1,0 +1,28 @@
+{
+  "projectName": "keyboard-css",
+  "projectOwner": "Dharmen Shah",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "shhdharmen",
+      "name": "Dharmen Shah",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6831283?v=4",
+      "profile": "https://github.com/shhdharmen",
+      "contributions": [
+        "code",
+        "content",
+        "design",
+        "doc",
+        "ideas"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}

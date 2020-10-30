@@ -1,17 +1,19 @@
 {
-  "name": "@keyboard-css/core",
-  "version": "0.0.0-development",
+  "name": "keyboard-css",
+  "version": "1.0.0-beta.3",
   "description": "A CSS to show keyboard keys.",
-  "main": "index.js",
-  "private": true,
+  "main": "css/main.min.css",
   "scripts": {
     "commit": "cz",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp watch",
+    "copy:sass-files": "cpx \"src/sass/**/*.*\" src/copy/sass",
+    "copy:package-files": "cpx \"{package.json,LICENSE,README.md}\" src/copy/",
+    "prebuild": "npm run copy:package-files && npm run copy:sass-files",
     "build": "gulp",
-    "postbuild": "cpx \"{README.md,package.json}\" \"dist\"",
-    "pack": "npm pack --prefix=dist",
-    "semantic-release": "semantic-release"
+    "postbuild": "node delete.js",
+    "semantic-release": "semantic-release",
+    "postpublish": "cpx dist/package.json . && cpx dist/npm-shrinkwrap.json ."
   },
   "repository": {
     "type": "git",
@@ -27,7 +29,11 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@qiwi/semantic-release-gh-pages-plugin": "^5.0.1",
     "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/exec": "^5.0.0",
+    "@semantic-release/git": "^9.0.0",
+    "all-contributors-cli": "^6.19.0",
     "autoprefixer": "^10.0.1",
     "browser-sync": "^2.26.13",
     "cpx": "^1.5.0",
@@ -40,6 +46,7 @@
     "gulp-header": "^2.0.9",
     "gulp-postcss": "^9.0.0",
     "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-svgmin": "^3.0.0",
     "gulp-terser": "^1.4.0",
@@ -55,7 +62,8 @@
     "stylelint-a11y": "^1.2.3",
     "stylelint-config-sass-guidelines": "^7.1.0",
     "stylelint-config-standard": "^20.0.0",
-    "stylelint-high-performance-animation": "^1.5.1"
+    "stylelint-high-performance-animation": "^1.5.1",
+    "stylelint-scss": "^3.18.0"
   },
   "config": {
     "commitizen": {
@@ -74,8 +82,5 @@
     "*.{scss,css}": "prettier --write",
     "*.md": "markdownlint"
   },
-  "dependencies": {},
-  "publishConfig": {
-    "access": "restricted"
-  }
+  "dependencies": {}
 }

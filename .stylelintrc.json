@@ -1,4 +1,14 @@
 {
   "extends": "stylelint-config-sass-guidelines",
-  "plugins": ["stylelint-a11y", "stylelint-high-performance-animation"]
+  "plugins": [
+    "stylelint-a11y",
+    "stylelint-high-performance-animation",
+    "stylelint-scss"
+  ],
+  "rules": {
+    "function-parentheses-space-inside": "never",
+    "max-nesting-depth": 3,
+    "scss/dollar-variable-pattern": ["^kbc-", { "ignore": "local" }],
+    "scss/dollar-variable-default": [true, { "ignore": "local" }]
+  }
 }

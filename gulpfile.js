@@ -18,26 +18,26 @@ var settings = {
  */
 
 var paths = {
-  input: "src/",
-  output: "dist/",
+  input: 'src/',
+  output: 'dist/',
   scripts: {
-    input: "src/js/*",
-    polyfills: ".polyfill.js",
-    output: "dist/js/",
+    input: 'src/js/*',
+    polyfills: '.polyfill.js',
+    output: 'dist/js/',
   },
   styles: {
-    input: "src/sass/**/*.{scss,sass}",
-    output: "dist/css/",
+    input: 'src/sass/**/*.{scss,sass}',
+    output: 'dist/css/',
   },
   svgs: {
-    input: "src/svg/*.svg",
-    output: "dist/svg/",
+    input: 'src/svg/*.svg',
+    output: 'dist/svg/',
   },
   copy: {
-    input: "src/copy/**/*",
-    output: "dist/",
+    input: 'src/copy/**/*',
+    output: 'dist/',
   },
-  reload: "./dist/",
+  reload: './dist/',
 };
 
 /**
@@ -46,14 +46,14 @@ var paths = {
 
 var banner = {
   main:
-    "/*!" +
-    " <%= package.name %> v<%= package.version %>" +
-    " | (c) " +
+    '/*!' +
+    ' <%= package.name %> v<%= package.version %>' +
+    ' | (c) ' +
     new Date().getFullYear() +
-    " <%= package.author.name %>" +
-    " | <%= package.license %> License" +
-    " | <%= package.repository.url %>" +
-    " */\n",
+    ' <%= package.author.name %>' +
+    ' | <%= package.license %> License' +
+    ' | <%= package.repository.url %>' +
+    ' */\n',
 };
 
 /**
@@ -61,25 +61,25 @@ var banner = {
  */
 
 // General
-var { gulp, src, dest, watch, series, parallel } = require("gulp");
-var del = require("del");
-var flatmap = require("gulp-flatmap");
-var lazypipe = require("lazypipe");
-var rename = require("gulp-rename");
-var header = require("gulp-header");
-var package = require("./package.json");
+var gulp,
+  { src, dest, watch, series, parallel, task } = require('gulp');
+var del = require('del');
+var rename = require('gulp-rename');
+var header = require('gulp-header');
+var replace = require('gulp-replace');
+var package = require('./package.json');
 
 // Styles
-var sass = require("gulp-sass");
-var postcss = require("gulp-postcss");
-var prefix = require("autoprefixer");
-var minify = require("cssnano");
+var sass = require('gulp-sass');
+var postcss = require('gulp-postcss');
+var prefix = require('autoprefixer');
+var minify = require('cssnano');
 
 // SVGs
-var svgmin = require("gulp-svgmin");
+var svgmin = require('gulp-svgmin');
 
 // BrowserSync
-var browserSync = require("browser-sync");
+var browserSync = require('browser-sync');
 
 /**
  * Gulp Tasks
@@ -106,7 +106,7 @@ var buildStyles = function (done) {
   return src(paths.styles.input)
     .pipe(
       sass({
-        outputStyle: "expanded",
+        outputStyle: 'expanded',
         sourceComments: true,
       })
     )
@@ -120,7 +120,7 @@ var buildStyles = function (done) {
     )
     .pipe(header(banner.main, { package: package }))
     .pipe(dest(paths.styles.output))
-    .pipe(rename({ suffix: ".min" }))
+    .pipe(rename({ suffix: '.min' }))
     .pipe(
       postcss([
         minify({
@@ -148,7 +148,9 @@ var copyFiles = function (done) {
   if (!settings.copy) return done();
 
   // Copy static files
-  return src(paths.copy.input).pipe(dest(paths.copy.output));
+  return src(paths.copy.input)
+    .pipe(replace('{{ version }}', package.version))
+    .pipe(dest(paths.copy.output));
 };
 
 // Watch for changes to the src directory
