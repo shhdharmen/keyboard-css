@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard CSS</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism.min.css"
+      integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-white fixed-top border-bottom shadow-sm"
+    >
+      <a class="navbar-brand" href="#">
+        <h1 class="display-4 d-inline-block">
+          <img src="./logo.png" class="mt-n3" />Keyboard CSS
+        </h1>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#getting-started">Getting Started</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#usage">Usage</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://github.com/shhdharmen/keyboard-css"
+              >Github</a
+            >
+          </li>
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form> -->
+      </div>
+    </nav>
+    <div
+      data-spy="scroll"
+      data-target="#navbar-example2"
+      class="container-fluid mt-5"
+    >
+      <div class="py-4"></div>
+      <div class="jumbotron text-center">
+        <div class="container-fluid px-0">
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <button class="kbc-button kbc-button-lg">K</button>
+              <button class="kbc-button kbc-button-lg">E</button>
+              <button class="kbc-button kbc-button-lg">Y</button>
+              <button class="kbc-button kbc-button-lg">B</button>
+              <button class="kbc-button kbc-button-lg">O</button>
+              <button class="kbc-button kbc-button-lg">A</button>
+              <button class="kbc-button kbc-button-lg">R</button>
+              <button class="kbc-button kbc-button-lg">D</button>
+            </div>
+            <div class="col-auto">
+              <button class="kbc-button kbc-button-lg">C</button>
+              <button class="kbc-button kbc-button-lg">S</button>
+              <button class="kbc-button kbc-button-lg">S</button>
+            </div>
+          </div>
+        </div>
+        <p class="lead mt-2">
+          <b><i>Show off your keyboard shortcuts with style 🦄.</i></b>
+        </p>
+        <hr class="my-4" />
+        <button class="btn btn-outline-primary btn-lg">Getting Started</button>
+      </div>
+      <div class="container-fluid">
+        <section class="mb-3">
+          <h4 id="getting-started">Getting Started</h4>
+          <p id="link">
+            Simplest way to use this is through <code>link</code> tag (thanks to
+            <a href="https://unpkg.com/">https://unpkg.com/</a>):
+          </p>
+          <div class="px-3 py-2 bg-dark rounded shadow-sm mb-3">
+            <code
+              >&lt;link rel="stylesheet"
+              href="https://unpkg.com/keyboard-css@1.0.0-beta.3/css/main.min.css"
+              /&gt;</code
+            >
+          </div>
+          <p id="npm">You can also install it from npm:</p>
+          <div class="px-3 py-2 bg-dark rounded shadow-sm mb-3">
+            <code>npm i keyboard-css</code>
+          </div>
+        </section>
+        <hr />
+        <section class="mb-3">
+          <h4 id="usage">Usage</h4>
+          <p>
+            You just have to add a single class to apply the related styles,
+            i.e. <code><b>kbc-button</b></code>
+          </p>
+          <h5 id="basic">Basic Usage</h5>
+          <div class="border mb-3">
+            <div class="bg-light">
+              <pre><code class="language-html">
+                &lt;button class="kbc-button"&gt;K&lt;/button&gt;
+              </code></pre>
+            </div>
+            <pre>
+              <button class="kbc-button">K</button>
+            </pre>
+          </div>
+          <h5 id="basic">Remove Surface Border</h5>
+          <p>
+            To remove surface border, simply add
+            <code><b>no-container</b></code> class.
+          </p>
+          <div class="border mb-3">
+            <div class="bg-light">
+              <pre><code class="language-html">
+                &lt;button class="kbc-button no-container"&gt;K&lt;/button&gt;
+              </code></pre>
+            </div>
+            <pre>
+              <button class="kbc-button no-container">K</button>
+            </pre>
+          </div>
+          <h5 id="basic">Sizing</h5>
+          <p>
+            Total 5 sizes are available. You can respective classes to see the
+            effect.
+          </p>
+          <div class="border bg-light mb-3">
+            <pre>
+              <code class="language-html">
+                &lt;button class="kbc-button kbc-button-xxs"&gt;XXS&lt;/button&gt;
+                &lt;button class="kbc-button kbc-button-xs"&gt;XS&lt;/button&gt;
+                &lt;button class="kbc-button kbc-button-sm"&gt;SM&lt;/button&gt;
+                &lt;button class="kbc-button"&gt;MD&lt;/button&gt;
+                &lt;button class="kbc-button kbc-button-lg"&gt;LG&lt;/button&gt;
+              </code>
+            </pre>
+            <pre>
+              <button class="kbc-button kbc-button-xxs">XXS</button>
+              <button class="kbc-button kbc-button-xs">XS</button>
+              <button class="kbc-button kbc-button-sm">SM</button>
+              <button class="kbc-button">MD</button>
+              <button class="kbc-button kbc-button-lg">LG</button>
+            </pre>
+          </div>
+          <h5 id="basic">States</h5>
+          <p>
+            Like all buttons, this also have 3 states: <code>:hover</code>,
+            <code>:focus</code>, <code>:active</code>, and
+            <code>:disabled</code>. You can add classes with same state name to
+            see it statically.
+          </p>
+          <div class="border mb-3">
+            <pre>
+              <code class="language-html">
+                &lt;button class="kbc-button hover"&gt;Hovered&lt;/button&gt;
+                &lt;button class="kbc-button focus"&gt;Focused&lt;/button&gt;
+                &lt;button class="kbc-button active"&gt;Activated&lt;/button&gt;
+                &lt;button class="kbc-button disabled"&gt;Disabled&lt;/button&gt;
+              </code>
+            </pre>
+            <pre>
+              <button class="kbc-button hover">Hovered</button>
+              <button class="kbc-button focus">Focused</button>
+              <button class="kbc-button active">Active</button>
+              <button class="kbc-button disabled">Disabled</button>
+            </pre>
+          </div>
+          <h5 id="Colors">Colors</h5>
+          <p>
+            Colors are directly inspired from
+            <a
+              href="https://getbootstrap.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Bootstrap</a
+            >.
+          </p>
+          <div class="border mb-3">
+            <pre>
+              <code class="language-html">
+                &lt;button class="kbc-button"&gt;Default&lt;/button&gt;
+                &lt;button class="kbc-button kbc-button-primary"&gt;Primary&lt;/button&gt;
+                &lt;button class="kbc-button kbc-button-secondary"&gt;Secondary&lt;/button&gt;
+                &lt;button class="kbc-button kbc-button-success"&gt;Success&lt;/button&gt;
+                &lt;button class="kbc-button kbc-button-danger"&gt;Danger&lt;/button&gt;
+                &lt;button class="kbc-button kbc-button-info"&gt;Info&lt;/button&gt;
+                &lt;button class="kbc-button kbc-button-light"&gt;Light&lt;/button&gt;
+                &lt;button class="kbc-button kbc-button-dark"&gt;Dark&lt;/button&gt;
+              </code>
+            </pre>
+            <pre class="d-flex px-5 py-2">
+              <button class="kbc-button">Default</button>
+              <button class="kbc-button kbc-button-primary">Primary</button>
+              <button class="kbc-button kbc-button-secondary">Secondary</button>
+              <button class="kbc-button kbc-button-success">Success</button>
+              <button class="kbc-button kbc-button-danger">Danger</button>
+              <button class="kbc-button kbc-button-info">Info</button>
+              <button class="kbc-button kbc-button-light">Light</button>
+              <button class="kbc-button kbc-button-dark">Dark</button>
+            </pre>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="footer bg-light mt-3 border-top py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6">
+            <ul class="list-unstyled d-flex">
+              <li>
+                <a
+                  href="https://github.com/shhdharmen/keyboard-css"
+                  target="_blank"
+                  class="kbc-button kbc-button-sm kbc-button-dark"
+                  >Github</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://npmjs.com/package/keyboard-css"
+                  target="_blank"
+                  class="kbc-button kbc-button-sm kbc-button-danger"
+                  >NPM</a
+                >
+              </li>
+            </ul>
+            <p class="ml-1">
+              Current Version: <b>1.0.0-beta.3</b> | Code licensed
+              <b
+                ><a
+                  class="text-dark"
+                  href="https://github.com/shhdharmen/keyboard-css/blob/main/LICENSE"
+                  >MIT</a
+                ></b
+              >
+            </p>
+          </div>
+          <div class="col-6">
+            <p>Developed by Dharmen Shah</p>
+            <ul class="list-unstyled d-flex">
+              <li class="mr-2">
+                <a
+                  href="http://twitter.com/shhdharmen"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mx-2">
+                <a
+                  href="http://github.com/shhdharmen"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Github</a
+                >
+              </li>
+              <li class="mx-2">
+                <a
+                  href="http://shhdharmen.me"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Website</a
+                >
+              </li>
+              <li class="ml-2">
+                <a
+                  href="http://blog.shhdharmen.me"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Blogs</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/prism.min.js"
+      integrity="sha512-9+422Bs3A87UkWfp+qV80Nfv9arhbCXKY1rxrF2seorI36mIIstMiuBfyKLF1yH1nnzQkEWq2xrzT4XU3Z+vrA=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/autoloader/prism-autoloader.min.js"
+      integrity="sha512-Q3qGP1uJL/B0sEmu57PKXjCirgPKMbg73OLRbTJ6lfHCVU5zkHqmcTI5EV2fSoPV1MHdKsCBE7m/aS6q0pPjRQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      anchors.add();
+    </script>
+  </body>
+</html>
