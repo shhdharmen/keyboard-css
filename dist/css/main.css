@@ -1,0 +1,1477 @@
+/*! keyboard-css v1.0.0-beta.1 | (c) 2020  | MIT License | https://github.com/shhdharmen/keyboard-css.git */
+/* line 5, src/sass/components/_button.scss */
+.kbc-button {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.6875rem;
+  margin-left: 0.375rem;
+  margin-right: 0.375rem;
+  margin-top: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9, 0 3px #d9d9d9, 0 4px #d9d9d9, 0 5px #d9d9d9, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
+  background-color: #fff;
+  border-color: #e6e6e6;
+  color: #343a40;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 1px solid #e6e6e6;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+  position: relative;
+  text-align: right;
+  transform: translate3d(0, 0, 5px);
+  transform-style: preserve-3d;
+  transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
+  width: auto;
+}
+
+/* line 60, src/sass/abstracts/_mixins.scss */
+.kbc-button:hover, .kbc-button:focus, .kbc-button.hover, .kbc-button.focus {
+  transform: translate3d(0, 1px, 5px);
+}
+
+/* line 66, src/sass/abstracts/_mixins.scss */
+.kbc-button:hover::after, .kbc-button:focus::after, .kbc-button.hover::after, .kbc-button.focus::after {
+  transform: translate3d(0, -1px, -5px);
+}
+
+/* line 71, src/sass/abstracts/_mixins.scss */
+.kbc-button:active, .kbc-button.active {
+  border-color: transparent;
+  box-shadow: none;
+  transform: translate3d(0, 5px, 0);
+}
+
+/* line 77, src/sass/abstracts/_mixins.scss */
+.kbc-button:active::after, .kbc-button.active::after {
+  transform: translate3d(0, -5px, 0);
+}
+
+/* line 82, src/sass/abstracts/_mixins.scss */
+.kbc-button::after {
+  border-radius: 0.5rem;
+  border-width: 0.125rem;
+  bottom: -10px;
+  left: -0.3125rem;
+  right: -0.3125rem;
+  top: 0px;
+  transform: translate3d(0, 0, -5px);
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button:hover, .kbc-button:focus, .kbc-button.hover, .kbc-button.focus {
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9, 0 3px #d9d9d9, 0 4px #d9d9d9, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
+  background-color: #e6e6e6;
+  color: #343a40;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button:active, .kbc-button.active {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 1px 1px #b3b3b3;
+  color: #343a40;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button::after {
+  border-color: #cccccc;
+}
+
+/* line 10, src/sass/components/_button.scss */
+.kbc-button-primary {
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff, 0 3px #4da3ff, 0 4px #4da3ff, 0 5px #4da3ff, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
+  background-color: #007bff;
+  border-color: #3395ff;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-primary:hover, .kbc-button-primary:focus, .kbc-button-primary.hover, .kbc-button-primary.focus {
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff, 0 3px #4da3ff, 0 4px #4da3ff, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
+  background-color: #3395ff;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-primary:active, .kbc-button-primary.active {
+  background-color: #3395ff;
+  box-shadow: 0 0 1px 1px #99caff;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-primary::after {
+  border-color: #66b0ff;
+}
+
+/* line 10, src/sass/components/_button.scss */
+.kbc-button-secondary {
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2, 0 3px #939ba2, 0 4px #939ba2, 0 5px #939ba2, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
+  background-color: #6c757d;
+  border-color: #868e96;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-secondary:hover, .kbc-button-secondary:focus, .kbc-button-secondary.hover, .kbc-button-secondary.focus {
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2, 0 3px #939ba2, 0 4px #939ba2, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
+  background-color: #868e96;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-secondary:active, .kbc-button-secondary.active {
+  background-color: #868e96;
+  box-shadow: 0 0 1px 1px #bcc1c6;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-secondary::after {
+  border-color: #a1a8ae;
+}
+
+/* line 10, src/sass/components/_button.scss */
+.kbc-button-success {
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368, 0 3px #48d368, 0 4px #48d368, 0 5px #48d368, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
+  background-color: #28a745;
+  border-color: #34ce57;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-success:hover, .kbc-button-success:focus, .kbc-button-success.hover, .kbc-button-success.focus {
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368, 0 3px #48d368, 0 4px #48d368, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
+  background-color: #34ce57;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-success:active, .kbc-button-success.active {
+  background-color: #34ce57;
+  box-shadow: 0 0 1px 1px #86e29b;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-success::after {
+  border-color: #5dd879;
+}
+
+/* line 10, src/sass/components/_button.scss */
+.kbc-button-info {
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6, 0 3px #36cee6, 0 4px #36cee6, 0 5px #36cee6, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
+  background-color: #17a2b8;
+  border-color: #1fc8e3;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-info:hover, .kbc-button-info:focus, .kbc-button-info.hover, .kbc-button-info.focus {
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6, 0 3px #36cee6, 0 4px #36cee6, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
+  background-color: #1fc8e3;
+  color: #343a40;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-info:active, .kbc-button-info.active {
+  background-color: #1fc8e3;
+  box-shadow: 0 0 1px 1px #7adeee;
+  color: #343a40;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-info::after {
+  border-color: #4cd3e9;
+}
+
+/* line 10, src/sass/components/_button.scss */
+.kbc-button-warning {
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00, 0 3px #ba8b00, 0 4px #ba8b00, 0 5px #ba8b00, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
+  background-color: #ffc107;
+  border-color: #d39e00;
+  color: #343a40;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-warning:hover, .kbc-button-warning:focus, .kbc-button-warning.hover, .kbc-button-warning.focus {
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00, 0 3px #ba8b00, 0 4px #ba8b00, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
+  background-color: #d39e00;
+  color: #343a40;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-warning:active, .kbc-button-warning.active {
+  background-color: #d39e00;
+  box-shadow: 0 0 1px 1px #6d5200;
+  color: #343a40;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-warning::after {
+  border-color: #a07800;
+}
+
+/* line 10, src/sass/components/_button.scss */
+.kbc-button-danger {
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681, 0 3px #e77681, 0 4px #e77681, 0 5px #e77681, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
+  background-color: #dc3545;
+  border-color: #e4606d;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-danger:hover, .kbc-button-danger:focus, .kbc-button-danger.hover, .kbc-button-danger.focus {
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681, 0 3px #e77681, 0 4px #e77681, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
+  background-color: #e4606d;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-danger:active, .kbc-button-danger.active {
+  background-color: #e4606d;
+  box-shadow: 0 0 1px 1px #f3b7bd;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-danger::after {
+  border-color: #eb8c95;
+}
+
+/* line 10, src/sass/components/_button.scss */
+.kbc-button-light {
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da, 0 3px #cbd3da, 0 4px #cbd3da, 0 5px #cbd3da, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
+  background-color: #f8f9fa;
+  border-color: #dae0e5;
+  color: #343a40;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-light:hover, .kbc-button-light:focus, .kbc-button-light.hover, .kbc-button-light.focus {
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da, 0 3px #cbd3da, 0 4px #cbd3da, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
+  background-color: #dae0e5;
+  color: #343a40;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-light:active, .kbc-button-light.active {
+  background-color: #dae0e5;
+  box-shadow: 0 0 1px 1px #9fadba;
+  color: #343a40;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-light::after {
+  border-color: #bdc6d0;
+}
+
+/* line 10, src/sass/components/_button.scss */
+.kbc-button-dark {
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a, 0 3px #56606a, 0 4px #56606a, 0 5px #56606a, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
+  background-color: #343a40;
+  border-color: #4b545c;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-dark:hover, .kbc-button-dark:focus, .kbc-button-dark.hover, .kbc-button-dark.focus {
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a, 0 3px #56606a, 0 4px #56606a, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
+  background-color: #4b545c;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-dark:active, .kbc-button-dark.active {
+  background-color: #4b545c;
+  box-shadow: 0 0 1px 1px #7a8793;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-dark::after {
+  border-color: #626d78;
+}
+
+/* line 16, src/sass/components/_button.scss */
+.kbc-button-xxs {
+  font-size: 0.7rem;
+  line-height: 1.5;
+  margin-bottom: 0.4375rem;
+  margin-left: 0.3125rem;
+  margin-right: 0.3125rem;
+  margin-top: 0.3125rem;
+  padding: 0.1rem 0.3rem;
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #fff;
+  border-color: #e6e6e6;
+  color: #343a40;
+}
+
+/* line 60, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs:hover, .kbc-button-xxs:focus, .kbc-button-xxs.hover, .kbc-button-xxs.focus {
+  transform: translate3d(0, 1px, 2px);
+}
+
+/* line 66, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs:hover::after, .kbc-button-xxs:focus::after, .kbc-button-xxs.hover::after, .kbc-button-xxs.focus::after {
+  transform: translate3d(0, -1px, -2px);
+}
+
+/* line 71, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs:active, .kbc-button-xxs.active {
+  border-color: transparent;
+  box-shadow: none;
+  transform: translate3d(0, 2px, 0);
+}
+
+/* line 77, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs:active::after, .kbc-button-xxs.active::after {
+  transform: translate3d(0, -2px, 0);
+}
+
+/* line 82, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs::after {
+  border-radius: 0.375rem;
+  border-width: 0.0625rem;
+  bottom: -6px;
+  left: -0.25rem;
+  right: -0.25rem;
+  top: -2px;
+  transform: translate3d(0, 0, -2px);
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs:hover, .kbc-button-xxs:focus, .kbc-button-xxs.hover, .kbc-button-xxs.focus {
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
+  background-color: #e6e6e6;
+  color: #343a40;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs:active, .kbc-button-xxs.active {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 1px 1px #b3b3b3;
+  color: #343a40;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs::after {
+  border-color: #cccccc;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-xxs.kbc-button-primary {
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #007bff;
+  border-color: #3395ff;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-primary:hover, .kbc-button-xxs.kbc-button-primary:focus, .kbc-button-xxs.kbc-button-primary.hover, .kbc-button-xxs.kbc-button-primary.focus {
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
+  background-color: #3395ff;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-primary:active, .kbc-button-xxs.kbc-button-primary.active {
+  background-color: #3395ff;
+  box-shadow: 0 0 1px 1px #99caff;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-primary::after {
+  border-color: #66b0ff;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-xxs.kbc-button-secondary {
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #6c757d;
+  border-color: #868e96;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-secondary:hover, .kbc-button-xxs.kbc-button-secondary:focus, .kbc-button-xxs.kbc-button-secondary.hover, .kbc-button-xxs.kbc-button-secondary.focus {
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
+  background-color: #868e96;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-secondary:active, .kbc-button-xxs.kbc-button-secondary.active {
+  background-color: #868e96;
+  box-shadow: 0 0 1px 1px #bcc1c6;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-secondary::after {
+  border-color: #a1a8ae;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-xxs.kbc-button-success {
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #28a745;
+  border-color: #34ce57;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-success:hover, .kbc-button-xxs.kbc-button-success:focus, .kbc-button-xxs.kbc-button-success.hover, .kbc-button-xxs.kbc-button-success.focus {
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
+  background-color: #34ce57;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-success:active, .kbc-button-xxs.kbc-button-success.active {
+  background-color: #34ce57;
+  box-shadow: 0 0 1px 1px #86e29b;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-success::after {
+  border-color: #5dd879;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-xxs.kbc-button-info {
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #17a2b8;
+  border-color: #1fc8e3;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-info:hover, .kbc-button-xxs.kbc-button-info:focus, .kbc-button-xxs.kbc-button-info.hover, .kbc-button-xxs.kbc-button-info.focus {
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
+  background-color: #1fc8e3;
+  color: #343a40;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-info:active, .kbc-button-xxs.kbc-button-info.active {
+  background-color: #1fc8e3;
+  box-shadow: 0 0 1px 1px #7adeee;
+  color: #343a40;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-info::after {
+  border-color: #4cd3e9;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-xxs.kbc-button-warning {
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #ffc107;
+  border-color: #d39e00;
+  color: #343a40;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-warning:hover, .kbc-button-xxs.kbc-button-warning:focus, .kbc-button-xxs.kbc-button-warning.hover, .kbc-button-xxs.kbc-button-warning.focus {
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
+  background-color: #d39e00;
+  color: #343a40;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-warning:active, .kbc-button-xxs.kbc-button-warning.active {
+  background-color: #d39e00;
+  box-shadow: 0 0 1px 1px #6d5200;
+  color: #343a40;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-warning::after {
+  border-color: #a07800;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-xxs.kbc-button-danger {
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #dc3545;
+  border-color: #e4606d;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-danger:hover, .kbc-button-xxs.kbc-button-danger:focus, .kbc-button-xxs.kbc-button-danger.hover, .kbc-button-xxs.kbc-button-danger.focus {
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
+  background-color: #e4606d;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-danger:active, .kbc-button-xxs.kbc-button-danger.active {
+  background-color: #e4606d;
+  box-shadow: 0 0 1px 1px #f3b7bd;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-danger::after {
+  border-color: #eb8c95;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-xxs.kbc-button-light {
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #f8f9fa;
+  border-color: #dae0e5;
+  color: #343a40;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-light:hover, .kbc-button-xxs.kbc-button-light:focus, .kbc-button-xxs.kbc-button-light.hover, .kbc-button-xxs.kbc-button-light.focus {
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
+  background-color: #dae0e5;
+  color: #343a40;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-light:active, .kbc-button-xxs.kbc-button-light.active {
+  background-color: #dae0e5;
+  box-shadow: 0 0 1px 1px #9fadba;
+  color: #343a40;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-light::after {
+  border-color: #bdc6d0;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-xxs.kbc-button-dark {
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #343a40;
+  border-color: #4b545c;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-dark:hover, .kbc-button-xxs.kbc-button-dark:focus, .kbc-button-xxs.kbc-button-dark.hover, .kbc-button-xxs.kbc-button-dark.focus {
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
+  background-color: #4b545c;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-dark:active, .kbc-button-xxs.kbc-button-dark.active {
+  background-color: #4b545c;
+  box-shadow: 0 0 1px 1px #7a8793;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-xxs.kbc-button-dark::after {
+  border-color: #626d78;
+}
+
+/* line 16, src/sass/components/_button.scss */
+.kbc-button-xs {
+  font-size: 0.725rem;
+  line-height: 1.5;
+  margin-bottom: 0.4375rem;
+  margin-left: 0.3125rem;
+  margin-right: 0.3125rem;
+  margin-top: 0.3125rem;
+  padding: 0.175rem 0.5rem;
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #fff;
+  border-color: #e6e6e6;
+  color: #343a40;
+}
+
+/* line 60, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs:hover, .kbc-button-xs:focus, .kbc-button-xs.hover, .kbc-button-xs.focus {
+  transform: translate3d(0, 1px, 2px);
+}
+
+/* line 66, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs:hover::after, .kbc-button-xs:focus::after, .kbc-button-xs.hover::after, .kbc-button-xs.focus::after {
+  transform: translate3d(0, -1px, -2px);
+}
+
+/* line 71, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs:active, .kbc-button-xs.active {
+  border-color: transparent;
+  box-shadow: none;
+  transform: translate3d(0, 2px, 0);
+}
+
+/* line 77, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs:active::after, .kbc-button-xs.active::after {
+  transform: translate3d(0, -2px, 0);
+}
+
+/* line 82, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs::after {
+  border-radius: 0.375rem;
+  border-width: 0.0625rem;
+  bottom: -6px;
+  left: -0.25rem;
+  right: -0.25rem;
+  top: -2px;
+  transform: translate3d(0, 0, -2px);
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs:hover, .kbc-button-xs:focus, .kbc-button-xs.hover, .kbc-button-xs.focus {
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
+  background-color: #e6e6e6;
+  color: #343a40;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs:active, .kbc-button-xs.active {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 1px 1px #b3b3b3;
+  color: #343a40;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs::after {
+  border-color: #cccccc;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-xs.kbc-button-primary {
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #007bff;
+  border-color: #3395ff;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-primary:hover, .kbc-button-xs.kbc-button-primary:focus, .kbc-button-xs.kbc-button-primary.hover, .kbc-button-xs.kbc-button-primary.focus {
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
+  background-color: #3395ff;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-primary:active, .kbc-button-xs.kbc-button-primary.active {
+  background-color: #3395ff;
+  box-shadow: 0 0 1px 1px #99caff;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-primary::after {
+  border-color: #66b0ff;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-xs.kbc-button-secondary {
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #6c757d;
+  border-color: #868e96;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-secondary:hover, .kbc-button-xs.kbc-button-secondary:focus, .kbc-button-xs.kbc-button-secondary.hover, .kbc-button-xs.kbc-button-secondary.focus {
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
+  background-color: #868e96;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-secondary:active, .kbc-button-xs.kbc-button-secondary.active {
+  background-color: #868e96;
+  box-shadow: 0 0 1px 1px #bcc1c6;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-secondary::after {
+  border-color: #a1a8ae;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-xs.kbc-button-success {
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #28a745;
+  border-color: #34ce57;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-success:hover, .kbc-button-xs.kbc-button-success:focus, .kbc-button-xs.kbc-button-success.hover, .kbc-button-xs.kbc-button-success.focus {
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
+  background-color: #34ce57;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-success:active, .kbc-button-xs.kbc-button-success.active {
+  background-color: #34ce57;
+  box-shadow: 0 0 1px 1px #86e29b;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-success::after {
+  border-color: #5dd879;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-xs.kbc-button-info {
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #17a2b8;
+  border-color: #1fc8e3;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-info:hover, .kbc-button-xs.kbc-button-info:focus, .kbc-button-xs.kbc-button-info.hover, .kbc-button-xs.kbc-button-info.focus {
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
+  background-color: #1fc8e3;
+  color: #343a40;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-info:active, .kbc-button-xs.kbc-button-info.active {
+  background-color: #1fc8e3;
+  box-shadow: 0 0 1px 1px #7adeee;
+  color: #343a40;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-info::after {
+  border-color: #4cd3e9;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-xs.kbc-button-warning {
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #ffc107;
+  border-color: #d39e00;
+  color: #343a40;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-warning:hover, .kbc-button-xs.kbc-button-warning:focus, .kbc-button-xs.kbc-button-warning.hover, .kbc-button-xs.kbc-button-warning.focus {
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
+  background-color: #d39e00;
+  color: #343a40;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-warning:active, .kbc-button-xs.kbc-button-warning.active {
+  background-color: #d39e00;
+  box-shadow: 0 0 1px 1px #6d5200;
+  color: #343a40;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-warning::after {
+  border-color: #a07800;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-xs.kbc-button-danger {
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #dc3545;
+  border-color: #e4606d;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-danger:hover, .kbc-button-xs.kbc-button-danger:focus, .kbc-button-xs.kbc-button-danger.hover, .kbc-button-xs.kbc-button-danger.focus {
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
+  background-color: #e4606d;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-danger:active, .kbc-button-xs.kbc-button-danger.active {
+  background-color: #e4606d;
+  box-shadow: 0 0 1px 1px #f3b7bd;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-danger::after {
+  border-color: #eb8c95;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-xs.kbc-button-light {
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #f8f9fa;
+  border-color: #dae0e5;
+  color: #343a40;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-light:hover, .kbc-button-xs.kbc-button-light:focus, .kbc-button-xs.kbc-button-light.hover, .kbc-button-xs.kbc-button-light.focus {
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
+  background-color: #dae0e5;
+  color: #343a40;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-light:active, .kbc-button-xs.kbc-button-light.active {
+  background-color: #dae0e5;
+  box-shadow: 0 0 1px 1px #9fadba;
+  color: #343a40;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-light::after {
+  border-color: #bdc6d0;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-xs.kbc-button-dark {
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #343a40;
+  border-color: #4b545c;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-dark:hover, .kbc-button-xs.kbc-button-dark:focus, .kbc-button-xs.kbc-button-dark.hover, .kbc-button-xs.kbc-button-dark.focus {
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
+  background-color: #4b545c;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-dark:active, .kbc-button-xs.kbc-button-dark.active {
+  background-color: #4b545c;
+  box-shadow: 0 0 1px 1px #7a8793;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-xs.kbc-button-dark::after {
+  border-color: #626d78;
+}
+
+/* line 16, src/sass/components/_button.scss */
+.kbc-button-sm {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 0.53125rem;
+  margin-left: 0.34375rem;
+  margin-right: 0.34375rem;
+  margin-top: 0.34375rem;
+  padding: 0.25rem 0.5rem;
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9, 0 3px #d9d9d9, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  background-color: #fff;
+  border-color: #e6e6e6;
+  color: #343a40;
+}
+
+/* line 60, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm:hover, .kbc-button-sm:focus, .kbc-button-sm.hover, .kbc-button-sm.focus {
+  transform: translate3d(0, 1px, 3px);
+}
+
+/* line 66, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm:hover::after, .kbc-button-sm:focus::after, .kbc-button-sm.hover::after, .kbc-button-sm.focus::after {
+  transform: translate3d(0, -1px, -3px);
+}
+
+/* line 71, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm:active, .kbc-button-sm.active {
+  border-color: transparent;
+  box-shadow: none;
+  transform: translate3d(0, 3px, 0);
+}
+
+/* line 77, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm:active::after, .kbc-button-sm.active::after {
+  transform: translate3d(0, -3px, 0);
+}
+
+/* line 82, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm::after {
+  border-radius: 0.375rem;
+  border-width: 0.09375rem;
+  bottom: -7px;
+  left: -0.25rem;
+  right: -0.25rem;
+  top: -1px;
+  transform: translate3d(0, 0, -3px);
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm:hover, .kbc-button-sm:focus, .kbc-button-sm.hover, .kbc-button-sm.focus {
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #e6e6e6;
+  color: #343a40;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm:active, .kbc-button-sm.active {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 1px 1px #b3b3b3;
+  color: #343a40;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm::after {
+  border-color: #cccccc;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-sm.kbc-button-primary {
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff, 0 3px #4da3ff, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  background-color: #007bff;
+  border-color: #3395ff;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-primary:hover, .kbc-button-sm.kbc-button-primary:focus, .kbc-button-sm.kbc-button-primary.hover, .kbc-button-sm.kbc-button-primary.focus {
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #3395ff;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-primary:active, .kbc-button-sm.kbc-button-primary.active {
+  background-color: #3395ff;
+  box-shadow: 0 0 1px 1px #99caff;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-primary::after {
+  border-color: #66b0ff;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-sm.kbc-button-secondary {
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2, 0 3px #939ba2, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  background-color: #6c757d;
+  border-color: #868e96;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-secondary:hover, .kbc-button-sm.kbc-button-secondary:focus, .kbc-button-sm.kbc-button-secondary.hover, .kbc-button-sm.kbc-button-secondary.focus {
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #868e96;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-secondary:active, .kbc-button-sm.kbc-button-secondary.active {
+  background-color: #868e96;
+  box-shadow: 0 0 1px 1px #bcc1c6;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-secondary::after {
+  border-color: #a1a8ae;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-sm.kbc-button-success {
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368, 0 3px #48d368, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  background-color: #28a745;
+  border-color: #34ce57;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-success:hover, .kbc-button-sm.kbc-button-success:focus, .kbc-button-sm.kbc-button-success.hover, .kbc-button-sm.kbc-button-success.focus {
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #34ce57;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-success:active, .kbc-button-sm.kbc-button-success.active {
+  background-color: #34ce57;
+  box-shadow: 0 0 1px 1px #86e29b;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-success::after {
+  border-color: #5dd879;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-sm.kbc-button-info {
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6, 0 3px #36cee6, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  background-color: #17a2b8;
+  border-color: #1fc8e3;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-info:hover, .kbc-button-sm.kbc-button-info:focus, .kbc-button-sm.kbc-button-info.hover, .kbc-button-sm.kbc-button-info.focus {
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #1fc8e3;
+  color: #343a40;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-info:active, .kbc-button-sm.kbc-button-info.active {
+  background-color: #1fc8e3;
+  box-shadow: 0 0 1px 1px #7adeee;
+  color: #343a40;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-info::after {
+  border-color: #4cd3e9;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-sm.kbc-button-warning {
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00, 0 3px #ba8b00, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  background-color: #ffc107;
+  border-color: #d39e00;
+  color: #343a40;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-warning:hover, .kbc-button-sm.kbc-button-warning:focus, .kbc-button-sm.kbc-button-warning.hover, .kbc-button-sm.kbc-button-warning.focus {
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #d39e00;
+  color: #343a40;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-warning:active, .kbc-button-sm.kbc-button-warning.active {
+  background-color: #d39e00;
+  box-shadow: 0 0 1px 1px #6d5200;
+  color: #343a40;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-warning::after {
+  border-color: #a07800;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-sm.kbc-button-danger {
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681, 0 3px #e77681, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  background-color: #dc3545;
+  border-color: #e4606d;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-danger:hover, .kbc-button-sm.kbc-button-danger:focus, .kbc-button-sm.kbc-button-danger.hover, .kbc-button-sm.kbc-button-danger.focus {
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #e4606d;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-danger:active, .kbc-button-sm.kbc-button-danger.active {
+  background-color: #e4606d;
+  box-shadow: 0 0 1px 1px #f3b7bd;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-danger::after {
+  border-color: #eb8c95;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-sm.kbc-button-light {
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da, 0 3px #cbd3da, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  background-color: #f8f9fa;
+  border-color: #dae0e5;
+  color: #343a40;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-light:hover, .kbc-button-sm.kbc-button-light:focus, .kbc-button-sm.kbc-button-light.hover, .kbc-button-sm.kbc-button-light.focus {
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #dae0e5;
+  color: #343a40;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-light:active, .kbc-button-sm.kbc-button-light.active {
+  background-color: #dae0e5;
+  box-shadow: 0 0 1px 1px #9fadba;
+  color: #343a40;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-light::after {
+  border-color: #bdc6d0;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-sm.kbc-button-dark {
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a, 0 3px #56606a, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  background-color: #343a40;
+  border-color: #4b545c;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-dark:hover, .kbc-button-sm.kbc-button-dark:focus, .kbc-button-sm.kbc-button-dark.hover, .kbc-button-sm.kbc-button-dark.focus {
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  background-color: #4b545c;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-dark:active, .kbc-button-sm.kbc-button-dark.active {
+  background-color: #4b545c;
+  box-shadow: 0 0 1px 1px #7a8793;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-sm.kbc-button-dark::after {
+  border-color: #626d78;
+}
+
+/* line 16, src/sass/components/_button.scss */
+.kbc-button-lg {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 0.875rem;
+  margin-left: 0.375rem;
+  margin-right: 0.375rem;
+  margin-top: 0.375rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9, 0 3px #d9d9d9, 0 4px #d9d9d9, 0 5px #d9d9d9, 0 6px #d9d9d9, 0 7px #d9d9d9, 0 8px #d9d9d9, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  background-color: #fff;
+  border-color: #e6e6e6;
+  color: #343a40;
+}
+
+/* line 60, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg:hover, .kbc-button-lg:focus, .kbc-button-lg.hover, .kbc-button-lg.focus {
+  transform: translate3d(0, 1px, 8px);
+}
+
+/* line 66, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg:hover::after, .kbc-button-lg:focus::after, .kbc-button-lg.hover::after, .kbc-button-lg.focus::after {
+  transform: translate3d(0, -1px, -8px);
+}
+
+/* line 71, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg:active, .kbc-button-lg.active {
+  border-color: transparent;
+  box-shadow: none;
+  transform: translate3d(0, 8px, 0);
+}
+
+/* line 77, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg:active::after, .kbc-button-lg.active::after {
+  transform: translate3d(0, -8px, 0);
+}
+
+/* line 82, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg::after {
+  border-radius: 0.5rem;
+  border-width: 0.125rem;
+  bottom: -13px;
+  left: -0.375rem;
+  right: -0.375rem;
+  top: 3px;
+  transform: translate3d(0, 0, -8px);
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg:hover, .kbc-button-lg:focus, .kbc-button-lg.hover, .kbc-button-lg.focus {
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9, 0 3px #d9d9d9, 0 4px #d9d9d9, 0 5px #d9d9d9, 0 6px #d9d9d9, 0 7px #d9d9d9, 2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
+  background-color: #e6e6e6;
+  color: #343a40;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg:active, .kbc-button-lg.active {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 1px 1px #b3b3b3;
+  color: #343a40;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg::after {
+  border-color: #cccccc;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-lg.kbc-button-primary {
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff, 0 3px #4da3ff, 0 4px #4da3ff, 0 5px #4da3ff, 0 6px #4da3ff, 0 7px #4da3ff, 0 8px #4da3ff, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  background-color: #007bff;
+  border-color: #3395ff;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-primary:hover, .kbc-button-lg.kbc-button-primary:focus, .kbc-button-lg.kbc-button-primary.hover, .kbc-button-lg.kbc-button-primary.focus {
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff, 0 3px #4da3ff, 0 4px #4da3ff, 0 5px #4da3ff, 0 6px #4da3ff, 0 7px #4da3ff, 2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
+  background-color: #3395ff;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-primary:active, .kbc-button-lg.kbc-button-primary.active {
+  background-color: #3395ff;
+  box-shadow: 0 0 1px 1px #99caff;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-primary::after {
+  border-color: #66b0ff;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-lg.kbc-button-secondary {
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2, 0 3px #939ba2, 0 4px #939ba2, 0 5px #939ba2, 0 6px #939ba2, 0 7px #939ba2, 0 8px #939ba2, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  background-color: #6c757d;
+  border-color: #868e96;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-secondary:hover, .kbc-button-lg.kbc-button-secondary:focus, .kbc-button-lg.kbc-button-secondary.hover, .kbc-button-lg.kbc-button-secondary.focus {
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2, 0 3px #939ba2, 0 4px #939ba2, 0 5px #939ba2, 0 6px #939ba2, 0 7px #939ba2, 2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
+  background-color: #868e96;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-secondary:active, .kbc-button-lg.kbc-button-secondary.active {
+  background-color: #868e96;
+  box-shadow: 0 0 1px 1px #bcc1c6;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-secondary::after {
+  border-color: #a1a8ae;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-lg.kbc-button-success {
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368, 0 3px #48d368, 0 4px #48d368, 0 5px #48d368, 0 6px #48d368, 0 7px #48d368, 0 8px #48d368, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  background-color: #28a745;
+  border-color: #34ce57;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-success:hover, .kbc-button-lg.kbc-button-success:focus, .kbc-button-lg.kbc-button-success.hover, .kbc-button-lg.kbc-button-success.focus {
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368, 0 3px #48d368, 0 4px #48d368, 0 5px #48d368, 0 6px #48d368, 0 7px #48d368, 2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
+  background-color: #34ce57;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-success:active, .kbc-button-lg.kbc-button-success.active {
+  background-color: #34ce57;
+  box-shadow: 0 0 1px 1px #86e29b;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-success::after {
+  border-color: #5dd879;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-lg.kbc-button-info {
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6, 0 3px #36cee6, 0 4px #36cee6, 0 5px #36cee6, 0 6px #36cee6, 0 7px #36cee6, 0 8px #36cee6, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  background-color: #17a2b8;
+  border-color: #1fc8e3;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-info:hover, .kbc-button-lg.kbc-button-info:focus, .kbc-button-lg.kbc-button-info.hover, .kbc-button-lg.kbc-button-info.focus {
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6, 0 3px #36cee6, 0 4px #36cee6, 0 5px #36cee6, 0 6px #36cee6, 0 7px #36cee6, 2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
+  background-color: #1fc8e3;
+  color: #343a40;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-info:active, .kbc-button-lg.kbc-button-info.active {
+  background-color: #1fc8e3;
+  box-shadow: 0 0 1px 1px #7adeee;
+  color: #343a40;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-info::after {
+  border-color: #4cd3e9;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-lg.kbc-button-warning {
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00, 0 3px #ba8b00, 0 4px #ba8b00, 0 5px #ba8b00, 0 6px #ba8b00, 0 7px #ba8b00, 0 8px #ba8b00, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  background-color: #ffc107;
+  border-color: #d39e00;
+  color: #343a40;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-warning:hover, .kbc-button-lg.kbc-button-warning:focus, .kbc-button-lg.kbc-button-warning.hover, .kbc-button-lg.kbc-button-warning.focus {
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00, 0 3px #ba8b00, 0 4px #ba8b00, 0 5px #ba8b00, 0 6px #ba8b00, 0 7px #ba8b00, 2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
+  background-color: #d39e00;
+  color: #343a40;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-warning:active, .kbc-button-lg.kbc-button-warning.active {
+  background-color: #d39e00;
+  box-shadow: 0 0 1px 1px #6d5200;
+  color: #343a40;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-warning::after {
+  border-color: #a07800;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-lg.kbc-button-danger {
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681, 0 3px #e77681, 0 4px #e77681, 0 5px #e77681, 0 6px #e77681, 0 7px #e77681, 0 8px #e77681, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  background-color: #dc3545;
+  border-color: #e4606d;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-danger:hover, .kbc-button-lg.kbc-button-danger:focus, .kbc-button-lg.kbc-button-danger.hover, .kbc-button-lg.kbc-button-danger.focus {
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681, 0 3px #e77681, 0 4px #e77681, 0 5px #e77681, 0 6px #e77681, 0 7px #e77681, 2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
+  background-color: #e4606d;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-danger:active, .kbc-button-lg.kbc-button-danger.active {
+  background-color: #e4606d;
+  box-shadow: 0 0 1px 1px #f3b7bd;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-danger::after {
+  border-color: #eb8c95;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-lg.kbc-button-light {
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da, 0 3px #cbd3da, 0 4px #cbd3da, 0 5px #cbd3da, 0 6px #cbd3da, 0 7px #cbd3da, 0 8px #cbd3da, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  background-color: #f8f9fa;
+  border-color: #dae0e5;
+  color: #343a40;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-light:hover, .kbc-button-lg.kbc-button-light:focus, .kbc-button-lg.kbc-button-light.hover, .kbc-button-lg.kbc-button-light.focus {
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da, 0 3px #cbd3da, 0 4px #cbd3da, 0 5px #cbd3da, 0 6px #cbd3da, 0 7px #cbd3da, 2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
+  background-color: #dae0e5;
+  color: #343a40;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-light:active, .kbc-button-lg.kbc-button-light.active {
+  background-color: #dae0e5;
+  box-shadow: 0 0 1px 1px #9fadba;
+  color: #343a40;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-light::after {
+  border-color: #bdc6d0;
+}
+
+/* line 21, src/sass/components/_button.scss */
+.kbc-button-lg.kbc-button-dark {
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a, 0 3px #56606a, 0 4px #56606a, 0 5px #56606a, 0 6px #56606a, 0 7px #56606a, 0 8px #56606a, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  background-color: #343a40;
+  border-color: #4b545c;
+  color: #f8f9fa;
+}
+
+/* line 126, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-dark:hover, .kbc-button-lg.kbc-button-dark:focus, .kbc-button-lg.kbc-button-dark.hover, .kbc-button-lg.kbc-button-dark.focus {
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a, 0 3px #56606a, 0 4px #56606a, 0 5px #56606a, 0 6px #56606a, 0 7px #56606a, 2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
+  background-color: #4b545c;
+  color: #f8f9fa;
+}
+
+/* line 135, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-dark:active, .kbc-button-lg.kbc-button-dark.active {
+  background-color: #4b545c;
+  box-shadow: 0 0 1px 1px #7a8793;
+  color: #f8f9fa;
+}
+
+/* line 142, src/sass/abstracts/_mixins.scss */
+.kbc-button-lg.kbc-button-dark::after {
+  border-color: #626d78;
+}
+
+/* line 45, src/sass/components/_button.scss */
+.kbc-button:disabled, .kbc-button.disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+/* line 52, src/sass/components/_button.scss */
+.kbc-button:hover, .kbc-button:focus, .kbc-button.hover, .kbc-button.focus {
+  outline: none;
+}
+
+/* line 59, src/sass/components/_button.scss */
+.kbc-button icon {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  transform-style: preserve-3d;
+}
+
+/* line 68, src/sass/components/_button.scss */
+.kbc-button.no-container::after {
+  border-color: transparent;
+}
+
+/* line 73, src/sass/components/_button.scss */
+.kbc-button::after {
+  border-style: solid;
+  box-sizing: content-box;
+  content: '';
+  display: block;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+/* line 85, src/sass/components/_button.scss */
+a.kbc-button {
+  text-decoration: none;
+}
+
+/* line 88, src/sass/components/_button.scss */
+a.kbc-button:hover, a.kbc-button:focus {
+  text-decoration: none;
+}
