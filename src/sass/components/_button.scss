@@ -1,32 +1,40 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
-.kbc-button {
-  @include button-size(
-    $kbc-btn-padding-y,
-    $kbc-btn-padding-x,
-    $kbc-btn-font-size,
-    $kbc-btn-line-height,
-    $kbc-btn-after-bottom,
-    $kbc-btn-after-left,
-    $kbc-btn-after-right,
-    $kbc-btn-after-top,
-    $kbc-btn-depth,
-    $kbc-btn-after-border-width,
-    $kbc-btn-after-border-radius
-  );
 
-  align-items: flex-end;
+.kbc-button {
+  @include button-size();
+  @include button-color();
+
+  @each $color-name, $color in $kbc-theme-colors {
+    &-#{$color-name} {
+      @include button-color($color, color-yiq($color));
+    }
+  }
+
+  @each $size, $options in $kbc-btn-size-map {
+    &-#{$size} {
+      @include button-size($options);
+      @include button-color($depth: map-get($options, 'depth'));
+    }
+    @each $color-name, $color in $kbc-theme-colors {
+      &-#{$size}.kbc-button-#{$color-name} {
+        @include button-color(
+          $color,
+          color-yiq($color),
+          map-get($options, 'depth')
+        );
+      }
+    }
+  }
+
   backface-visibility: hidden;
-  background-color: $kbc-btn-bg-color;
   border: $kbc-btn-border-width solid $kbc-btn-border-color;
   border-radius: $kbc-btn-border-radius;
-  color: $kbc-btn-font-color;
   cursor: $kbc-btn-cursor;
-  display: inline-flex;
+  display: inline-block;
   font-family: $kbc-btn-font-family;
   font-weight: $kbc-btn-font-weight;
-  justify-content: flex-end;
   position: relative;
   text-align: $kbc-btn-text-align;
   transform: translate3d(0, 0, #{$kbc-btn-depth}px);
@@ -34,79 +42,18 @@
   transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
   width: $kbc-btn-width;
 
-  &-xxs {
-    @include button-size(
-      $kbc-btn-padding-y-xxs,
-      $kbc-btn-padding-x-xxs,
-      $kbc-btn-font-size-xxs,
-      $kbc-btn-line-height-xxs,
-      $kbc-btn-after-bottom-xxs,
-      $kbc-btn-after-left-xxs,
-      $kbc-btn-after-right-xxs,
-      $kbc-btn-after-top-xxs,
-      $kbc-btn-depth-xxs,
-      $kbc-btn-after-border-width-xxs,
-      $kbc-btn-after-border-radius-xxs
-    );
-  }
-
-  &-xs {
-    @include button-size(
-      $kbc-btn-padding-y-xs,
-      $kbc-btn-padding-x-xs,
-      $kbc-btn-font-size-xs,
-      $kbc-btn-line-height-xs,
-      $kbc-btn-after-bottom-xs,
-      $kbc-btn-after-left-xs,
-      $kbc-btn-after-right-xs,
-      $kbc-btn-after-top-xs,
-      $kbc-btn-depth-xs,
-      $kbc-btn-after-border-width-xs,
-      $kbc-btn-after-border-radius-xs
-    );
-  }
-
-  &-sm {
-    @include button-size(
-      $kbc-btn-padding-y-sm,
-      $kbc-btn-padding-x-sm,
-      $kbc-btn-font-size-sm,
-      $kbc-btn-line-height-sm,
-      $kbc-btn-after-bottom-sm,
-      $kbc-btn-after-left-sm,
-      $kbc-btn-after-right-sm,
-      $kbc-btn-after-top-sm,
-      $kbc-btn-depth-sm,
-      $kbc-btn-after-border-width-sm,
-      $kbc-btn-after-border-radius-sm
-    );
-  }
-
-  &-lg {
-    @include button-size(
-      $kbc-btn-padding-y-lg,
-      $kbc-btn-padding-x-lg,
-      $kbc-btn-font-size-lg,
-      $kbc-btn-line-height-lg,
-      $kbc-btn-after-bottom-lg,
-      $kbc-btn-after-left-lg,
-      $kbc-btn-after-right-lg,
-      $kbc-btn-after-top-lg,
-      $kbc-btn-depth-lg,
-      $kbc-btn-after-border-width-lg,
-      $kbc-btn-after-border-radius-lg
-    );
+  &:disabled,
+  &.disabled {
+    cursor: not-allowed;
+    opacity: $kbc-btn-disabled-opacity;
+    pointer-events: none;
   }
 
   &:hover,
-  &:focus {
-    background-color: $kbc-btn-focus-bg-color;
+  &:focus,
+  &.hover,
+  &.focus {
     outline: none;
-  }
-
-  &:active {
-    background-color: $kbc-btn-active-bg-color;
-    box-shadow: $kbc-btn-active-box-shadow;
   }
 
   icon {
@@ -117,16 +64,29 @@
     transform-style: preserve-3d;
   }
 
-  &:not(.no-container) {
+  &.no-container {
     &::after {
-      border-color: $kbc-btn-after-border-color;
-      border-style: solid;
-      box-sizing: content-box;
-      content: '';
-      display: block;
-      position: absolute;
-      transform-style: preserve-3d;
-      transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
+      border-color: transparent;
     }
+  }
+
+  &::after {
+    border-style: solid;
+    box-sizing: content-box;
+    content: '';
+    display: block;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
+  }
+}
+
+// stylelint-disable-next-line
+a.kbc-button {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
   }
 }
