@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/shhdharmen/keyboard-css/compare/v1.0.0...v1.1.0) (2020-10-30)
+
+
+### Features
+
+* **button:** default align left, docs ([132035c](https://github.com/shhdharmen/keyboard-css/commit/132035c2593e287381ba3e7f7bae37a0ef457549))
+
 # 1.0.0 (2020-10-30)
 
 
