@@ -61,39 +61,30 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#getting-started">Getting Started</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Usage
-            </a>
-            <div class="dropdown-menu shadow-sm" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#basic">Basic</a>
-              <a class="dropdown-item" href="#remove-border">Remove Border</a>
-              <a class="dropdown-item" href="#sizing">Sizing</a>
-              <a class="dropdown-item" href="#states">States</a>
-              <a class="dropdown-item" href="#colors">Colors</a>
-              <!-- <div class="dropdown-divider"></div> -->
-              <!-- <a class="dropdown-item" href="#">Something else here</a> -->
-            </div>
-          </li>
+          </li> -->
         </ul>
         <ul class="navbar-nav">
           <li class="nav-item">
             <a
               class="nav-link"
               href="https://github.com/shhdharmen/keyboard-css"
-              >Github</a
-            >
+              target="_blank"
+              ><img
+                alt="GitHub stars"
+                src="https://img.shields.io/github/stars/shhdharmen/keyboard-css?style=social"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              target="_blank"
+              href="https://twitter.com/intent/tweet?text=Show+off+your+keyboard+shortcuts+with+style+🦄:&url=https%3A%2F%2Fgithub.com%2Fshhdharmen%2Fkeyboard-css"
+              ><img
+                alt="Twitter"
+                src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fshhdharmen%2Fkeyboard-css"
+            /></a>
           </li>
         </ul>
         <!-- <form class="form-inline my-2 my-lg-0">
@@ -133,138 +124,373 @@
         <b><i>Show off your keyboard shortcuts with style 🦄.</i></b>
       </p>
       <hr class="my-4" />
-      <button class="btn btn-outline-primary btn-lg">Getting Started</button>
+      <a href="#getting-started" class="btn btn-outline-primary btn-lg"
+        >Getting Started</a
+      >
     </div>
-    <div class="container mb-5">
-      <section class="mb-3">
-        <h4 id="getting-started">Getting Started</h4>
-        <p id="link">
-          Simplest way to use this is through <code>link</code> tag (thanks to
-          <a href="https://unpkg.com/">https://unpkg.com/</a>):
-        </p>
-        <div class="px-3 py-2 bg-dark rounded shadow-sm mb-3">
-          <code
-            >&lt;link rel="stylesheet" href="https://unpkg.com/keyboard-css/css/main.min.css" /&gt;</code
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-auto d-sm-none d-md-block border-right">
+          <nav id="navbar-example3" class="navbar navbar-light bg-light">
+            <!-- <a class="navbar-brand" href="#">Menu</a> -->
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#getting-started">Getting Started</a>
+              <a class="nav-link" href="#usage">Usage</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ml-3 my-1" href="#Basic">Basic</a>
+                <a class="nav-link ml-3 my-1" href="#remove-border"
+                  >Remove Surface Border</a
+                >
+                <a class="nav-link ml-3 my-1" href="#sizing">Sizing</a>
+                <a class="nav-link ml-3 my-1" href="#states">States</a>
+                <a class="nav-link ml-3 my-1" href="#colors">Colors</a>
+              </nav>
+              <a class="nav-link" href="#usage-with-javascript"
+                >Usage with Javascript</a
+              >
+              <a class="nav-link" href="#advanced-config-with-sass"
+                >Advanced Configuration Options with SASS</a
+              >
+              <a class="nav-link" href="#license-and-contributing"
+                >License and Contributing</a
+              >
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ml-3 my-1" href="#contributing"
+                  >Contributing</a
+                >
+                <a class="nav-link ml-3 my-1" href="#code-of-conduct"
+                  >Code of Conduct</a
+                >
+              </nav>
+            </nav>
+          </nav>
+        </div>
+        <div class="col-12 col-sm-12 col-md">
+          <div
+            data-spy="scroll"
+            data-target="#navbar-example3"
+            data-offset="0"
+            style="height: 100vh; overflow-y: scroll"
           >
-        </div>
-        <p id="npm">You can also install it from npm:</p>
-        <div class="px-3 py-2 bg-dark rounded shadow-sm mb-3">
-          <code>npm i keyboard-css</code>
-        </div>
-      </section>
-      <hr />
-      <section class="mb-3">
-        <h4 id="usage">Usage</h4>
-        <p>
-          You just have to add a single class to apply the related styles, i.e.
-          <code><b>kbc-button</b></code>
-        </p>
-        <h5 id="basic">Basic Usage</h5>
-        <div class="border mb-3">
-          <div class="bg-light">
-            <pre><code class="language-html">
-                &lt;button class="kbc-button"&gt;K&lt;/button&gt;
+            <div class="container mb-5">
+              <section class="mb-3">
+                <h4 id="getting-started">Getting Started</h4>
+                <p id="link">
+                  Simplest way to use this is through <code>link</code> tag
+                  (thanks to
+                  <a href="https://unpkg.com/">https://unpkg.com/</a>):
+                </p>
+                <div class="px-3 py-2 bg-dark rounded shadow-sm mb-3">
+                  <code
+                    >&lt;link rel="stylesheet"
+                    href="https://unpkg.com/keyboard-css/css/main.min.css"
+                    /&gt;</code
+                  >
+                </div>
+                <p id="npm">You can also install it from npm:</p>
+                <div class="px-3 py-2 bg-dark rounded shadow-sm mb-3">
+                  <code>npm i keyboard-css</code>
+                </div>
+              </section>
+              <hr />
+              <section class="mb-3">
+                <h4 id="usage">Usage</h4>
+                <p>
+                  You just have to add a single class to apply the related
+                  styles, i.e.
+                  <code><b>kbc-button</b></code>
+                </p>
+                <h5 id="basic">Basic Usage</h5>
+                <div class="border mb-3">
+                  <div class="bg-light">
+                    <pre><code class="language-html">
+                      &lt;button class="kbc-button"&gt;K&lt;/button&gt;
+                    </code></pre>
+                  </div>
+                  <pre>
+                    <button class="kbc-button">K</button>
+                  </pre>
+                </div>
+                <h5 id="remove-border">Remove Surface Border</h5>
+                <p>
+                  To remove surface border, simply add
+                  <code><b>no-container</b></code> class.
+                </p>
+                <div class="border mb-3">
+                  <div class="bg-light">
+                    <pre><code class="language-html">
+                      &lt;button class="kbc-button no-container"&gt;K&lt;/button&gt;
+                    </code></pre>
+                  </div>
+                  <pre>
+                    <button class="kbc-button no-container">K</button>
+                  </pre>
+                </div>
+                <h5 id="sizing">Sizing</h5>
+                <p>
+                  Total 5 sizes are available. You can respective classes to see
+                  the effect.
+                </p>
+                <div class="border bg-light mb-3">
+                  <pre>
+                    <code class="language-html">
+                      &lt;button class="kbc-button kbc-button-xxs"&gt;XXS&lt;/button&gt;
+                      &lt;button class="kbc-button kbc-button-xs"&gt;XS&lt;/button&gt;
+                      &lt;button class="kbc-button kbc-button-sm"&gt;SM&lt;/button&gt;
+                      &lt;button class="kbc-button"&gt;MD&lt;/button&gt;
+                      &lt;button class="kbc-button kbc-button-lg"&gt;LG&lt;/button&gt;
+                    </code>
+                  </pre>
+                  <pre>
+                    <button class="kbc-button kbc-button-xxs">XXS</button>
+                    <button class="kbc-button kbc-button-xs">XS</button>
+                    <button class="kbc-button kbc-button-sm">SM</button>
+                    <button class="kbc-button">MD</button>
+                    <button class="kbc-button kbc-button-lg">LG</button>
+                  </pre>
+                </div>
+                <h5 id="states">States</h5>
+                <p>
+                  Like all buttons, this also have 3 states:
+                  <code>:hover</code>, <code>:focus</code>,
+                  <code>:active</code>, and <code>:disabled</code>. You can add
+                  classes with same state name to see it statically.
+                </p>
+                <div class="border mb-3">
+                  <pre>
+                    <code class="language-html">
+                      &lt;button class="kbc-button hover"&gt;Hovered&lt;/button&gt;
+                      &lt;button class="kbc-button focus"&gt;Focused&lt;/button&gt;
+                      &lt;button class="kbc-button active"&gt;Activated&lt;/button&gt;
+                      &lt;button class="kbc-button disabled"&gt;Disabled&lt;/button&gt;
+                    </code>
+                  </pre>
+                  <pre>
+                    <button class="kbc-button hover">Hovered</button>
+                    <button class="kbc-button focus">Focused</button>
+                    <button class="kbc-button active">Active</button>
+                    <button class="kbc-button disabled">Disabled</button>
+                  </pre>
+                </div>
+                <h5 id="colors">Colors</h5>
+                <p>
+                  Colors are directly inspired from
+                  <a
+                    href="https://getbootstrap.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >Bootstrap</a
+                  >.
+                </p>
+                <div class="border mb-3">
+                  <pre>
+                    <code class="language-html">
+                      &lt;button class="kbc-button"&gt;Default&lt;/button&gt;
+                      &lt;button class="kbc-button kbc-button-primary"&gt;Primary&lt;/button&gt;
+                      &lt;button class="kbc-button kbc-button-secondary"&gt;Secondary&lt;/button&gt;
+                      &lt;button class="kbc-button kbc-button-success"&gt;Success&lt;/button&gt;
+                      &lt;button class="kbc-button kbc-button-danger"&gt;Danger&lt;/button&gt;
+                      &lt;button class="kbc-button kbc-button-info"&gt;Info&lt;/button&gt;
+                      &lt;button class="kbc-button kbc-button-light"&gt;Light&lt;/button&gt;
+                      &lt;button class="kbc-button kbc-button-dark"&gt;Dark&lt;/button&gt;
+                    </code>
+                  </pre>
+                  <pre>
+                    <button class="kbc-button">Default</button>
+                    <button class="kbc-button kbc-button-primary">Primary</button>
+                    <button class="kbc-button kbc-button-secondary">Secondary</button>
+                    <button class="kbc-button kbc-button-success">Success</button>
+                    <button class="kbc-button kbc-button-danger">Danger</button>
+                    <button class="kbc-button kbc-button-info">Info</button>
+                    <button class="kbc-button kbc-button-light">Light</button>
+                    <button class="kbc-button kbc-button-dark">Dark</button>
+                  </pre>
+                </div>
+              </section>
+              <hr />
+              <section class="mb-3">
+                <h4 id="usage-with-javascript">Usage with Javascript</h4>
+                <p>
+                  You can do a whole bunch of other stuff with Keyboard CSS when
+                  you combine it with Javascript. A simple example:
+                </p>
+                <pre><code class="language-javascript">
+                const element = document.querySelector('.my-element');
+                element.classList.add('kbc-button', 'kbc-button-dark');
               </code></pre>
-          </div>
-          <pre>
-              <button class="kbc-button">K</button>
-            </pre>
-        </div>
-        <h5 id="remove-border">Remove Surface Border</h5>
-        <p>
-          To remove surface border, simply add
-          <code><b>no-container</b></code> class.
-        </p>
-        <div class="border mb-3">
-          <div class="bg-light">
-            <pre><code class="language-html">
-                &lt;button class="kbc-button no-container"&gt;K&lt;/button&gt;
+                <p>You can also bind keyboard events:</p>
+                <div class="border">
+                  <pre><code class="language-html">
+                  &lt;button class="kbc-button" data-keyboard-key="K"&gt;K&lt;/button&gt;
+                </code></pre>
+                  <pre><code class="language-javascript">
+                  document.addEventListener('keydown', (ev) => {
+                    const key = ev.key;
+                    const element = document.querySelector(
+                        '[data-keyboard-key="' + key.toUpperCase() + '"]'
+                    );
+                    element.classList.add('active');
+                });
+                
+                document.addEventListener('keyup', (ev) => {
+                    const key = ev.key;
+                    const element = document.querySelector(
+                        '[data-keyboard-key="' + key.toUpperCase() + '"]'
+                    );
+                    element.classList.remove('active');
+                });
+                </code></pre>
+                  <p class="text-muted px-3">
+                    <i>Try pressing <b>K</b> from your keyboard.</i>
+                  </p>
+                  <pre>
+                  <button class="kbc-button" data-keyboard-key="K">K</button>
+                </pre>
+                </div>
+              </section>
+              <hr />
+              <section class="mb-3">
+                <h4 id="advanced-config-with-sass">
+                  Advanced Configuration Options with SASS
+                </h4>
+                <p>
+                  I have used
+                  <a
+                    href="http://https://sass-lang.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >SASS</a
+                  >
+                  to create this build. Mostly, everything is handled through
+                  <a
+                    href="https://sass-lang.com/documentation/variables"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >sass variables</a
+                  >, so you can easily override the defaults, thanks to
+                  <a
+                    href="https://sass-lang.com/documentation/variables#default-values"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><code>!default</code></a
+                  >
+                  flag.
+                </p>
+                <p>
+                  For example, to change the default base font-size to 20px, you
+                  can do like below:
+                </p>
+                <pre><code class="language-scss">
+                // assuming you have already done: npm i keyboard-css
+      
+                // define variables first
+                $kbc-font-size-base: 20 / 16 * 1rem;
+      
+                // and then import
+                @import "../../node_modules/keyboard-css/sass/main";
               </code></pre>
+                <p>
+                  or with new
+                  <a
+                    href="https://sass-lang.com/documentation/at-rules/use"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >@use</a
+                  >
+                  rule, you can achieve the same using below code:
+                </p>
+                <pre><code class="language-scss">
+                // assuming you have already done: npm i keyboard-css
+      
+                @use "path/to/node_modules/keyboard-css/sass/main" with (
+                    $kbc-font-size-base: 20 / 16 * 1rem
+                );
+              </code></pre>
+                <p>You can also introduce your new size:</p>
+                <pre><code class="language-scss">
+                // add size in $kbc-btn-size-map
+                $kbc-btn-size-map: (
+                  "xlg": (
+                    "padding-y": 0.75rem,
+                    "padding-x": 1.25rem,
+                    "font-size": 1.5rem,
+                    "line-height": 1.5,
+                    "depth": 11,
+                    "after-border-width": 0.125rem,
+                    "after-adjust-x": -0.125rem,
+                    "after-adjust-y": -5,
+                    "after-border-radius": 0.5rem,
+                  ),
+                );
+      
+                // and then import
+                @import "path/to/node_modules/keyboard-css/sass/main";
+              </code></pre>
+                <p>
+                  You can check all the variables at
+                  <a
+                    href="https://github.com/shhdharmen/keyboard-css/blob/main/src/sass/abstracts/_variables.scss"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >_variables.scss</a
+                  >
+                  file.
+                </p>
+              </section>
+              <hr />
+              <section class="mb-3">
+                <h4 id="license-and-contributing">License and Contributing</h4>
+                <p>
+                  Keyboard CSS is licensed under the
+                  <a
+                    href="https://github.com/shhdharmen/keyboard-css/blob/main/LICENSE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >MIT</a
+                  >
+                  license. And same is available on Github:
+                </p>
+                <div class="mb-3">
+                  <img
+                    class="img-fluid"
+                    src="https://github-readme-stats.vercel.app/api/pin/?username=shhdharmen&repo=keyboard-css"
+                    alt="Github repo: https://github.com/shhdharmen/keyboard-css"
+                    srcset=""
+                  />
+                </div>
+                <h5 id="contributing">Contributing</h5>
+                <p>
+                  🙏 I would ❤️ for you to contribute to Keyboard CSS and help
+                  make it even better than it is today! Checkout
+                  <a
+                    href="https://github.com/shhdharmen/keyboard-css/blob/main/CONTRIBUTING.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >CONTRIBUTING</a
+                  >
+                  guidelines for more details.
+                </p>
+                <h5 id="code-of-conduct">Code of Conduct</h5>
+                <p>
+                  This project and everyone participating in it are governed by
+                  the
+                  <a
+                    target="_blank"
+                    href="https://github.com/shhdharmen/keyboard-css/blob/main/CODE_OF_CONDUCT.md"
+                    >Contributor Covenant Code of Conduct</a
+                  >. By participating, you are expected to uphold this code.
+                  Please report unacceptable behavior to
+                  <a target="_blank" href="mailto:shhdharmen@gmail.com"
+                    >shhdharmen@gmail.com</a
+                  >.
+                </p>
+              </section>
+              <hr />
+            </div>
           </div>
-          <pre>
-              <button class="kbc-button no-container">K</button>
-            </pre>
         </div>
-        <h5 id="sizing">Sizing</h5>
-        <p>
-          Total 5 sizes are available. You can respective classes to see the
-          effect.
-        </p>
-        <div class="border bg-light mb-3">
-          <pre>
-              <code class="language-html">
-                &lt;button class="kbc-button kbc-button-xxs"&gt;XXS&lt;/button&gt;
-                &lt;button class="kbc-button kbc-button-xs"&gt;XS&lt;/button&gt;
-                &lt;button class="kbc-button kbc-button-sm"&gt;SM&lt;/button&gt;
-                &lt;button class="kbc-button"&gt;MD&lt;/button&gt;
-                &lt;button class="kbc-button kbc-button-lg"&gt;LG&lt;/button&gt;
-              </code>
-            </pre>
-          <pre>
-              <button class="kbc-button kbc-button-xxs">XXS</button>
-              <button class="kbc-button kbc-button-xs">XS</button>
-              <button class="kbc-button kbc-button-sm">SM</button>
-              <button class="kbc-button">MD</button>
-              <button class="kbc-button kbc-button-lg">LG</button>
-            </pre>
-        </div>
-        <h5 id="states">States</h5>
-        <p>
-          Like all buttons, this also have 3 states: <code>:hover</code>,
-          <code>:focus</code>, <code>:active</code>, and <code>:disabled</code>.
-          You can add classes with same state name to see it statically.
-        </p>
-        <div class="border mb-3">
-          <pre>
-              <code class="language-html">
-                &lt;button class="kbc-button hover"&gt;Hovered&lt;/button&gt;
-                &lt;button class="kbc-button focus"&gt;Focused&lt;/button&gt;
-                &lt;button class="kbc-button active"&gt;Activated&lt;/button&gt;
-                &lt;button class="kbc-button disabled"&gt;Disabled&lt;/button&gt;
-              </code>
-            </pre>
-          <pre>
-              <button class="kbc-button hover">Hovered</button>
-              <button class="kbc-button focus">Focused</button>
-              <button class="kbc-button active">Active</button>
-              <button class="kbc-button disabled">Disabled</button>
-            </pre>
-        </div>
-        <h5 id="colors">Colors</h5>
-        <p>
-          Colors are directly inspired from
-          <a
-            href="https://getbootstrap.com"
-            rel="noopener noreferrer"
-            target="_blank"
-            >Bootstrap</a
-          >.
-        </p>
-        <div class="border mb-3">
-          <pre>
-              <code class="language-html">
-                &lt;button class="kbc-button"&gt;Default&lt;/button&gt;
-                &lt;button class="kbc-button kbc-button-primary"&gt;Primary&lt;/button&gt;
-                &lt;button class="kbc-button kbc-button-secondary"&gt;Secondary&lt;/button&gt;
-                &lt;button class="kbc-button kbc-button-success"&gt;Success&lt;/button&gt;
-                &lt;button class="kbc-button kbc-button-danger"&gt;Danger&lt;/button&gt;
-                &lt;button class="kbc-button kbc-button-info"&gt;Info&lt;/button&gt;
-                &lt;button class="kbc-button kbc-button-light"&gt;Light&lt;/button&gt;
-                &lt;button class="kbc-button kbc-button-dark"&gt;Dark&lt;/button&gt;
-              </code>
-            </pre>
-          <pre>
-              <button class="kbc-button">Default</button>
-              <button class="kbc-button kbc-button-primary">Primary</button>
-              <button class="kbc-button kbc-button-secondary">Secondary</button>
-              <button class="kbc-button kbc-button-success">Success</button>
-              <button class="kbc-button kbc-button-danger">Danger</button>
-              <button class="kbc-button kbc-button-info">Info</button>
-              <button class="kbc-button kbc-button-light">Light</button>
-              <button class="kbc-button kbc-button-dark">Dark</button>
-            </pre>
-        </div>
-      </section>
+      </div>
     </div>
     <div class="footer bg-dark border-top py-5">
       <div class="container">
@@ -380,6 +606,22 @@
     ></script>
     <script>
       anchors.add();
+    </script>
+    <script>
+      document.addEventListener('keydown', (ev) => {
+        const key = ev.key;
+        const element = document.querySelector(
+          '[data-keyboard-key="' + key.toUpperCase() + '"]'
+        );
+        element.classList.add('active');
+      });
+      document.addEventListener('keyup', (ev) => {
+        const key = ev.key;
+        const element = document.querySelector(
+          '[data-keyboard-key="' + key.toUpperCase() + '"]'
+        );
+        element.classList.remove('active');
+      });
     </script>
   </body>
 </html>
