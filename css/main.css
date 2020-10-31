@@ -1,4 +1,4 @@
-/*! keyboard-css v1.0.0-beta.3 | (c) 2020  | MIT License | https://github.com/shhdharmen/keyboard-css.git */
+/*! keyboard-css v1.1.0 | (c) 2020  | MIT License | https://github.com/shhdharmen/keyboard-css.git */
 /* line 5, src/sass/components/_button.scss */
 .kbc-button {
   font-size: 1rem;
@@ -20,12 +20,10 @@
   display: inline-block;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 400;
-  position: relative;
   text-align: left;
   transform: translate3d(0, 0, 5px);
   transform-style: preserve-3d;
   transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
-  width: auto;
 }
 
 /* line 60, src/sass/abstracts/_mixins.scss */
@@ -1428,19 +1426,19 @@
   border-color: #626d78;
 }
 
-/* line 45, src/sass/components/_button.scss */
+/* line 43, src/sass/components/_button.scss */
 .kbc-button:disabled, .kbc-button.disabled {
   cursor: not-allowed;
   opacity: 0.65;
   pointer-events: none;
 }
 
-/* line 52, src/sass/components/_button.scss */
+/* line 50, src/sass/components/_button.scss */
 .kbc-button:hover, .kbc-button:focus, .kbc-button.hover, .kbc-button.focus {
   outline: none;
 }
 
-/* line 59, src/sass/components/_button.scss */
+/* line 57, src/sass/components/_button.scss */
 .kbc-button icon {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -1450,12 +1448,12 @@
   transform-style: preserve-3d;
 }
 
-/* line 68, src/sass/components/_button.scss */
+/* line 66, src/sass/components/_button.scss */
 .kbc-button.no-container::after {
   border-color: transparent;
 }
 
-/* line 73, src/sass/components/_button.scss */
+/* line 71, src/sass/components/_button.scss */
 .kbc-button::after {
   border-style: solid;
   box-sizing: content-box;
@@ -1466,12 +1464,12 @@
   transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
 }
 
-/* line 85, src/sass/components/_button.scss */
+/* line 83, src/sass/components/_button.scss */
 a.kbc-button {
   text-decoration: none;
 }
 
-/* line 88, src/sass/components/_button.scss */
+/* line 86, src/sass/components/_button.scss */
 a.kbc-button:hover, a.kbc-button:focus {
   text-decoration: none;
 }

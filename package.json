@@ -1,6 +1,6 @@
 {
   "name": "keyboard-css",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A CSS to show keyboard keys.",
   "main": "css/main.min.css",
   "scripts": {
@@ -19,13 +19,18 @@
     "type": "git",
     "url": "https://github.com/shhdharmen/keyboard-css.git"
   },
-  "keywords": [],
+  "keywords": [
+    "css",
+    "scss",
+    "sass",
+    "keyboard"
+  ],
   "author": "Dharmen Shah",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/shhdharmen/keyboard-css/issues"
   },
-  "homepage": "https://github.com/shhdharmen/keyboard-css#readme",
+  "homepage": "https://shhdharmen.github.io/keyboard-css/",
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",

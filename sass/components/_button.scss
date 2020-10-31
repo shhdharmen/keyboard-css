@@ -35,12 +35,10 @@
   display: inline-block;
   font-family: $kbc-btn-font-family;
   font-weight: $kbc-btn-font-weight;
-  position: relative;
   text-align: $kbc-btn-text-align;
   transform: translate3d(0, 0, #{$kbc-btn-depth}px);
   transform-style: preserve-3d;
   transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
-  width: $kbc-btn-width;
 
   &:disabled,
   &.disabled {
