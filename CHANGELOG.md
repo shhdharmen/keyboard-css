@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/shhdharmen/keyboard-css/compare/v1.1.0...v1.1.1) (2020-10-31)
+
+
+### Bug Fixes
+
+* **button:** remove position:relative and width, and some docs changes ([ffe7efe](https://github.com/shhdharmen/keyboard-css/commit/ffe7efef40f5b4b389a07a717de2e9fb53b0eb09))
+
 # [1.1.0](https://github.com/shhdharmen/keyboard-css/compare/v1.0.0...v1.1.0) (2020-10-30)
 
 
