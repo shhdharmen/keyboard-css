@@ -149,14 +149,14 @@ Like all buttons, this also have 4 states: `:hover`, `:focus`, `:active`, and `:
 Colors are inspired from [Bootstrap theme colors](https://getbootstrap.com/docs/4.5/getting-started/theming/#theme-colors).
 
 ```html
-<kbd> class="kbc-button">Default</kbd>
-<kbd> class="kbc-button kbc-button-primary">Primary</kbd>
-<kbd> class="kbc-button kbc-button-secondary">Secondary</kbd>
-<kbd> class="kbc-button kbc-button-success">Success</kbd>
-<kbd> class="kbc-button kbc-button-danger">Danger</kbd>
-<kbd> class="kbc-button kbc-button-info">Info</kbd>
-<kbd> class="kbc-button kbc-button-light">Light</kbd>
-<kbd> class="kbc-button kbc-button-dark">Dark</kbd>
+<kbd class="kbc-button">Default</kbd>
+<kbd class="kbc-button kbc-button-primary">Primary</kbd>
+<kbd class="kbc-button kbc-button-secondary">Secondary</kbd>
+<kbd class="kbc-button kbc-button-success">Success</kbd>
+<kbd class="kbc-button kbc-button-danger">Danger</kbd>
+<kbd class="kbc-button kbc-button-info">Info</kbd>
+<kbd class="kbc-button kbc-button-light">Light</kbd>
+<kbd class="kbc-button kbc-button-dark">Dark</kbd>
 ```
 
 ![.kbc-button colors](https://cdn.hashnode.com/res/hashnode/image/upload/v1604132409394/Wx4yypH83.png)
