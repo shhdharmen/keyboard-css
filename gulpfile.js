@@ -30,7 +30,7 @@ var paths = {
     output: 'dist/css/',
   },
   copyScss: {
-    input: 'src/sass/**/*.{scss,sass}',
+    input: 'src/scss/**/*.{scss,sass}',
     output: 'dist/scss/',
   },
   svgs: {
