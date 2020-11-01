@@ -213,7 +213,7 @@ To change the default base font-size of `button` and `a` elements, to 20px, you 
 $kbc-font-size-base: 20 / 16 * 1rem;
 
 // and then import
-@import "path/to/node_modules/keyboard-css/sass/main";
+@import "path/to/node_modules/keyboard-css/dist/scss/main";
 ```
 
 or with new [@use](https://sass-lang.com/documentation/at-rules/use) rule, you can achieve the same using below code:
@@ -221,7 +221,7 @@ or with new [@use](https://sass-lang.com/documentation/at-rules/use) rule, you c
 ```scss
 // assuming you have already done: npm i keyboard-css
 
-@use "path/to/node_modules/keyboard-css/sass/main" with (
+@use "path/to/node_modules/keyboard-css/dist/scss/main" with (
     $kbc-font-size-base: 20 / 16 * 1rem
 );
 ```
@@ -247,7 +247,7 @@ $kbc-btn-size-map: (
 );
 
 // and then import
-@import "path/to/node_modules/keyboard-css/sass/main";
+@import "path/to/node_modules/keyboard-css/dist/scss/main";
 ```
 
 And then use it in HTML:
@@ -265,7 +265,7 @@ Depth is calculated and applied as multiple shadows. To increase/decrease it, yo
 $kbc-kbd-depth: 4;
 
 // and then import
-@import "path/to/node_modules/keyboard-css/sass/main";
+@import "path/to/node_modules/keyboard-css/dist/scss/main";
 ```
 
 ## License and Contributing
