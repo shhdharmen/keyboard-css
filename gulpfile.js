@@ -26,8 +26,12 @@ var paths = {
     output: 'dist/js/',
   },
   styles: {
-    input: 'src/sass/**/*.{scss,sass}',
+    input: 'src/scss/**/*.{scss,sass}',
     output: 'dist/css/',
+  },
+  copyScss: {
+    input: 'src/scss/**/*.{scss,sass}',
+    output: 'dist/scss/',
   },
   svgs: {
     input: 'src/svg/*.svg',
@@ -148,9 +152,16 @@ var copyFiles = function (done) {
   if (!settings.copy) return done();
 
   // Copy static files
-  return src(paths.copy.input)
-    .pipe(replace('{{ version }}', package.version))
-    .pipe(dest(paths.copy.output));
+  return src(paths.copy.input).pipe(dest(paths.copy.output));
+};
+
+// Copy static files into output folder
+var copyScss = function (done) {
+  // Make sure this feature is activated before running
+  if (!settings.copy) return done();
+
+  // Copy static files
+  return src(paths.copyScss.input).pipe(dest(paths.copyScss.output));
 };
 
 // Watch for changes to the src directory
@@ -190,7 +201,7 @@ var watchSource = function (done) {
 // gulp
 exports.default = series(
   cleanDist,
-  parallel(buildStyles, buildSVGs, copyFiles)
+  parallel(buildStyles, buildSVGs, copyFiles, copyScss)
 );
 
 // Watch and reload

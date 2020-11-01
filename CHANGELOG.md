@@ -1,3 +1,11 @@
+## [1.2.1-beta.1](https://github.com/shhdharmen/keyboard-css/compare/v1.2.0...v1.2.1-beta.1) (2020-11-01)
+
+
+### Bug Fixes
+
+* **.gitignore:** do not ignore dist ([d63927e](https://github.com/shhdharmen/keyboard-css/commit/d63927e37aaca82791309ee0abf286a9e8d31def))
+* **package:** fixes to update version in package.json ([689f3a6](https://github.com/shhdharmen/keyboard-css/commit/689f3a6094070e68a0e231922f5ce8b982654145))
+
 # [1.2.0](https://github.com/shhdharmen/keyboard-css/compare/v1.1.1...v1.2.0) (2020-11-01)
 
 

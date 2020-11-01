@@ -200,7 +200,7 @@ I have used [sass](https://sass-lang.com/) to create this build. Mostly, everyth
 
 ### Variables file
 
-You can check all the variables at [_variables.scss](https://github.com/shhdharmen/keyboard-css/blob/main/src/sass/abstracts/_variables.scss) file.
+You can check all the variables at [_variables.scss](https://github.com/shhdharmen/keyboard-css/blob/main/src/scss/abstracts/_variables.scss) file.
 
 ### Change font size
 
