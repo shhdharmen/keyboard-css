@@ -270,9 +270,7 @@ $kbc-kbd-depth: 4;
 
 ## License and Contributing
 
-Keyboard CSS is licensed under the [MIT](https://github.com/shhdharmen/keyboard-css/blob/main/LICENSE) license. And same is available on Github:
-
-%[https://github.com/shhdharmen/keyboard-css]
+Keyboard CSS is licensed under the [MIT](https://github.com/shhdharmen/keyboard-css/blob/main/LICENSE) license.
 
 ### Contributing
 
