@@ -261,7 +261,6 @@ And then use it in HTML:
 Depth is calculated and applied as multiple shadows. To increase/decrease it, you can change respective variables:
 
 ```scss
-// add size in $kbc-btn-size-map
 $kbc-kbd-depth: 4;
 
 // and then import
