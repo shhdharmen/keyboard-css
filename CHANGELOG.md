@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/shhdharmen/keyboard-css/compare/v1.2.1...v1.2.2) (2020-11-01)
+
+
+### Bug Fixes
+
+* **docs:** paths in doc ([91290c7](https://github.com/shhdharmen/keyboard-css/commit/91290c709431d28a98451ba06cb909c74c641fb9))
+
 ## [1.2.1](https://github.com/shhdharmen/keyboard-css/compare/v1.2.0...v1.2.1) (2020-11-01)
 
 
