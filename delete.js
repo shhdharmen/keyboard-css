@@ -5,7 +5,7 @@ const del = require('del');
     'src/copy/**',
     '!src/copy',
     '!src/copy/index.html',
-    '!src/copy/logo.png',
+    '!src/copy/assets/**',
   ]);
 
   console.log('Deleted files:\n', deletedFilePaths.join('\n'));
