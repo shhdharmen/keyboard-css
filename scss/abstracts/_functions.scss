@@ -1,0 +1,51 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass functions.
+// -----------------------------------------------------------------------------
+@function calculate-box-shadow($depth, $shadow-color) {
+  // stylelint-disable-next-line
+  $box-shadow: 0 0 $shadow-color;
+
+  @for $i from 0 through $depth {
+    // stylelint-disable-next-line
+    $box-shadow: #{$box-shadow}, 0 #{$i}px $shadow-color;
+  }
+
+  @return $box-shadow;
+}
+
+// Color contrast
+@function color-yiq(
+  $color,
+  $dark: $kbc-yiq-text-dark,
+  $light: $kbc-yiq-text-light
+) {
+  // stylelint-disable
+  $r: red($color);
+  $g: green($color);
+  $b: blue($color);
+
+  $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+  // stylelint-enable
+
+  @if ($yiq >= $kbc-yiq-contrasted-threshold) {
+    @return $kbc-dark;
+  } @else {
+    @return $kbc-light;
+  }
+}
+
+@function color-yiq-lightness($color, $delta: 10%) {
+  // stylelint-disable
+  $r: red($color);
+  $g: green($color);
+  $b: blue($color);
+
+  $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+  // stylelint-enable
+
+  @if ($yiq >= $kbc-yiq-contrasted-threshold) {
+    @return -$delta;
+  } @else {
+    @return $delta;
+  }
+}
