@@ -3,6 +3,70 @@
 // -----------------------------------------------------------------------------
 
 .kbc-button {
+  @include kbd-size();
+  @include kbd-color();
+
+  @each $color-name, $color in $kbc-theme-colors {
+    &-#{$color-name} {
+      @include kbd-color($color, color-yiq($color));
+    }
+  }
+
+  @each $size, $options in $kbc-btn-size-map {
+    &-#{$size} {
+      @include kbd-size($options);
+      @include kbd-color($depth: map-get($options, 'depth'));
+    }
+    @each $color-name, $color in $kbc-theme-colors {
+      &-#{$size}.kbc-button-#{$color-name} {
+        @include kbd-color(
+          $color,
+          color-yiq($color),
+          map-get($options, 'depth')
+        );
+      }
+    }
+  }
+
+  backface-visibility: hidden;
+  border: $kbc-btn-border-width solid $kbc-btn-border-color;
+  border-radius: $kbc-btn-border-radius;
+  display: inline-block;
+  font-family: $kbc-kbd-font-family;
+  font-weight: $kbc-btn-font-weight;
+  text-align: $kbc-btn-text-align;
+  transform: translate3d(0, 0, #{$kbc-btn-depth}px);
+  transform-style: preserve-3d;
+  transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
+
+  &.no-container {
+    &::after {
+      border-color: transparent;
+    }
+  }
+
+  &::after {
+    border-style: solid;
+    box-sizing: content-box;
+    content: '';
+    display: block;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
+  }
+}
+
+a.kbc-button {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+button.kbc-button,
+a.kbc-button {
   @include button-size();
   @include button-color();
 
@@ -28,17 +92,8 @@
     }
   }
 
-  backface-visibility: hidden;
-  border: $kbc-btn-border-width solid $kbc-btn-border-color;
-  border-radius: $kbc-btn-border-radius;
   cursor: $kbc-btn-cursor;
-  display: inline-block;
   font-family: $kbc-btn-font-family;
-  font-weight: $kbc-btn-font-weight;
-  text-align: $kbc-btn-text-align;
-  transform: translate3d(0, 0, #{$kbc-btn-depth}px);
-  transform-style: preserve-3d;
-  transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
 
   &:disabled,
   &.disabled {
@@ -52,39 +107,5 @@
   &.hover,
   &.focus {
     outline: none;
-  }
-
-  icon {
-    backface-visibility: hidden;
-    position: absolute;
-    right: $kbc-btn-icon-right;
-    top: $kbc-btn-icon-top;
-    transform-style: preserve-3d;
-  }
-
-  &.no-container {
-    &::after {
-      border-color: transparent;
-    }
-  }
-
-  &::after {
-    border-style: solid;
-    box-sizing: content-box;
-    content: '';
-    display: block;
-    position: absolute;
-    transform-style: preserve-3d;
-    transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
-  }
-}
-
-// stylelint-disable-next-line
-a.kbc-button {
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    text-decoration: none;
   }
 }

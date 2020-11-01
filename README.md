@@ -1,6 +1,6 @@
 <!-- markdownlint-disable -->
 <p align="center">
-    <img src="src/copy/assets/logo.png" alt="Keyboard CSS Logo">
+    <img src="https://raw.githubusercontent.com/shhdharmen/keyboard-css/main/src/copy/assets/logo.png" alt="Keyboard CSS Logo">
 </p>
 
 <p align="center">
@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-    <img src="src/copy/assets/demo.gif" alt="Keyboard CSS Demo">
+    <img src="https://raw.githubusercontent.com/shhdharmen/keyboard-css/main/src/copy/assets/demo.gif" alt="Keyboard CSS Demo">
 </p>
 <!-- markdownlint-restore -->
 
@@ -27,12 +27,18 @@ Keyboard CSS is a library of ready-to-use, cross-browser compatible keyboard lik
 - [Installation](#installation)
 - [Usage](#usage)
   - [Basic Usage](#basic-usage)
+    - [Usage with `kbd`](#usage-with-kbd)
+    - [Usage with `button` and `a`](#usage-with-button-and-a)
   - [Remove Surface Border](#remove-surface-border)
   - [Sizing](#sizing)
   - [States](#states)
   - [Colors](#colors)
 - [Usage with Javascript](#usage-with-javascript)
 - [Advanced Configuration Options with SASS](#advanced-configuration-options-with-sass)
+  - [Variables file](#variables-file)
+  - [Change font size](#change-font-size)
+  - [Add new size](#add-new-size)
+  - [Change depth](#change-depth)
 - [License and Contributing](#license-and-contributing)
   - [Contributing](#contributing)
   - [Code of Conduct](#code-of-conduct)
@@ -60,31 +66,51 @@ yarn add keyboard-css
 
 ## Usage
 
+According to [W3C](https://www.w3.org/TR/2011/WD-html5-author-20110809/the-kbd-element.html), the `kbd` element represents user input (typically keyboard input, although it may also be used to represent other input, such as voice commands).
+
+The main purpose of Keyboard CSS is to enhance look and feel such `kbd` elements, but it can also be used with `button` and `a` elements, for better interactivity (like simulating click).
+
 ### Basic Usage
 
-You just have to add a single class to apply the related styles, i.e. kbc-button, preferably to a `<button>` or `<a>`:
+You just have to add a single class to `kbd`, `button` or `a` to apply the related styles, i.e. **`kbc-button`**
+
+#### Usage with `kbd`
+
+When `.kbc-button` is used with `kbd` element, font-size and line-height is inherited from parent for better accessibility.
+
+```html
+<h3>Press <kbd class="kbc-button">/</kbd> to search this site.</h3>
+<p>Press <kbd class="kbc-button">Ctrl</kbd> + <kbd class="kbc-button">Shift</kbd> + <kbd class="kbc-button">R</kbd> to re-render this page.</p>
+```
+
+![kbd](https://cdn.hashnode.com/res/hashnode/image/upload/v1604225546161/lUeN3BJzF.png)
+
+#### Usage with `button` and `a`
+
+When used with button and a elements, it starts supporting interactions.
 
 ```html
 <button class="kbc-button">K</button>
+<a class="kbc-button">K</a>
 ```
 
 ![.kbc-button](https://cdn.hashnode.com/res/hashnode/image/upload/v1604125963109/kn4Fi5C1y.png)
-
-Great! Your button is now a Keyboard key. Congrats!
 
 ### Remove Surface Border
 
 To remove surface border, simply add `no-container` class.
 
 ```html
-<button class="kbc-button no-container">K</button>
+<kbd class="kbc-button no-container">K</kbd>
 ```
 
 ![.kbc-button.no-container](https://cdn.hashnode.com/res/hashnode/image/upload/v1604126020814/45uX1tLO5.png)
 
 ### Sizing
 
-Total 5 sizes are available. You can add respective class to see the effect:
+Total 5 sizes are available. You can add respective class to see the effect.
+
+> Sizing works with `button` and `a` elements, and not `kbd` element.
 
 | Size              | Use case                                    | Class             |
 | ----------------- | ------------------------------------------- | ----------------- |
@@ -105,6 +131,8 @@ Total 5 sizes are available. You can add respective class to see the effect:
 
 ### States
 
+> States work with `button` and `a` elements, and not `kbd` element.
+
 Like all buttons, this also have 4 states: `:hover`, `:focus`, `:active`, and `:disabled`. You can add classes with same state name to see it statically.
 
 ```html
@@ -121,14 +149,14 @@ Like all buttons, this also have 4 states: `:hover`, `:focus`, `:active`, and `:
 Colors are inspired from [Bootstrap theme colors](https://getbootstrap.com/docs/4.5/getting-started/theming/#theme-colors).
 
 ```html
-<button class="kbc-button">Default</button>
-<button class="kbc-button kbc-button-primary">Primary</button>
-<button class="kbc-button kbc-button-secondary">Secondary</button>
-<button class="kbc-button kbc-button-success">Success</button>
-<button class="kbc-button kbc-button-danger">Danger</button>
-<button class="kbc-button kbc-button-info">Info</button>
-<button class="kbc-button kbc-button-light">Light</button>
-<button class="kbc-button kbc-button-dark">Dark</button>
+<kbd> class="kbc-button">Default</kbd>
+<kbd> class="kbc-button kbc-button-primary">Primary</kbd>
+<kbd> class="kbc-button kbc-button-secondary">Secondary</kbd>
+<kbd> class="kbc-button kbc-button-success">Success</kbd>
+<kbd> class="kbc-button kbc-button-danger">Danger</kbd>
+<kbd> class="kbc-button kbc-button-info">Info</kbd>
+<kbd> class="kbc-button kbc-button-light">Light</kbd>
+<kbd> class="kbc-button kbc-button-dark">Dark</kbd>
 ```
 
 ![.kbc-button colors](https://cdn.hashnode.com/res/hashnode/image/upload/v1604132409394/Wx4yypH83.png)
@@ -170,7 +198,13 @@ document.addEventListener('keyup', (ev) => {
 
 I have used [sass](https://sass-lang.com/) to create this build. Mostly, everything is handled through [sass variables](https://sass-lang.com/documentation/variables), so you can easily override the defaults, thanks to [!default](https://sass-lang.com/documentation/variables#default-values) flag.
 
-For example, to change the default base font-size to 20px, you can do like below:
+### Variables file
+
+You can check all the variables at [_variables.scss](https://github.com/shhdharmen/keyboard-css/blob/main/src/sass/abstracts/_variables.scss) file.
+
+### Change font size
+
+To change the default base font-size of `button` and `a` elements, to 20px, you can do like below:
 
 ```scss
 // assuming you have already done: npm i keyboard-css
@@ -179,7 +213,7 @@ For example, to change the default base font-size to 20px, you can do like below
 $kbc-font-size-base: 20 / 16 * 1rem;
 
 // and then import
-@import "../../node_modules/keyboard-css/sass/main";
+@import "path/to/node_modules/keyboard-css/sass/main";
 ```
 
 or with new [@use](https://sass-lang.com/documentation/at-rules/use) rule, you can achieve the same using below code:
@@ -192,12 +226,14 @@ or with new [@use](https://sass-lang.com/documentation/at-rules/use) rule, you c
 );
 ```
 
+### Add new size
+
 You can also introduce your new size:
 
 ```scss
 // add size in $kbc-btn-size-map
 $kbc-btn-size-map: (
-  "xlg": (
+  "xl": (
     "padding-y": 0.75rem,
     "padding-x": 1.25rem,
     "font-size": 1.5rem,
@@ -214,19 +250,37 @@ $kbc-btn-size-map: (
 @import "path/to/node_modules/keyboard-css/sass/main";
 ```
 
-You can check all the variables at [_variables.scss](./src/sass/abstracts/_variables.scss) file.
+And then use it in HTML:
+
+```html
+<button class="kbc-button kbc-button-xl">XL Button</button>
+```
+
+### Change depth
+
+Depth is calculated and applied as multiple shadows. To increase/decrease it, you can change respective variables:
+
+```scss
+// add size in $kbc-btn-size-map
+$kbc-kbd-depth: 4;
+
+// and then import
+@import "path/to/node_modules/keyboard-css/sass/main";
+```
 
 ## License and Contributing
 
-Keyboard CSS is licensed under the [MIT](./LICENSE) license.
+Keyboard CSS is licensed under the [MIT](https://github.com/shhdharmen/keyboard-css/blob/main/LICENSE) license. And same is available on Github:
+
+%[https://github.com/shhdharmen/keyboard-css]
 
 ### Contributing
 
-🙏 I would ❤️ for you to contribute to Keyboard CSS and help make it even better than it is today! Checkout [contributing](./CONTRIBUTING.md) guidelines for more details.
+🙏 I would ❤️ for you to contribute to Keyboard CSS and help make it even better than it is today! Checkout [contributing](https://github.com/shhdharmen/keyboard-css/blob/main/CONTRIBUTING.md) guidelines for more details.
 
 ### Code of Conduct
 
-This project and everyone participating in it are governed by the [Contributor Covenant Code of Conduct](./CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to <shhdharmen@gmail.com>.
+This project and everyone participating in it are governed by the [Contributor Covenant Code of Conduct](https://github.com/shhdharmen/keyboard-css/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to <shhdharmen@gmail.com>.
 
 ## Contributors ✨
 
