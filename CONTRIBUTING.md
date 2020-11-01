@@ -20,7 +20,13 @@ npm start
 
 ## Building
 
-Building and publishing is done through semantic-release and github actions. You can check the flow at [release.yml](./.github/workflows/release.yml).
+Building and publishing is done through semantic-release and github actions. You can check the flow at [release.yml](./.github/workflows/release.yml) and [.releaserc.json](./.releaserc.json).
+
+As the [@semantic-release/npm](https://github.com/semantic-release/npm) plugin uses the npm CLI to update the package.json version and publish the package, all npm hook scripts will be executed.
+
+We are using the `postversion` hook so it will be executed during the prepare step of [@semantic-release/npm](https://github.com/semantic-release/npm), which allow for example to update files before committing them with the [@semantic-release/git](https://github.com/semantic-release/git) plugin.
+
+More at: [How can I use a npm build script that requires the `package.json`'s version ?](https://semantic-release.gitbook.io/semantic-release/support/faq#how-can-i-use-a-npm-build-script-that-requires-the-package-jsons-version).
 
 <!-- markdownlint-disable -->
 ## <a name="rules"></a> Coding Rules

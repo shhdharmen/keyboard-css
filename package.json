@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp watch",
     "build": "gulp",
-    "build:ci": "node update-version.js",
+    "postversion": "npm run build",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -60,6 +60,7 @@
     "lazypipe": "^1.0.2",
     "lint-staged": "^10.5.0",
     "markdownlint-cli": "^0.24.0",
+    "minimist": "^1.2.5",
     "node-sass": "^4.14.1",
     "postcss": "^8.1.4",
     "prettier": "2.1.2",
