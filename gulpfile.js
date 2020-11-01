@@ -201,7 +201,7 @@ var watchSource = function (done) {
 // gulp
 exports.default = series(
   cleanDist,
-  parallel(buildStyles, buildSVGs, copyFiles)
+  parallel(buildStyles, buildSVGs, copyFiles, copyScss)
 );
 
 // Watch and reload

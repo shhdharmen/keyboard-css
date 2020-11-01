@@ -12,7 +12,7 @@
     [
       "@semantic-release/github",
       {
-        "assets": "dist/**/*.*",
+        "assets": "dist/**",
         "message": "chore(release): ${nextRelease.version} ${new Date().toLocaleString('en-IN', {year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' })} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
