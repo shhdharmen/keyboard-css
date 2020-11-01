@@ -1,4 +1,4 @@
-/*! keyboard-css v1.2.3 | (c) 2020  | MIT License | https://github.com/shhdharmen/keyboard-css.git */
+/*! keyboard-css v1.2.4-beta.1 | (c) 2020  | MIT License | https://github.com/shhdharmen/keyboard-css.git */
 /* stylelint-disable */
 /* line 5, src/scss/components/_button.scss */
 .kbc-button {
@@ -9,19 +9,16 @@
   margin-right: 0.25rem;
   margin-top: 0.25rem;
   padding: 0.1rem 0.4rem;
-  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9,
-    0 3px #d9d9d9, 0 4px #d9d9d9, 0 5px #d9d9d9, 2px 2.5px 4px #adb5bd,
-    0 -1px 2.5px #adb5bd;
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9, 0 3px #d9d9d9, 0 4px #d9d9d9, 0 5px #d9d9d9, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
   background-color: #fff;
   border-color: #e6e6e6;
   color: #343a40;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
   border: 1px solid #e6e6e6;
   border-radius: 0.25rem;
   display: inline-block;
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
-    'Courier New', monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-weight: 400;
   text-align: left;
   transform: translate3d(0, 0, 5px);
@@ -47,9 +44,7 @@
 
 /* line 10, src/scss/components/_button.scss */
 .kbc-button-primary {
-  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff,
-    0 3px #4da3ff, 0 4px #4da3ff, 0 5px #4da3ff, 2px 2.5px 4px #adb5bd,
-    0 -1px 2.5px #adb5bd;
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff, 0 3px #4da3ff, 0 4px #4da3ff, 0 5px #4da3ff, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
   background-color: #007bff;
   border-color: #3395ff;
   color: #f8f9fa;
@@ -62,9 +57,7 @@
 
 /* line 10, src/scss/components/_button.scss */
 .kbc-button-secondary {
-  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2,
-    0 3px #939ba2, 0 4px #939ba2, 0 5px #939ba2, 2px 2.5px 4px #adb5bd,
-    0 -1px 2.5px #adb5bd;
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2, 0 3px #939ba2, 0 4px #939ba2, 0 5px #939ba2, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
   background-color: #6c757d;
   border-color: #868e96;
   color: #f8f9fa;
@@ -77,9 +70,7 @@
 
 /* line 10, src/scss/components/_button.scss */
 .kbc-button-success {
-  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368,
-    0 3px #48d368, 0 4px #48d368, 0 5px #48d368, 2px 2.5px 4px #adb5bd,
-    0 -1px 2.5px #adb5bd;
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368, 0 3px #48d368, 0 4px #48d368, 0 5px #48d368, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
   background-color: #28a745;
   border-color: #34ce57;
   color: #f8f9fa;
@@ -92,9 +83,7 @@
 
 /* line 10, src/scss/components/_button.scss */
 .kbc-button-info {
-  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6,
-    0 3px #36cee6, 0 4px #36cee6, 0 5px #36cee6, 2px 2.5px 4px #adb5bd,
-    0 -1px 2.5px #adb5bd;
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6, 0 3px #36cee6, 0 4px #36cee6, 0 5px #36cee6, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
   background-color: #17a2b8;
   border-color: #1fc8e3;
   color: #f8f9fa;
@@ -107,9 +96,7 @@
 
 /* line 10, src/scss/components/_button.scss */
 .kbc-button-warning {
-  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00,
-    0 3px #ba8b00, 0 4px #ba8b00, 0 5px #ba8b00, 2px 2.5px 4px #adb5bd,
-    0 -1px 2.5px #adb5bd;
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00, 0 3px #ba8b00, 0 4px #ba8b00, 0 5px #ba8b00, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
   background-color: #ffc107;
   border-color: #d39e00;
   color: #343a40;
@@ -122,9 +109,7 @@
 
 /* line 10, src/scss/components/_button.scss */
 .kbc-button-danger {
-  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681,
-    0 3px #e77681, 0 4px #e77681, 0 5px #e77681, 2px 2.5px 4px #adb5bd,
-    0 -1px 2.5px #adb5bd;
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681, 0 3px #e77681, 0 4px #e77681, 0 5px #e77681, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
   background-color: #dc3545;
   border-color: #e4606d;
   color: #f8f9fa;
@@ -137,9 +122,7 @@
 
 /* line 10, src/scss/components/_button.scss */
 .kbc-button-light {
-  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da,
-    0 3px #cbd3da, 0 4px #cbd3da, 0 5px #cbd3da, 2px 2.5px 4px #adb5bd,
-    0 -1px 2.5px #adb5bd;
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da, 0 3px #cbd3da, 0 4px #cbd3da, 0 5px #cbd3da, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
   background-color: #f8f9fa;
   border-color: #dae0e5;
   color: #343a40;
@@ -152,9 +135,7 @@
 
 /* line 10, src/scss/components/_button.scss */
 .kbc-button-dark {
-  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a,
-    0 3px #56606a, 0 4px #56606a, 0 5px #56606a, 2px 2.5px 4px #adb5bd,
-    0 -1px 2.5px #adb5bd;
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a, 0 3px #56606a, 0 4px #56606a, 0 5px #56606a, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
   background-color: #343a40;
   border-color: #4b545c;
   color: #f8f9fa;
@@ -174,8 +155,7 @@
   margin-right: 0.25rem;
   margin-top: 0.25rem;
   padding: 0.1rem 0.3rem;
-  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #fff;
   border-color: #e6e6e6;
   color: #343a40;
@@ -199,8 +179,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-xxs.kbc-button-primary {
-  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #007bff;
   border-color: #3395ff;
   color: #f8f9fa;
@@ -213,8 +192,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-xxs.kbc-button-secondary {
-  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #6c757d;
   border-color: #868e96;
   color: #f8f9fa;
@@ -227,8 +205,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-xxs.kbc-button-success {
-  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #28a745;
   border-color: #34ce57;
   color: #f8f9fa;
@@ -241,8 +218,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-xxs.kbc-button-info {
-  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #17a2b8;
   border-color: #1fc8e3;
   color: #f8f9fa;
@@ -255,8 +231,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-xxs.kbc-button-warning {
-  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #ffc107;
   border-color: #d39e00;
   color: #343a40;
@@ -269,8 +244,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-xxs.kbc-button-danger {
-  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #dc3545;
   border-color: #e4606d;
   color: #f8f9fa;
@@ -283,8 +257,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-xxs.kbc-button-light {
-  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #f8f9fa;
   border-color: #dae0e5;
   color: #343a40;
@@ -297,8 +270,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-xxs.kbc-button-dark {
-  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #343a40;
   border-color: #4b545c;
   color: #f8f9fa;
@@ -318,8 +290,7 @@
   margin-right: 0.25rem;
   margin-top: 0.25rem;
   padding: 0.175rem 0.5rem;
-  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #fff;
   border-color: #e6e6e6;
   color: #343a40;
@@ -343,8 +314,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-xs.kbc-button-primary {
-  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #007bff;
   border-color: #3395ff;
   color: #f8f9fa;
@@ -357,8 +327,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-xs.kbc-button-secondary {
-  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #6c757d;
   border-color: #868e96;
   color: #f8f9fa;
@@ -371,8 +340,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-xs.kbc-button-success {
-  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #28a745;
   border-color: #34ce57;
   color: #f8f9fa;
@@ -385,8 +353,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-xs.kbc-button-info {
-  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #17a2b8;
   border-color: #1fc8e3;
   color: #f8f9fa;
@@ -399,8 +366,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-xs.kbc-button-warning {
-  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #ffc107;
   border-color: #d39e00;
   color: #343a40;
@@ -413,8 +379,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-xs.kbc-button-danger {
-  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #dc3545;
   border-color: #e4606d;
   color: #f8f9fa;
@@ -427,8 +392,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-xs.kbc-button-light {
-  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #f8f9fa;
   border-color: #dae0e5;
   color: #343a40;
@@ -441,8 +405,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-xs.kbc-button-dark {
-  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #343a40;
   border-color: #4b545c;
   color: #f8f9fa;
@@ -462,8 +425,7 @@
   margin-right: 0.25rem;
   margin-top: 0.25rem;
   padding: 0.25rem 0.5rem;
-  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9,
-    0 3px #d9d9d9, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9, 0 3px #d9d9d9, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
   background-color: #fff;
   border-color: #e6e6e6;
   color: #343a40;
@@ -487,8 +449,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-sm.kbc-button-primary {
-  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff,
-    0 3px #4da3ff, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff, 0 3px #4da3ff, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
   background-color: #007bff;
   border-color: #3395ff;
   color: #f8f9fa;
@@ -501,8 +462,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-sm.kbc-button-secondary {
-  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2,
-    0 3px #939ba2, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2, 0 3px #939ba2, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
   background-color: #6c757d;
   border-color: #868e96;
   color: #f8f9fa;
@@ -515,8 +475,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-sm.kbc-button-success {
-  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368,
-    0 3px #48d368, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368, 0 3px #48d368, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
   background-color: #28a745;
   border-color: #34ce57;
   color: #f8f9fa;
@@ -529,8 +488,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-sm.kbc-button-info {
-  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6,
-    0 3px #36cee6, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6, 0 3px #36cee6, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
   background-color: #17a2b8;
   border-color: #1fc8e3;
   color: #f8f9fa;
@@ -543,8 +501,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-sm.kbc-button-warning {
-  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00,
-    0 3px #ba8b00, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00, 0 3px #ba8b00, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
   background-color: #ffc107;
   border-color: #d39e00;
   color: #343a40;
@@ -557,8 +514,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-sm.kbc-button-danger {
-  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681,
-    0 3px #e77681, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681, 0 3px #e77681, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
   background-color: #dc3545;
   border-color: #e4606d;
   color: #f8f9fa;
@@ -571,8 +527,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-sm.kbc-button-light {
-  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da,
-    0 3px #cbd3da, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da, 0 3px #cbd3da, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
   background-color: #f8f9fa;
   border-color: #dae0e5;
   color: #343a40;
@@ -585,8 +540,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-sm.kbc-button-dark {
-  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a,
-    0 3px #56606a, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a, 0 3px #56606a, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
   background-color: #343a40;
   border-color: #4b545c;
   color: #f8f9fa;
@@ -606,9 +560,7 @@
   margin-right: 0.25rem;
   margin-top: 0.25rem;
   padding: 0.5rem 1rem;
-  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9,
-    0 3px #d9d9d9, 0 4px #d9d9d9, 0 5px #d9d9d9, 0 6px #d9d9d9, 0 7px #d9d9d9,
-    0 8px #d9d9d9, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9, 0 3px #d9d9d9, 0 4px #d9d9d9, 0 5px #d9d9d9, 0 6px #d9d9d9, 0 7px #d9d9d9, 0 8px #d9d9d9, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
   background-color: #fff;
   border-color: #e6e6e6;
   color: #343a40;
@@ -632,9 +584,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-lg.kbc-button-primary {
-  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff,
-    0 3px #4da3ff, 0 4px #4da3ff, 0 5px #4da3ff, 0 6px #4da3ff, 0 7px #4da3ff,
-    0 8px #4da3ff, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff, 0 3px #4da3ff, 0 4px #4da3ff, 0 5px #4da3ff, 0 6px #4da3ff, 0 7px #4da3ff, 0 8px #4da3ff, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
   background-color: #007bff;
   border-color: #3395ff;
   color: #f8f9fa;
@@ -647,9 +597,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-lg.kbc-button-secondary {
-  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2,
-    0 3px #939ba2, 0 4px #939ba2, 0 5px #939ba2, 0 6px #939ba2, 0 7px #939ba2,
-    0 8px #939ba2, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2, 0 3px #939ba2, 0 4px #939ba2, 0 5px #939ba2, 0 6px #939ba2, 0 7px #939ba2, 0 8px #939ba2, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
   background-color: #6c757d;
   border-color: #868e96;
   color: #f8f9fa;
@@ -662,9 +610,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-lg.kbc-button-success {
-  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368,
-    0 3px #48d368, 0 4px #48d368, 0 5px #48d368, 0 6px #48d368, 0 7px #48d368,
-    0 8px #48d368, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368, 0 3px #48d368, 0 4px #48d368, 0 5px #48d368, 0 6px #48d368, 0 7px #48d368, 0 8px #48d368, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
   background-color: #28a745;
   border-color: #34ce57;
   color: #f8f9fa;
@@ -677,9 +623,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-lg.kbc-button-info {
-  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6,
-    0 3px #36cee6, 0 4px #36cee6, 0 5px #36cee6, 0 6px #36cee6, 0 7px #36cee6,
-    0 8px #36cee6, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6, 0 3px #36cee6, 0 4px #36cee6, 0 5px #36cee6, 0 6px #36cee6, 0 7px #36cee6, 0 8px #36cee6, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
   background-color: #17a2b8;
   border-color: #1fc8e3;
   color: #f8f9fa;
@@ -692,9 +636,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-lg.kbc-button-warning {
-  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00,
-    0 3px #ba8b00, 0 4px #ba8b00, 0 5px #ba8b00, 0 6px #ba8b00, 0 7px #ba8b00,
-    0 8px #ba8b00, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00, 0 3px #ba8b00, 0 4px #ba8b00, 0 5px #ba8b00, 0 6px #ba8b00, 0 7px #ba8b00, 0 8px #ba8b00, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
   background-color: #ffc107;
   border-color: #d39e00;
   color: #343a40;
@@ -707,9 +649,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-lg.kbc-button-danger {
-  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681,
-    0 3px #e77681, 0 4px #e77681, 0 5px #e77681, 0 6px #e77681, 0 7px #e77681,
-    0 8px #e77681, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681, 0 3px #e77681, 0 4px #e77681, 0 5px #e77681, 0 6px #e77681, 0 7px #e77681, 0 8px #e77681, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
   background-color: #dc3545;
   border-color: #e4606d;
   color: #f8f9fa;
@@ -722,9 +662,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-lg.kbc-button-light {
-  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da,
-    0 3px #cbd3da, 0 4px #cbd3da, 0 5px #cbd3da, 0 6px #cbd3da, 0 7px #cbd3da,
-    0 8px #cbd3da, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da, 0 3px #cbd3da, 0 4px #cbd3da, 0 5px #cbd3da, 0 6px #cbd3da, 0 7px #cbd3da, 0 8px #cbd3da, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
   background-color: #f8f9fa;
   border-color: #dae0e5;
   color: #343a40;
@@ -737,9 +675,7 @@
 
 /* line 21, src/scss/components/_button.scss */
 .kbc-button-lg.kbc-button-dark {
-  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a,
-    0 3px #56606a, 0 4px #56606a, 0 5px #56606a, 0 6px #56606a, 0 7px #56606a,
-    0 8px #56606a, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a, 0 3px #56606a, 0 4px #56606a, 0 5px #56606a, 0 6px #56606a, 0 7px #56606a, 0 8px #56606a, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
   background-color: #343a40;
   border-color: #4b545c;
   color: #f8f9fa;
@@ -772,8 +708,7 @@ a.kbc-button {
 }
 
 /* line 62, src/scss/components/_button.scss */
-a.kbc-button:hover,
-a.kbc-button:focus {
+a.kbc-button:hover, a.kbc-button:focus {
   text-decoration: none;
 }
 
@@ -787,23 +722,16 @@ a.kbc-button {
   margin-right: 0.375rem;
   margin-top: 0.375rem;
   padding: 0.375rem 0.75rem;
-  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9,
-    0 3px #d9d9d9, 0 4px #d9d9d9, 0 5px #d9d9d9, 2px 2.5px 4px #adb5bd,
-    0 -1px 2.5px #adb5bd;
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9, 0 3px #d9d9d9, 0 4px #d9d9d9, 0 5px #d9d9d9, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
   background-color: #fff;
   border-color: #e6e6e6;
   color: #343a40;
   cursor: pointer;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 /* line 119, src/scss/abstracts/_mixins.scss */
-button.kbc-button:hover,
-button.kbc-button:focus,
-button.kbc-button.hover,
-button.kbc-button.focus,
+button.kbc-button:hover, button.kbc-button:focus, button.kbc-button.hover, button.kbc-button.focus,
 a.kbc-button:hover,
 a.kbc-button:focus,
 a.kbc-button.hover,
@@ -812,10 +740,7 @@ a.kbc-button.focus {
 }
 
 /* line 125, src/scss/abstracts/_mixins.scss */
-button.kbc-button:hover::after,
-button.kbc-button:focus::after,
-button.kbc-button.hover::after,
-button.kbc-button.focus::after,
+button.kbc-button:hover::after, button.kbc-button:focus::after, button.kbc-button.hover::after, button.kbc-button.focus::after,
 a.kbc-button:hover::after,
 a.kbc-button:focus::after,
 a.kbc-button.hover::after,
@@ -824,8 +749,7 @@ a.kbc-button.focus::after {
 }
 
 /* line 130, src/scss/abstracts/_mixins.scss */
-button.kbc-button:active,
-button.kbc-button.active,
+button.kbc-button:active, button.kbc-button.active,
 a.kbc-button:active,
 a.kbc-button.active {
   border-color: transparent;
@@ -834,8 +758,7 @@ a.kbc-button.active {
 }
 
 /* line 136, src/scss/abstracts/_mixins.scss */
-button.kbc-button:active::after,
-button.kbc-button.active::after,
+button.kbc-button:active::after, button.kbc-button.active::after,
 a.kbc-button:active::after,
 a.kbc-button.active::after {
   transform: translate3d(0, -5px, 0);
@@ -854,23 +777,18 @@ a.kbc-button::after {
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button:hover,
-button.kbc-button:focus,
-button.kbc-button.hover,
-button.kbc-button.focus,
+button.kbc-button:hover, button.kbc-button:focus, button.kbc-button.hover, button.kbc-button.focus,
 a.kbc-button:hover,
 a.kbc-button:focus,
 a.kbc-button.hover,
 a.kbc-button.focus {
-  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9,
-    0 3px #d9d9d9, 0 4px #d9d9d9, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9, 0 3px #d9d9d9, 0 4px #d9d9d9, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
   background-color: #e6e6e6;
   color: #343a40;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button:active,
-button.kbc-button.active,
+button.kbc-button:active, button.kbc-button.active,
 a.kbc-button:active,
 a.kbc-button.active {
   background-color: #e6e6e6;
@@ -887,32 +805,25 @@ a.kbc-button::after {
 /* line 74, src/scss/components/_button.scss */
 button.kbc-button-primary,
 a.kbc-button-primary {
-  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff,
-    0 3px #4da3ff, 0 4px #4da3ff, 0 5px #4da3ff, 2px 2.5px 4px #adb5bd,
-    0 -1px 2.5px #adb5bd;
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff, 0 3px #4da3ff, 0 4px #4da3ff, 0 5px #4da3ff, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
   background-color: #007bff;
   border-color: #3395ff;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-primary:hover,
-button.kbc-button-primary:focus,
-button.kbc-button-primary.hover,
-button.kbc-button-primary.focus,
+button.kbc-button-primary:hover, button.kbc-button-primary:focus, button.kbc-button-primary.hover, button.kbc-button-primary.focus,
 a.kbc-button-primary:hover,
 a.kbc-button-primary:focus,
 a.kbc-button-primary.hover,
 a.kbc-button-primary.focus {
-  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff,
-    0 3px #4da3ff, 0 4px #4da3ff, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff, 0 3px #4da3ff, 0 4px #4da3ff, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
   background-color: #3395ff;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-primary:active,
-button.kbc-button-primary.active,
+button.kbc-button-primary:active, button.kbc-button-primary.active,
 a.kbc-button-primary:active,
 a.kbc-button-primary.active {
   background-color: #3395ff;
@@ -929,32 +840,25 @@ a.kbc-button-primary::after {
 /* line 74, src/scss/components/_button.scss */
 button.kbc-button-secondary,
 a.kbc-button-secondary {
-  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2,
-    0 3px #939ba2, 0 4px #939ba2, 0 5px #939ba2, 2px 2.5px 4px #adb5bd,
-    0 -1px 2.5px #adb5bd;
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2, 0 3px #939ba2, 0 4px #939ba2, 0 5px #939ba2, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
   background-color: #6c757d;
   border-color: #868e96;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-secondary:hover,
-button.kbc-button-secondary:focus,
-button.kbc-button-secondary.hover,
-button.kbc-button-secondary.focus,
+button.kbc-button-secondary:hover, button.kbc-button-secondary:focus, button.kbc-button-secondary.hover, button.kbc-button-secondary.focus,
 a.kbc-button-secondary:hover,
 a.kbc-button-secondary:focus,
 a.kbc-button-secondary.hover,
 a.kbc-button-secondary.focus {
-  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2,
-    0 3px #939ba2, 0 4px #939ba2, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2, 0 3px #939ba2, 0 4px #939ba2, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
   background-color: #868e96;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-secondary:active,
-button.kbc-button-secondary.active,
+button.kbc-button-secondary:active, button.kbc-button-secondary.active,
 a.kbc-button-secondary:active,
 a.kbc-button-secondary.active {
   background-color: #868e96;
@@ -971,32 +875,25 @@ a.kbc-button-secondary::after {
 /* line 74, src/scss/components/_button.scss */
 button.kbc-button-success,
 a.kbc-button-success {
-  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368,
-    0 3px #48d368, 0 4px #48d368, 0 5px #48d368, 2px 2.5px 4px #adb5bd,
-    0 -1px 2.5px #adb5bd;
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368, 0 3px #48d368, 0 4px #48d368, 0 5px #48d368, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
   background-color: #28a745;
   border-color: #34ce57;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-success:hover,
-button.kbc-button-success:focus,
-button.kbc-button-success.hover,
-button.kbc-button-success.focus,
+button.kbc-button-success:hover, button.kbc-button-success:focus, button.kbc-button-success.hover, button.kbc-button-success.focus,
 a.kbc-button-success:hover,
 a.kbc-button-success:focus,
 a.kbc-button-success.hover,
 a.kbc-button-success.focus {
-  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368,
-    0 3px #48d368, 0 4px #48d368, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368, 0 3px #48d368, 0 4px #48d368, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
   background-color: #34ce57;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-success:active,
-button.kbc-button-success.active,
+button.kbc-button-success:active, button.kbc-button-success.active,
 a.kbc-button-success:active,
 a.kbc-button-success.active {
   background-color: #34ce57;
@@ -1013,32 +910,25 @@ a.kbc-button-success::after {
 /* line 74, src/scss/components/_button.scss */
 button.kbc-button-info,
 a.kbc-button-info {
-  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6,
-    0 3px #36cee6, 0 4px #36cee6, 0 5px #36cee6, 2px 2.5px 4px #adb5bd,
-    0 -1px 2.5px #adb5bd;
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6, 0 3px #36cee6, 0 4px #36cee6, 0 5px #36cee6, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
   background-color: #17a2b8;
   border-color: #1fc8e3;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-info:hover,
-button.kbc-button-info:focus,
-button.kbc-button-info.hover,
-button.kbc-button-info.focus,
+button.kbc-button-info:hover, button.kbc-button-info:focus, button.kbc-button-info.hover, button.kbc-button-info.focus,
 a.kbc-button-info:hover,
 a.kbc-button-info:focus,
 a.kbc-button-info.hover,
 a.kbc-button-info.focus {
-  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6,
-    0 3px #36cee6, 0 4px #36cee6, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6, 0 3px #36cee6, 0 4px #36cee6, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
   background-color: #1fc8e3;
   color: #343a40;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-info:active,
-button.kbc-button-info.active,
+button.kbc-button-info:active, button.kbc-button-info.active,
 a.kbc-button-info:active,
 a.kbc-button-info.active {
   background-color: #1fc8e3;
@@ -1055,32 +945,25 @@ a.kbc-button-info::after {
 /* line 74, src/scss/components/_button.scss */
 button.kbc-button-warning,
 a.kbc-button-warning {
-  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00,
-    0 3px #ba8b00, 0 4px #ba8b00, 0 5px #ba8b00, 2px 2.5px 4px #adb5bd,
-    0 -1px 2.5px #adb5bd;
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00, 0 3px #ba8b00, 0 4px #ba8b00, 0 5px #ba8b00, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
   background-color: #ffc107;
   border-color: #d39e00;
   color: #343a40;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-warning:hover,
-button.kbc-button-warning:focus,
-button.kbc-button-warning.hover,
-button.kbc-button-warning.focus,
+button.kbc-button-warning:hover, button.kbc-button-warning:focus, button.kbc-button-warning.hover, button.kbc-button-warning.focus,
 a.kbc-button-warning:hover,
 a.kbc-button-warning:focus,
 a.kbc-button-warning.hover,
 a.kbc-button-warning.focus {
-  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00,
-    0 3px #ba8b00, 0 4px #ba8b00, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00, 0 3px #ba8b00, 0 4px #ba8b00, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
   background-color: #d39e00;
   color: #343a40;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-warning:active,
-button.kbc-button-warning.active,
+button.kbc-button-warning:active, button.kbc-button-warning.active,
 a.kbc-button-warning:active,
 a.kbc-button-warning.active {
   background-color: #d39e00;
@@ -1097,32 +980,25 @@ a.kbc-button-warning::after {
 /* line 74, src/scss/components/_button.scss */
 button.kbc-button-danger,
 a.kbc-button-danger {
-  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681,
-    0 3px #e77681, 0 4px #e77681, 0 5px #e77681, 2px 2.5px 4px #adb5bd,
-    0 -1px 2.5px #adb5bd;
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681, 0 3px #e77681, 0 4px #e77681, 0 5px #e77681, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
   background-color: #dc3545;
   border-color: #e4606d;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-danger:hover,
-button.kbc-button-danger:focus,
-button.kbc-button-danger.hover,
-button.kbc-button-danger.focus,
+button.kbc-button-danger:hover, button.kbc-button-danger:focus, button.kbc-button-danger.hover, button.kbc-button-danger.focus,
 a.kbc-button-danger:hover,
 a.kbc-button-danger:focus,
 a.kbc-button-danger.hover,
 a.kbc-button-danger.focus {
-  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681,
-    0 3px #e77681, 0 4px #e77681, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681, 0 3px #e77681, 0 4px #e77681, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
   background-color: #e4606d;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-danger:active,
-button.kbc-button-danger.active,
+button.kbc-button-danger:active, button.kbc-button-danger.active,
 a.kbc-button-danger:active,
 a.kbc-button-danger.active {
   background-color: #e4606d;
@@ -1139,32 +1015,25 @@ a.kbc-button-danger::after {
 /* line 74, src/scss/components/_button.scss */
 button.kbc-button-light,
 a.kbc-button-light {
-  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da,
-    0 3px #cbd3da, 0 4px #cbd3da, 0 5px #cbd3da, 2px 2.5px 4px #adb5bd,
-    0 -1px 2.5px #adb5bd;
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da, 0 3px #cbd3da, 0 4px #cbd3da, 0 5px #cbd3da, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
   background-color: #f8f9fa;
   border-color: #dae0e5;
   color: #343a40;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-light:hover,
-button.kbc-button-light:focus,
-button.kbc-button-light.hover,
-button.kbc-button-light.focus,
+button.kbc-button-light:hover, button.kbc-button-light:focus, button.kbc-button-light.hover, button.kbc-button-light.focus,
 a.kbc-button-light:hover,
 a.kbc-button-light:focus,
 a.kbc-button-light.hover,
 a.kbc-button-light.focus {
-  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da,
-    0 3px #cbd3da, 0 4px #cbd3da, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da, 0 3px #cbd3da, 0 4px #cbd3da, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
   background-color: #dae0e5;
   color: #343a40;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-light:active,
-button.kbc-button-light.active,
+button.kbc-button-light:active, button.kbc-button-light.active,
 a.kbc-button-light:active,
 a.kbc-button-light.active {
   background-color: #dae0e5;
@@ -1181,32 +1050,25 @@ a.kbc-button-light::after {
 /* line 74, src/scss/components/_button.scss */
 button.kbc-button-dark,
 a.kbc-button-dark {
-  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a,
-    0 3px #56606a, 0 4px #56606a, 0 5px #56606a, 2px 2.5px 4px #adb5bd,
-    0 -1px 2.5px #adb5bd;
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a, 0 3px #56606a, 0 4px #56606a, 0 5px #56606a, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
   background-color: #343a40;
   border-color: #4b545c;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-dark:hover,
-button.kbc-button-dark:focus,
-button.kbc-button-dark.hover,
-button.kbc-button-dark.focus,
+button.kbc-button-dark:hover, button.kbc-button-dark:focus, button.kbc-button-dark.hover, button.kbc-button-dark.focus,
 a.kbc-button-dark:hover,
 a.kbc-button-dark:focus,
 a.kbc-button-dark.hover,
 a.kbc-button-dark.focus {
-  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a,
-    0 3px #56606a, 0 4px #56606a, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a, 0 3px #56606a, 0 4px #56606a, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
   background-color: #4b545c;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-dark:active,
-button.kbc-button-dark.active,
+button.kbc-button-dark:active, button.kbc-button-dark.active,
 a.kbc-button-dark:active,
 a.kbc-button-dark.active {
   background-color: #4b545c;
@@ -1230,18 +1092,14 @@ a.kbc-button-xxs {
   margin-right: 0.3125rem;
   margin-top: 0.3125rem;
   padding: 0.1rem 0.3rem;
-  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #fff;
   border-color: #e6e6e6;
   color: #343a40;
 }
 
 /* line 119, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xxs:hover,
-button.kbc-button-xxs:focus,
-button.kbc-button-xxs.hover,
-button.kbc-button-xxs.focus,
+button.kbc-button-xxs:hover, button.kbc-button-xxs:focus, button.kbc-button-xxs.hover, button.kbc-button-xxs.focus,
 a.kbc-button-xxs:hover,
 a.kbc-button-xxs:focus,
 a.kbc-button-xxs.hover,
@@ -1250,10 +1108,7 @@ a.kbc-button-xxs.focus {
 }
 
 /* line 125, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xxs:hover::after,
-button.kbc-button-xxs:focus::after,
-button.kbc-button-xxs.hover::after,
-button.kbc-button-xxs.focus::after,
+button.kbc-button-xxs:hover::after, button.kbc-button-xxs:focus::after, button.kbc-button-xxs.hover::after, button.kbc-button-xxs.focus::after,
 a.kbc-button-xxs:hover::after,
 a.kbc-button-xxs:focus::after,
 a.kbc-button-xxs.hover::after,
@@ -1262,8 +1117,7 @@ a.kbc-button-xxs.focus::after {
 }
 
 /* line 130, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xxs:active,
-button.kbc-button-xxs.active,
+button.kbc-button-xxs:active, button.kbc-button-xxs.active,
 a.kbc-button-xxs:active,
 a.kbc-button-xxs.active {
   border-color: transparent;
@@ -1272,8 +1126,7 @@ a.kbc-button-xxs.active {
 }
 
 /* line 136, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xxs:active::after,
-button.kbc-button-xxs.active::after,
+button.kbc-button-xxs:active::after, button.kbc-button-xxs.active::after,
 a.kbc-button-xxs:active::after,
 a.kbc-button-xxs.active::after {
   transform: translate3d(0, -2px, 0);
@@ -1292,23 +1145,18 @@ a.kbc-button-xxs::after {
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xxs:hover,
-button.kbc-button-xxs:focus,
-button.kbc-button-xxs.hover,
-button.kbc-button-xxs.focus,
+button.kbc-button-xxs:hover, button.kbc-button-xxs:focus, button.kbc-button-xxs.hover, button.kbc-button-xxs.focus,
 a.kbc-button-xxs:hover,
 a.kbc-button-xxs:focus,
 a.kbc-button-xxs.hover,
 a.kbc-button-xxs.focus {
-  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 2px 0.5px 4px #adb5bd,
-    0 -1px 0.5px #adb5bd;
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
   background-color: #e6e6e6;
   color: #343a40;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xxs:active,
-button.kbc-button-xxs.active,
+button.kbc-button-xxs:active, button.kbc-button-xxs.active,
 a.kbc-button-xxs:active,
 a.kbc-button-xxs.active {
   background-color: #e6e6e6;
@@ -1325,31 +1173,25 @@ a.kbc-button-xxs::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-xxs.kbc-button-primary,
 a.kbc-button-xxs.kbc-button-primary {
-  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #007bff;
   border-color: #3395ff;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xxs.kbc-button-primary:hover,
-button.kbc-button-xxs.kbc-button-primary:focus,
-button.kbc-button-xxs.kbc-button-primary.hover,
-button.kbc-button-xxs.kbc-button-primary.focus,
+button.kbc-button-xxs.kbc-button-primary:hover, button.kbc-button-xxs.kbc-button-primary:focus, button.kbc-button-xxs.kbc-button-primary.hover, button.kbc-button-xxs.kbc-button-primary.focus,
 a.kbc-button-xxs.kbc-button-primary:hover,
 a.kbc-button-xxs.kbc-button-primary:focus,
 a.kbc-button-xxs.kbc-button-primary.hover,
 a.kbc-button-xxs.kbc-button-primary.focus {
-  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 2px 0.5px 4px #adb5bd,
-    0 -1px 0.5px #adb5bd;
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
   background-color: #3395ff;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xxs.kbc-button-primary:active,
-button.kbc-button-xxs.kbc-button-primary.active,
+button.kbc-button-xxs.kbc-button-primary:active, button.kbc-button-xxs.kbc-button-primary.active,
 a.kbc-button-xxs.kbc-button-primary:active,
 a.kbc-button-xxs.kbc-button-primary.active {
   background-color: #3395ff;
@@ -1366,31 +1208,25 @@ a.kbc-button-xxs.kbc-button-primary::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-xxs.kbc-button-secondary,
 a.kbc-button-xxs.kbc-button-secondary {
-  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #6c757d;
   border-color: #868e96;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xxs.kbc-button-secondary:hover,
-button.kbc-button-xxs.kbc-button-secondary:focus,
-button.kbc-button-xxs.kbc-button-secondary.hover,
-button.kbc-button-xxs.kbc-button-secondary.focus,
+button.kbc-button-xxs.kbc-button-secondary:hover, button.kbc-button-xxs.kbc-button-secondary:focus, button.kbc-button-xxs.kbc-button-secondary.hover, button.kbc-button-xxs.kbc-button-secondary.focus,
 a.kbc-button-xxs.kbc-button-secondary:hover,
 a.kbc-button-xxs.kbc-button-secondary:focus,
 a.kbc-button-xxs.kbc-button-secondary.hover,
 a.kbc-button-xxs.kbc-button-secondary.focus {
-  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 2px 0.5px 4px #adb5bd,
-    0 -1px 0.5px #adb5bd;
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
   background-color: #868e96;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xxs.kbc-button-secondary:active,
-button.kbc-button-xxs.kbc-button-secondary.active,
+button.kbc-button-xxs.kbc-button-secondary:active, button.kbc-button-xxs.kbc-button-secondary.active,
 a.kbc-button-xxs.kbc-button-secondary:active,
 a.kbc-button-xxs.kbc-button-secondary.active {
   background-color: #868e96;
@@ -1407,31 +1243,25 @@ a.kbc-button-xxs.kbc-button-secondary::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-xxs.kbc-button-success,
 a.kbc-button-xxs.kbc-button-success {
-  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #28a745;
   border-color: #34ce57;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xxs.kbc-button-success:hover,
-button.kbc-button-xxs.kbc-button-success:focus,
-button.kbc-button-xxs.kbc-button-success.hover,
-button.kbc-button-xxs.kbc-button-success.focus,
+button.kbc-button-xxs.kbc-button-success:hover, button.kbc-button-xxs.kbc-button-success:focus, button.kbc-button-xxs.kbc-button-success.hover, button.kbc-button-xxs.kbc-button-success.focus,
 a.kbc-button-xxs.kbc-button-success:hover,
 a.kbc-button-xxs.kbc-button-success:focus,
 a.kbc-button-xxs.kbc-button-success.hover,
 a.kbc-button-xxs.kbc-button-success.focus {
-  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 2px 0.5px 4px #adb5bd,
-    0 -1px 0.5px #adb5bd;
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
   background-color: #34ce57;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xxs.kbc-button-success:active,
-button.kbc-button-xxs.kbc-button-success.active,
+button.kbc-button-xxs.kbc-button-success:active, button.kbc-button-xxs.kbc-button-success.active,
 a.kbc-button-xxs.kbc-button-success:active,
 a.kbc-button-xxs.kbc-button-success.active {
   background-color: #34ce57;
@@ -1448,31 +1278,25 @@ a.kbc-button-xxs.kbc-button-success::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-xxs.kbc-button-info,
 a.kbc-button-xxs.kbc-button-info {
-  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #17a2b8;
   border-color: #1fc8e3;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xxs.kbc-button-info:hover,
-button.kbc-button-xxs.kbc-button-info:focus,
-button.kbc-button-xxs.kbc-button-info.hover,
-button.kbc-button-xxs.kbc-button-info.focus,
+button.kbc-button-xxs.kbc-button-info:hover, button.kbc-button-xxs.kbc-button-info:focus, button.kbc-button-xxs.kbc-button-info.hover, button.kbc-button-xxs.kbc-button-info.focus,
 a.kbc-button-xxs.kbc-button-info:hover,
 a.kbc-button-xxs.kbc-button-info:focus,
 a.kbc-button-xxs.kbc-button-info.hover,
 a.kbc-button-xxs.kbc-button-info.focus {
-  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 2px 0.5px 4px #adb5bd,
-    0 -1px 0.5px #adb5bd;
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
   background-color: #1fc8e3;
   color: #343a40;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xxs.kbc-button-info:active,
-button.kbc-button-xxs.kbc-button-info.active,
+button.kbc-button-xxs.kbc-button-info:active, button.kbc-button-xxs.kbc-button-info.active,
 a.kbc-button-xxs.kbc-button-info:active,
 a.kbc-button-xxs.kbc-button-info.active {
   background-color: #1fc8e3;
@@ -1489,31 +1313,25 @@ a.kbc-button-xxs.kbc-button-info::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-xxs.kbc-button-warning,
 a.kbc-button-xxs.kbc-button-warning {
-  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #ffc107;
   border-color: #d39e00;
   color: #343a40;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xxs.kbc-button-warning:hover,
-button.kbc-button-xxs.kbc-button-warning:focus,
-button.kbc-button-xxs.kbc-button-warning.hover,
-button.kbc-button-xxs.kbc-button-warning.focus,
+button.kbc-button-xxs.kbc-button-warning:hover, button.kbc-button-xxs.kbc-button-warning:focus, button.kbc-button-xxs.kbc-button-warning.hover, button.kbc-button-xxs.kbc-button-warning.focus,
 a.kbc-button-xxs.kbc-button-warning:hover,
 a.kbc-button-xxs.kbc-button-warning:focus,
 a.kbc-button-xxs.kbc-button-warning.hover,
 a.kbc-button-xxs.kbc-button-warning.focus {
-  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 2px 0.5px 4px #adb5bd,
-    0 -1px 0.5px #adb5bd;
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
   background-color: #d39e00;
   color: #343a40;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xxs.kbc-button-warning:active,
-button.kbc-button-xxs.kbc-button-warning.active,
+button.kbc-button-xxs.kbc-button-warning:active, button.kbc-button-xxs.kbc-button-warning.active,
 a.kbc-button-xxs.kbc-button-warning:active,
 a.kbc-button-xxs.kbc-button-warning.active {
   background-color: #d39e00;
@@ -1530,31 +1348,25 @@ a.kbc-button-xxs.kbc-button-warning::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-xxs.kbc-button-danger,
 a.kbc-button-xxs.kbc-button-danger {
-  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #dc3545;
   border-color: #e4606d;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xxs.kbc-button-danger:hover,
-button.kbc-button-xxs.kbc-button-danger:focus,
-button.kbc-button-xxs.kbc-button-danger.hover,
-button.kbc-button-xxs.kbc-button-danger.focus,
+button.kbc-button-xxs.kbc-button-danger:hover, button.kbc-button-xxs.kbc-button-danger:focus, button.kbc-button-xxs.kbc-button-danger.hover, button.kbc-button-xxs.kbc-button-danger.focus,
 a.kbc-button-xxs.kbc-button-danger:hover,
 a.kbc-button-xxs.kbc-button-danger:focus,
 a.kbc-button-xxs.kbc-button-danger.hover,
 a.kbc-button-xxs.kbc-button-danger.focus {
-  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 2px 0.5px 4px #adb5bd,
-    0 -1px 0.5px #adb5bd;
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
   background-color: #e4606d;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xxs.kbc-button-danger:active,
-button.kbc-button-xxs.kbc-button-danger.active,
+button.kbc-button-xxs.kbc-button-danger:active, button.kbc-button-xxs.kbc-button-danger.active,
 a.kbc-button-xxs.kbc-button-danger:active,
 a.kbc-button-xxs.kbc-button-danger.active {
   background-color: #e4606d;
@@ -1571,31 +1383,25 @@ a.kbc-button-xxs.kbc-button-danger::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-xxs.kbc-button-light,
 a.kbc-button-xxs.kbc-button-light {
-  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #f8f9fa;
   border-color: #dae0e5;
   color: #343a40;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xxs.kbc-button-light:hover,
-button.kbc-button-xxs.kbc-button-light:focus,
-button.kbc-button-xxs.kbc-button-light.hover,
-button.kbc-button-xxs.kbc-button-light.focus,
+button.kbc-button-xxs.kbc-button-light:hover, button.kbc-button-xxs.kbc-button-light:focus, button.kbc-button-xxs.kbc-button-light.hover, button.kbc-button-xxs.kbc-button-light.focus,
 a.kbc-button-xxs.kbc-button-light:hover,
 a.kbc-button-xxs.kbc-button-light:focus,
 a.kbc-button-xxs.kbc-button-light.hover,
 a.kbc-button-xxs.kbc-button-light.focus {
-  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 2px 0.5px 4px #adb5bd,
-    0 -1px 0.5px #adb5bd;
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
   background-color: #dae0e5;
   color: #343a40;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xxs.kbc-button-light:active,
-button.kbc-button-xxs.kbc-button-light.active,
+button.kbc-button-xxs.kbc-button-light:active, button.kbc-button-xxs.kbc-button-light.active,
 a.kbc-button-xxs.kbc-button-light:active,
 a.kbc-button-xxs.kbc-button-light.active {
   background-color: #dae0e5;
@@ -1612,31 +1418,25 @@ a.kbc-button-xxs.kbc-button-light::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-xxs.kbc-button-dark,
 a.kbc-button-xxs.kbc-button-dark {
-  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #343a40;
   border-color: #4b545c;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xxs.kbc-button-dark:hover,
-button.kbc-button-xxs.kbc-button-dark:focus,
-button.kbc-button-xxs.kbc-button-dark.hover,
-button.kbc-button-xxs.kbc-button-dark.focus,
+button.kbc-button-xxs.kbc-button-dark:hover, button.kbc-button-xxs.kbc-button-dark:focus, button.kbc-button-xxs.kbc-button-dark.hover, button.kbc-button-xxs.kbc-button-dark.focus,
 a.kbc-button-xxs.kbc-button-dark:hover,
 a.kbc-button-xxs.kbc-button-dark:focus,
 a.kbc-button-xxs.kbc-button-dark.hover,
 a.kbc-button-xxs.kbc-button-dark.focus {
-  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 2px 0.5px 4px #adb5bd,
-    0 -1px 0.5px #adb5bd;
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
   background-color: #4b545c;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xxs.kbc-button-dark:active,
-button.kbc-button-xxs.kbc-button-dark.active,
+button.kbc-button-xxs.kbc-button-dark:active, button.kbc-button-xxs.kbc-button-dark.active,
 a.kbc-button-xxs.kbc-button-dark:active,
 a.kbc-button-xxs.kbc-button-dark.active {
   background-color: #4b545c;
@@ -1660,18 +1460,14 @@ a.kbc-button-xs {
   margin-right: 0.3125rem;
   margin-top: 0.3125rem;
   padding: 0.175rem 0.5rem;
-  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #fff;
   border-color: #e6e6e6;
   color: #343a40;
 }
 
 /* line 119, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xs:hover,
-button.kbc-button-xs:focus,
-button.kbc-button-xs.hover,
-button.kbc-button-xs.focus,
+button.kbc-button-xs:hover, button.kbc-button-xs:focus, button.kbc-button-xs.hover, button.kbc-button-xs.focus,
 a.kbc-button-xs:hover,
 a.kbc-button-xs:focus,
 a.kbc-button-xs.hover,
@@ -1680,10 +1476,7 @@ a.kbc-button-xs.focus {
 }
 
 /* line 125, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xs:hover::after,
-button.kbc-button-xs:focus::after,
-button.kbc-button-xs.hover::after,
-button.kbc-button-xs.focus::after,
+button.kbc-button-xs:hover::after, button.kbc-button-xs:focus::after, button.kbc-button-xs.hover::after, button.kbc-button-xs.focus::after,
 a.kbc-button-xs:hover::after,
 a.kbc-button-xs:focus::after,
 a.kbc-button-xs.hover::after,
@@ -1692,8 +1485,7 @@ a.kbc-button-xs.focus::after {
 }
 
 /* line 130, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xs:active,
-button.kbc-button-xs.active,
+button.kbc-button-xs:active, button.kbc-button-xs.active,
 a.kbc-button-xs:active,
 a.kbc-button-xs.active {
   border-color: transparent;
@@ -1702,8 +1494,7 @@ a.kbc-button-xs.active {
 }
 
 /* line 136, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xs:active::after,
-button.kbc-button-xs.active::after,
+button.kbc-button-xs:active::after, button.kbc-button-xs.active::after,
 a.kbc-button-xs:active::after,
 a.kbc-button-xs.active::after {
   transform: translate3d(0, -2px, 0);
@@ -1722,23 +1513,18 @@ a.kbc-button-xs::after {
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xs:hover,
-button.kbc-button-xs:focus,
-button.kbc-button-xs.hover,
-button.kbc-button-xs.focus,
+button.kbc-button-xs:hover, button.kbc-button-xs:focus, button.kbc-button-xs.hover, button.kbc-button-xs.focus,
 a.kbc-button-xs:hover,
 a.kbc-button-xs:focus,
 a.kbc-button-xs.hover,
 a.kbc-button-xs.focus {
-  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 2px 0.5px 4px #adb5bd,
-    0 -1px 0.5px #adb5bd;
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
   background-color: #e6e6e6;
   color: #343a40;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xs:active,
-button.kbc-button-xs.active,
+button.kbc-button-xs:active, button.kbc-button-xs.active,
 a.kbc-button-xs:active,
 a.kbc-button-xs.active {
   background-color: #e6e6e6;
@@ -1755,31 +1541,25 @@ a.kbc-button-xs::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-xs.kbc-button-primary,
 a.kbc-button-xs.kbc-button-primary {
-  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #007bff;
   border-color: #3395ff;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xs.kbc-button-primary:hover,
-button.kbc-button-xs.kbc-button-primary:focus,
-button.kbc-button-xs.kbc-button-primary.hover,
-button.kbc-button-xs.kbc-button-primary.focus,
+button.kbc-button-xs.kbc-button-primary:hover, button.kbc-button-xs.kbc-button-primary:focus, button.kbc-button-xs.kbc-button-primary.hover, button.kbc-button-xs.kbc-button-primary.focus,
 a.kbc-button-xs.kbc-button-primary:hover,
 a.kbc-button-xs.kbc-button-primary:focus,
 a.kbc-button-xs.kbc-button-primary.hover,
 a.kbc-button-xs.kbc-button-primary.focus {
-  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 2px 0.5px 4px #adb5bd,
-    0 -1px 0.5px #adb5bd;
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
   background-color: #3395ff;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xs.kbc-button-primary:active,
-button.kbc-button-xs.kbc-button-primary.active,
+button.kbc-button-xs.kbc-button-primary:active, button.kbc-button-xs.kbc-button-primary.active,
 a.kbc-button-xs.kbc-button-primary:active,
 a.kbc-button-xs.kbc-button-primary.active {
   background-color: #3395ff;
@@ -1796,31 +1576,25 @@ a.kbc-button-xs.kbc-button-primary::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-xs.kbc-button-secondary,
 a.kbc-button-xs.kbc-button-secondary {
-  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #6c757d;
   border-color: #868e96;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xs.kbc-button-secondary:hover,
-button.kbc-button-xs.kbc-button-secondary:focus,
-button.kbc-button-xs.kbc-button-secondary.hover,
-button.kbc-button-xs.kbc-button-secondary.focus,
+button.kbc-button-xs.kbc-button-secondary:hover, button.kbc-button-xs.kbc-button-secondary:focus, button.kbc-button-xs.kbc-button-secondary.hover, button.kbc-button-xs.kbc-button-secondary.focus,
 a.kbc-button-xs.kbc-button-secondary:hover,
 a.kbc-button-xs.kbc-button-secondary:focus,
 a.kbc-button-xs.kbc-button-secondary.hover,
 a.kbc-button-xs.kbc-button-secondary.focus {
-  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 2px 0.5px 4px #adb5bd,
-    0 -1px 0.5px #adb5bd;
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
   background-color: #868e96;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xs.kbc-button-secondary:active,
-button.kbc-button-xs.kbc-button-secondary.active,
+button.kbc-button-xs.kbc-button-secondary:active, button.kbc-button-xs.kbc-button-secondary.active,
 a.kbc-button-xs.kbc-button-secondary:active,
 a.kbc-button-xs.kbc-button-secondary.active {
   background-color: #868e96;
@@ -1837,31 +1611,25 @@ a.kbc-button-xs.kbc-button-secondary::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-xs.kbc-button-success,
 a.kbc-button-xs.kbc-button-success {
-  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #28a745;
   border-color: #34ce57;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xs.kbc-button-success:hover,
-button.kbc-button-xs.kbc-button-success:focus,
-button.kbc-button-xs.kbc-button-success.hover,
-button.kbc-button-xs.kbc-button-success.focus,
+button.kbc-button-xs.kbc-button-success:hover, button.kbc-button-xs.kbc-button-success:focus, button.kbc-button-xs.kbc-button-success.hover, button.kbc-button-xs.kbc-button-success.focus,
 a.kbc-button-xs.kbc-button-success:hover,
 a.kbc-button-xs.kbc-button-success:focus,
 a.kbc-button-xs.kbc-button-success.hover,
 a.kbc-button-xs.kbc-button-success.focus {
-  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 2px 0.5px 4px #adb5bd,
-    0 -1px 0.5px #adb5bd;
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
   background-color: #34ce57;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xs.kbc-button-success:active,
-button.kbc-button-xs.kbc-button-success.active,
+button.kbc-button-xs.kbc-button-success:active, button.kbc-button-xs.kbc-button-success.active,
 a.kbc-button-xs.kbc-button-success:active,
 a.kbc-button-xs.kbc-button-success.active {
   background-color: #34ce57;
@@ -1878,31 +1646,25 @@ a.kbc-button-xs.kbc-button-success::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-xs.kbc-button-info,
 a.kbc-button-xs.kbc-button-info {
-  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #17a2b8;
   border-color: #1fc8e3;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xs.kbc-button-info:hover,
-button.kbc-button-xs.kbc-button-info:focus,
-button.kbc-button-xs.kbc-button-info.hover,
-button.kbc-button-xs.kbc-button-info.focus,
+button.kbc-button-xs.kbc-button-info:hover, button.kbc-button-xs.kbc-button-info:focus, button.kbc-button-xs.kbc-button-info.hover, button.kbc-button-xs.kbc-button-info.focus,
 a.kbc-button-xs.kbc-button-info:hover,
 a.kbc-button-xs.kbc-button-info:focus,
 a.kbc-button-xs.kbc-button-info.hover,
 a.kbc-button-xs.kbc-button-info.focus {
-  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 2px 0.5px 4px #adb5bd,
-    0 -1px 0.5px #adb5bd;
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
   background-color: #1fc8e3;
   color: #343a40;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xs.kbc-button-info:active,
-button.kbc-button-xs.kbc-button-info.active,
+button.kbc-button-xs.kbc-button-info:active, button.kbc-button-xs.kbc-button-info.active,
 a.kbc-button-xs.kbc-button-info:active,
 a.kbc-button-xs.kbc-button-info.active {
   background-color: #1fc8e3;
@@ -1919,31 +1681,25 @@ a.kbc-button-xs.kbc-button-info::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-xs.kbc-button-warning,
 a.kbc-button-xs.kbc-button-warning {
-  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #ffc107;
   border-color: #d39e00;
   color: #343a40;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xs.kbc-button-warning:hover,
-button.kbc-button-xs.kbc-button-warning:focus,
-button.kbc-button-xs.kbc-button-warning.hover,
-button.kbc-button-xs.kbc-button-warning.focus,
+button.kbc-button-xs.kbc-button-warning:hover, button.kbc-button-xs.kbc-button-warning:focus, button.kbc-button-xs.kbc-button-warning.hover, button.kbc-button-xs.kbc-button-warning.focus,
 a.kbc-button-xs.kbc-button-warning:hover,
 a.kbc-button-xs.kbc-button-warning:focus,
 a.kbc-button-xs.kbc-button-warning.hover,
 a.kbc-button-xs.kbc-button-warning.focus {
-  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 2px 0.5px 4px #adb5bd,
-    0 -1px 0.5px #adb5bd;
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
   background-color: #d39e00;
   color: #343a40;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xs.kbc-button-warning:active,
-button.kbc-button-xs.kbc-button-warning.active,
+button.kbc-button-xs.kbc-button-warning:active, button.kbc-button-xs.kbc-button-warning.active,
 a.kbc-button-xs.kbc-button-warning:active,
 a.kbc-button-xs.kbc-button-warning.active {
   background-color: #d39e00;
@@ -1960,31 +1716,25 @@ a.kbc-button-xs.kbc-button-warning::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-xs.kbc-button-danger,
 a.kbc-button-xs.kbc-button-danger {
-  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #dc3545;
   border-color: #e4606d;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xs.kbc-button-danger:hover,
-button.kbc-button-xs.kbc-button-danger:focus,
-button.kbc-button-xs.kbc-button-danger.hover,
-button.kbc-button-xs.kbc-button-danger.focus,
+button.kbc-button-xs.kbc-button-danger:hover, button.kbc-button-xs.kbc-button-danger:focus, button.kbc-button-xs.kbc-button-danger.hover, button.kbc-button-xs.kbc-button-danger.focus,
 a.kbc-button-xs.kbc-button-danger:hover,
 a.kbc-button-xs.kbc-button-danger:focus,
 a.kbc-button-xs.kbc-button-danger.hover,
 a.kbc-button-xs.kbc-button-danger.focus {
-  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 2px 0.5px 4px #adb5bd,
-    0 -1px 0.5px #adb5bd;
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
   background-color: #e4606d;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xs.kbc-button-danger:active,
-button.kbc-button-xs.kbc-button-danger.active,
+button.kbc-button-xs.kbc-button-danger:active, button.kbc-button-xs.kbc-button-danger.active,
 a.kbc-button-xs.kbc-button-danger:active,
 a.kbc-button-xs.kbc-button-danger.active {
   background-color: #e4606d;
@@ -2001,31 +1751,25 @@ a.kbc-button-xs.kbc-button-danger::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-xs.kbc-button-light,
 a.kbc-button-xs.kbc-button-light {
-  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #f8f9fa;
   border-color: #dae0e5;
   color: #343a40;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xs.kbc-button-light:hover,
-button.kbc-button-xs.kbc-button-light:focus,
-button.kbc-button-xs.kbc-button-light.hover,
-button.kbc-button-xs.kbc-button-light.focus,
+button.kbc-button-xs.kbc-button-light:hover, button.kbc-button-xs.kbc-button-light:focus, button.kbc-button-xs.kbc-button-light.hover, button.kbc-button-xs.kbc-button-light.focus,
 a.kbc-button-xs.kbc-button-light:hover,
 a.kbc-button-xs.kbc-button-light:focus,
 a.kbc-button-xs.kbc-button-light.hover,
 a.kbc-button-xs.kbc-button-light.focus {
-  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 2px 0.5px 4px #adb5bd,
-    0 -1px 0.5px #adb5bd;
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
   background-color: #dae0e5;
   color: #343a40;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xs.kbc-button-light:active,
-button.kbc-button-xs.kbc-button-light.active,
+button.kbc-button-xs.kbc-button-light:active, button.kbc-button-xs.kbc-button-light.active,
 a.kbc-button-xs.kbc-button-light:active,
 a.kbc-button-xs.kbc-button-light.active {
   background-color: #dae0e5;
@@ -2042,31 +1786,25 @@ a.kbc-button-xs.kbc-button-light::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-xs.kbc-button-dark,
 a.kbc-button-xs.kbc-button-dark {
-  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #343a40;
   border-color: #4b545c;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xs.kbc-button-dark:hover,
-button.kbc-button-xs.kbc-button-dark:focus,
-button.kbc-button-xs.kbc-button-dark.hover,
-button.kbc-button-xs.kbc-button-dark.focus,
+button.kbc-button-xs.kbc-button-dark:hover, button.kbc-button-xs.kbc-button-dark:focus, button.kbc-button-xs.kbc-button-dark.hover, button.kbc-button-xs.kbc-button-dark.focus,
 a.kbc-button-xs.kbc-button-dark:hover,
 a.kbc-button-xs.kbc-button-dark:focus,
 a.kbc-button-xs.kbc-button-dark.hover,
 a.kbc-button-xs.kbc-button-dark.focus {
-  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 2px 0.5px 4px #adb5bd,
-    0 -1px 0.5px #adb5bd;
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 2px 0.5px 4px #adb5bd, 0 -1px 0.5px #adb5bd;
   background-color: #4b545c;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-xs.kbc-button-dark:active,
-button.kbc-button-xs.kbc-button-dark.active,
+button.kbc-button-xs.kbc-button-dark:active, button.kbc-button-xs.kbc-button-dark.active,
 a.kbc-button-xs.kbc-button-dark:active,
 a.kbc-button-xs.kbc-button-dark.active {
   background-color: #4b545c;
@@ -2090,18 +1828,14 @@ a.kbc-button-sm {
   margin-right: 0.34375rem;
   margin-top: 0.34375rem;
   padding: 0.25rem 0.5rem;
-  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9,
-    0 3px #d9d9d9, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9, 0 3px #d9d9d9, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
   background-color: #fff;
   border-color: #e6e6e6;
   color: #343a40;
 }
 
 /* line 119, src/scss/abstracts/_mixins.scss */
-button.kbc-button-sm:hover,
-button.kbc-button-sm:focus,
-button.kbc-button-sm.hover,
-button.kbc-button-sm.focus,
+button.kbc-button-sm:hover, button.kbc-button-sm:focus, button.kbc-button-sm.hover, button.kbc-button-sm.focus,
 a.kbc-button-sm:hover,
 a.kbc-button-sm:focus,
 a.kbc-button-sm.hover,
@@ -2110,10 +1844,7 @@ a.kbc-button-sm.focus {
 }
 
 /* line 125, src/scss/abstracts/_mixins.scss */
-button.kbc-button-sm:hover::after,
-button.kbc-button-sm:focus::after,
-button.kbc-button-sm.hover::after,
-button.kbc-button-sm.focus::after,
+button.kbc-button-sm:hover::after, button.kbc-button-sm:focus::after, button.kbc-button-sm.hover::after, button.kbc-button-sm.focus::after,
 a.kbc-button-sm:hover::after,
 a.kbc-button-sm:focus::after,
 a.kbc-button-sm.hover::after,
@@ -2122,8 +1853,7 @@ a.kbc-button-sm.focus::after {
 }
 
 /* line 130, src/scss/abstracts/_mixins.scss */
-button.kbc-button-sm:active,
-button.kbc-button-sm.active,
+button.kbc-button-sm:active, button.kbc-button-sm.active,
 a.kbc-button-sm:active,
 a.kbc-button-sm.active {
   border-color: transparent;
@@ -2132,8 +1862,7 @@ a.kbc-button-sm.active {
 }
 
 /* line 136, src/scss/abstracts/_mixins.scss */
-button.kbc-button-sm:active::after,
-button.kbc-button-sm.active::after,
+button.kbc-button-sm:active::after, button.kbc-button-sm.active::after,
 a.kbc-button-sm:active::after,
 a.kbc-button-sm.active::after {
   transform: translate3d(0, -3px, 0);
@@ -2152,23 +1881,18 @@ a.kbc-button-sm::after {
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-sm:hover,
-button.kbc-button-sm:focus,
-button.kbc-button-sm.hover,
-button.kbc-button-sm.focus,
+button.kbc-button-sm:hover, button.kbc-button-sm:focus, button.kbc-button-sm.hover, button.kbc-button-sm.focus,
 a.kbc-button-sm:hover,
 a.kbc-button-sm:focus,
 a.kbc-button-sm.hover,
 a.kbc-button-sm.focus {
-  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #e6e6e6;
   color: #343a40;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-sm:active,
-button.kbc-button-sm.active,
+button.kbc-button-sm:active, button.kbc-button-sm.active,
 a.kbc-button-sm:active,
 a.kbc-button-sm.active {
   background-color: #e6e6e6;
@@ -2185,31 +1909,25 @@ a.kbc-button-sm::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-sm.kbc-button-primary,
 a.kbc-button-sm.kbc-button-primary {
-  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff,
-    0 3px #4da3ff, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff, 0 3px #4da3ff, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
   background-color: #007bff;
   border-color: #3395ff;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-sm.kbc-button-primary:hover,
-button.kbc-button-sm.kbc-button-primary:focus,
-button.kbc-button-sm.kbc-button-primary.hover,
-button.kbc-button-sm.kbc-button-primary.focus,
+button.kbc-button-sm.kbc-button-primary:hover, button.kbc-button-sm.kbc-button-primary:focus, button.kbc-button-sm.kbc-button-primary.hover, button.kbc-button-sm.kbc-button-primary.focus,
 a.kbc-button-sm.kbc-button-primary:hover,
 a.kbc-button-sm.kbc-button-primary:focus,
 a.kbc-button-sm.kbc-button-primary.hover,
 a.kbc-button-sm.kbc-button-primary.focus {
-  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #3395ff;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-sm.kbc-button-primary:active,
-button.kbc-button-sm.kbc-button-primary.active,
+button.kbc-button-sm.kbc-button-primary:active, button.kbc-button-sm.kbc-button-primary.active,
 a.kbc-button-sm.kbc-button-primary:active,
 a.kbc-button-sm.kbc-button-primary.active {
   background-color: #3395ff;
@@ -2226,31 +1944,25 @@ a.kbc-button-sm.kbc-button-primary::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-sm.kbc-button-secondary,
 a.kbc-button-sm.kbc-button-secondary {
-  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2,
-    0 3px #939ba2, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2, 0 3px #939ba2, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
   background-color: #6c757d;
   border-color: #868e96;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-sm.kbc-button-secondary:hover,
-button.kbc-button-sm.kbc-button-secondary:focus,
-button.kbc-button-sm.kbc-button-secondary.hover,
-button.kbc-button-sm.kbc-button-secondary.focus,
+button.kbc-button-sm.kbc-button-secondary:hover, button.kbc-button-sm.kbc-button-secondary:focus, button.kbc-button-sm.kbc-button-secondary.hover, button.kbc-button-sm.kbc-button-secondary.focus,
 a.kbc-button-sm.kbc-button-secondary:hover,
 a.kbc-button-sm.kbc-button-secondary:focus,
 a.kbc-button-sm.kbc-button-secondary.hover,
 a.kbc-button-sm.kbc-button-secondary.focus {
-  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #868e96;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-sm.kbc-button-secondary:active,
-button.kbc-button-sm.kbc-button-secondary.active,
+button.kbc-button-sm.kbc-button-secondary:active, button.kbc-button-sm.kbc-button-secondary.active,
 a.kbc-button-sm.kbc-button-secondary:active,
 a.kbc-button-sm.kbc-button-secondary.active {
   background-color: #868e96;
@@ -2267,31 +1979,25 @@ a.kbc-button-sm.kbc-button-secondary::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-sm.kbc-button-success,
 a.kbc-button-sm.kbc-button-success {
-  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368,
-    0 3px #48d368, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368, 0 3px #48d368, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
   background-color: #28a745;
   border-color: #34ce57;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-sm.kbc-button-success:hover,
-button.kbc-button-sm.kbc-button-success:focus,
-button.kbc-button-sm.kbc-button-success.hover,
-button.kbc-button-sm.kbc-button-success.focus,
+button.kbc-button-sm.kbc-button-success:hover, button.kbc-button-sm.kbc-button-success:focus, button.kbc-button-sm.kbc-button-success.hover, button.kbc-button-sm.kbc-button-success.focus,
 a.kbc-button-sm.kbc-button-success:hover,
 a.kbc-button-sm.kbc-button-success:focus,
 a.kbc-button-sm.kbc-button-success.hover,
 a.kbc-button-sm.kbc-button-success.focus {
-  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #34ce57;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-sm.kbc-button-success:active,
-button.kbc-button-sm.kbc-button-success.active,
+button.kbc-button-sm.kbc-button-success:active, button.kbc-button-sm.kbc-button-success.active,
 a.kbc-button-sm.kbc-button-success:active,
 a.kbc-button-sm.kbc-button-success.active {
   background-color: #34ce57;
@@ -2308,31 +2014,25 @@ a.kbc-button-sm.kbc-button-success::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-sm.kbc-button-info,
 a.kbc-button-sm.kbc-button-info {
-  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6,
-    0 3px #36cee6, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6, 0 3px #36cee6, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
   background-color: #17a2b8;
   border-color: #1fc8e3;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-sm.kbc-button-info:hover,
-button.kbc-button-sm.kbc-button-info:focus,
-button.kbc-button-sm.kbc-button-info.hover,
-button.kbc-button-sm.kbc-button-info.focus,
+button.kbc-button-sm.kbc-button-info:hover, button.kbc-button-sm.kbc-button-info:focus, button.kbc-button-sm.kbc-button-info.hover, button.kbc-button-sm.kbc-button-info.focus,
 a.kbc-button-sm.kbc-button-info:hover,
 a.kbc-button-sm.kbc-button-info:focus,
 a.kbc-button-sm.kbc-button-info.hover,
 a.kbc-button-sm.kbc-button-info.focus {
-  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #1fc8e3;
   color: #343a40;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-sm.kbc-button-info:active,
-button.kbc-button-sm.kbc-button-info.active,
+button.kbc-button-sm.kbc-button-info:active, button.kbc-button-sm.kbc-button-info.active,
 a.kbc-button-sm.kbc-button-info:active,
 a.kbc-button-sm.kbc-button-info.active {
   background-color: #1fc8e3;
@@ -2349,31 +2049,25 @@ a.kbc-button-sm.kbc-button-info::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-sm.kbc-button-warning,
 a.kbc-button-sm.kbc-button-warning {
-  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00,
-    0 3px #ba8b00, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00, 0 3px #ba8b00, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
   background-color: #ffc107;
   border-color: #d39e00;
   color: #343a40;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-sm.kbc-button-warning:hover,
-button.kbc-button-sm.kbc-button-warning:focus,
-button.kbc-button-sm.kbc-button-warning.hover,
-button.kbc-button-sm.kbc-button-warning.focus,
+button.kbc-button-sm.kbc-button-warning:hover, button.kbc-button-sm.kbc-button-warning:focus, button.kbc-button-sm.kbc-button-warning.hover, button.kbc-button-sm.kbc-button-warning.focus,
 a.kbc-button-sm.kbc-button-warning:hover,
 a.kbc-button-sm.kbc-button-warning:focus,
 a.kbc-button-sm.kbc-button-warning.hover,
 a.kbc-button-sm.kbc-button-warning.focus {
-  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #d39e00;
   color: #343a40;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-sm.kbc-button-warning:active,
-button.kbc-button-sm.kbc-button-warning.active,
+button.kbc-button-sm.kbc-button-warning:active, button.kbc-button-sm.kbc-button-warning.active,
 a.kbc-button-sm.kbc-button-warning:active,
 a.kbc-button-sm.kbc-button-warning.active {
   background-color: #d39e00;
@@ -2390,31 +2084,25 @@ a.kbc-button-sm.kbc-button-warning::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-sm.kbc-button-danger,
 a.kbc-button-sm.kbc-button-danger {
-  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681,
-    0 3px #e77681, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681, 0 3px #e77681, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
   background-color: #dc3545;
   border-color: #e4606d;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-sm.kbc-button-danger:hover,
-button.kbc-button-sm.kbc-button-danger:focus,
-button.kbc-button-sm.kbc-button-danger.hover,
-button.kbc-button-sm.kbc-button-danger.focus,
+button.kbc-button-sm.kbc-button-danger:hover, button.kbc-button-sm.kbc-button-danger:focus, button.kbc-button-sm.kbc-button-danger.hover, button.kbc-button-sm.kbc-button-danger.focus,
 a.kbc-button-sm.kbc-button-danger:hover,
 a.kbc-button-sm.kbc-button-danger:focus,
 a.kbc-button-sm.kbc-button-danger.hover,
 a.kbc-button-sm.kbc-button-danger.focus {
-  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #e4606d;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-sm.kbc-button-danger:active,
-button.kbc-button-sm.kbc-button-danger.active,
+button.kbc-button-sm.kbc-button-danger:active, button.kbc-button-sm.kbc-button-danger.active,
 a.kbc-button-sm.kbc-button-danger:active,
 a.kbc-button-sm.kbc-button-danger.active {
   background-color: #e4606d;
@@ -2431,31 +2119,25 @@ a.kbc-button-sm.kbc-button-danger::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-sm.kbc-button-light,
 a.kbc-button-sm.kbc-button-light {
-  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da,
-    0 3px #cbd3da, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da, 0 3px #cbd3da, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
   background-color: #f8f9fa;
   border-color: #dae0e5;
   color: #343a40;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-sm.kbc-button-light:hover,
-button.kbc-button-sm.kbc-button-light:focus,
-button.kbc-button-sm.kbc-button-light.hover,
-button.kbc-button-sm.kbc-button-light.focus,
+button.kbc-button-sm.kbc-button-light:hover, button.kbc-button-sm.kbc-button-light:focus, button.kbc-button-sm.kbc-button-light.hover, button.kbc-button-sm.kbc-button-light.focus,
 a.kbc-button-sm.kbc-button-light:hover,
 a.kbc-button-sm.kbc-button-light:focus,
 a.kbc-button-sm.kbc-button-light.hover,
 a.kbc-button-sm.kbc-button-light.focus {
-  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #dae0e5;
   color: #343a40;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-sm.kbc-button-light:active,
-button.kbc-button-sm.kbc-button-light.active,
+button.kbc-button-sm.kbc-button-light:active, button.kbc-button-sm.kbc-button-light.active,
 a.kbc-button-sm.kbc-button-light:active,
 a.kbc-button-sm.kbc-button-light.active {
   background-color: #dae0e5;
@@ -2472,31 +2154,25 @@ a.kbc-button-sm.kbc-button-light::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-sm.kbc-button-dark,
 a.kbc-button-sm.kbc-button-dark {
-  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a,
-    0 3px #56606a, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a, 0 3px #56606a, 2px 1.5px 4px #adb5bd, 0 -1px 1.5px #adb5bd;
   background-color: #343a40;
   border-color: #4b545c;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-sm.kbc-button-dark:hover,
-button.kbc-button-sm.kbc-button-dark:focus,
-button.kbc-button-sm.kbc-button-dark.hover,
-button.kbc-button-sm.kbc-button-dark.focus,
+button.kbc-button-sm.kbc-button-dark:hover, button.kbc-button-sm.kbc-button-dark:focus, button.kbc-button-sm.kbc-button-dark.hover, button.kbc-button-sm.kbc-button-dark.focus,
 a.kbc-button-sm.kbc-button-dark:hover,
 a.kbc-button-sm.kbc-button-dark:focus,
 a.kbc-button-sm.kbc-button-dark.hover,
 a.kbc-button-sm.kbc-button-dark.focus {
-  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a,
-    2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a, 2px 1px 4px #adb5bd, 0 -1px 1px #adb5bd;
   background-color: #4b545c;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-sm.kbc-button-dark:active,
-button.kbc-button-sm.kbc-button-dark.active,
+button.kbc-button-sm.kbc-button-dark:active, button.kbc-button-sm.kbc-button-dark.active,
 a.kbc-button-sm.kbc-button-dark:active,
 a.kbc-button-sm.kbc-button-dark.active {
   background-color: #4b545c;
@@ -2520,19 +2196,14 @@ a.kbc-button-lg {
   margin-right: 0.375rem;
   margin-top: 0.375rem;
   padding: 0.5rem 1rem;
-  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9,
-    0 3px #d9d9d9, 0 4px #d9d9d9, 0 5px #d9d9d9, 0 6px #d9d9d9, 0 7px #d9d9d9,
-    0 8px #d9d9d9, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9, 0 3px #d9d9d9, 0 4px #d9d9d9, 0 5px #d9d9d9, 0 6px #d9d9d9, 0 7px #d9d9d9, 0 8px #d9d9d9, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
   background-color: #fff;
   border-color: #e6e6e6;
   color: #343a40;
 }
 
 /* line 119, src/scss/abstracts/_mixins.scss */
-button.kbc-button-lg:hover,
-button.kbc-button-lg:focus,
-button.kbc-button-lg.hover,
-button.kbc-button-lg.focus,
+button.kbc-button-lg:hover, button.kbc-button-lg:focus, button.kbc-button-lg.hover, button.kbc-button-lg.focus,
 a.kbc-button-lg:hover,
 a.kbc-button-lg:focus,
 a.kbc-button-lg.hover,
@@ -2541,10 +2212,7 @@ a.kbc-button-lg.focus {
 }
 
 /* line 125, src/scss/abstracts/_mixins.scss */
-button.kbc-button-lg:hover::after,
-button.kbc-button-lg:focus::after,
-button.kbc-button-lg.hover::after,
-button.kbc-button-lg.focus::after,
+button.kbc-button-lg:hover::after, button.kbc-button-lg:focus::after, button.kbc-button-lg.hover::after, button.kbc-button-lg.focus::after,
 a.kbc-button-lg:hover::after,
 a.kbc-button-lg:focus::after,
 a.kbc-button-lg.hover::after,
@@ -2553,8 +2221,7 @@ a.kbc-button-lg.focus::after {
 }
 
 /* line 130, src/scss/abstracts/_mixins.scss */
-button.kbc-button-lg:active,
-button.kbc-button-lg.active,
+button.kbc-button-lg:active, button.kbc-button-lg.active,
 a.kbc-button-lg:active,
 a.kbc-button-lg.active {
   border-color: transparent;
@@ -2563,8 +2230,7 @@ a.kbc-button-lg.active {
 }
 
 /* line 136, src/scss/abstracts/_mixins.scss */
-button.kbc-button-lg:active::after,
-button.kbc-button-lg.active::after,
+button.kbc-button-lg:active::after, button.kbc-button-lg.active::after,
 a.kbc-button-lg:active::after,
 a.kbc-button-lg.active::after {
   transform: translate3d(0, -8px, 0);
@@ -2583,24 +2249,18 @@ a.kbc-button-lg::after {
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-lg:hover,
-button.kbc-button-lg:focus,
-button.kbc-button-lg.hover,
-button.kbc-button-lg.focus,
+button.kbc-button-lg:hover, button.kbc-button-lg:focus, button.kbc-button-lg.hover, button.kbc-button-lg.focus,
 a.kbc-button-lg:hover,
 a.kbc-button-lg:focus,
 a.kbc-button-lg.hover,
 a.kbc-button-lg.focus {
-  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9,
-    0 3px #d9d9d9, 0 4px #d9d9d9, 0 5px #d9d9d9, 0 6px #d9d9d9, 0 7px #d9d9d9,
-    2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
+  box-shadow: 0 0 #d9d9d9, 0 0px #d9d9d9, 0 1px #d9d9d9, 0 2px #d9d9d9, 0 3px #d9d9d9, 0 4px #d9d9d9, 0 5px #d9d9d9, 0 6px #d9d9d9, 0 7px #d9d9d9, 2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
   background-color: #e6e6e6;
   color: #343a40;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-lg:active,
-button.kbc-button-lg.active,
+button.kbc-button-lg:active, button.kbc-button-lg.active,
 a.kbc-button-lg:active,
 a.kbc-button-lg.active {
   background-color: #e6e6e6;
@@ -2617,33 +2277,25 @@ a.kbc-button-lg::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-lg.kbc-button-primary,
 a.kbc-button-lg.kbc-button-primary {
-  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff,
-    0 3px #4da3ff, 0 4px #4da3ff, 0 5px #4da3ff, 0 6px #4da3ff, 0 7px #4da3ff,
-    0 8px #4da3ff, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff, 0 3px #4da3ff, 0 4px #4da3ff, 0 5px #4da3ff, 0 6px #4da3ff, 0 7px #4da3ff, 0 8px #4da3ff, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
   background-color: #007bff;
   border-color: #3395ff;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-lg.kbc-button-primary:hover,
-button.kbc-button-lg.kbc-button-primary:focus,
-button.kbc-button-lg.kbc-button-primary.hover,
-button.kbc-button-lg.kbc-button-primary.focus,
+button.kbc-button-lg.kbc-button-primary:hover, button.kbc-button-lg.kbc-button-primary:focus, button.kbc-button-lg.kbc-button-primary.hover, button.kbc-button-lg.kbc-button-primary.focus,
 a.kbc-button-lg.kbc-button-primary:hover,
 a.kbc-button-lg.kbc-button-primary:focus,
 a.kbc-button-lg.kbc-button-primary.hover,
 a.kbc-button-lg.kbc-button-primary.focus {
-  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff,
-    0 3px #4da3ff, 0 4px #4da3ff, 0 5px #4da3ff, 0 6px #4da3ff, 0 7px #4da3ff,
-    2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
+  box-shadow: 0 0 #4da3ff, 0 0px #4da3ff, 0 1px #4da3ff, 0 2px #4da3ff, 0 3px #4da3ff, 0 4px #4da3ff, 0 5px #4da3ff, 0 6px #4da3ff, 0 7px #4da3ff, 2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
   background-color: #3395ff;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-lg.kbc-button-primary:active,
-button.kbc-button-lg.kbc-button-primary.active,
+button.kbc-button-lg.kbc-button-primary:active, button.kbc-button-lg.kbc-button-primary.active,
 a.kbc-button-lg.kbc-button-primary:active,
 a.kbc-button-lg.kbc-button-primary.active {
   background-color: #3395ff;
@@ -2660,33 +2312,25 @@ a.kbc-button-lg.kbc-button-primary::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-lg.kbc-button-secondary,
 a.kbc-button-lg.kbc-button-secondary {
-  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2,
-    0 3px #939ba2, 0 4px #939ba2, 0 5px #939ba2, 0 6px #939ba2, 0 7px #939ba2,
-    0 8px #939ba2, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2, 0 3px #939ba2, 0 4px #939ba2, 0 5px #939ba2, 0 6px #939ba2, 0 7px #939ba2, 0 8px #939ba2, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
   background-color: #6c757d;
   border-color: #868e96;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-lg.kbc-button-secondary:hover,
-button.kbc-button-lg.kbc-button-secondary:focus,
-button.kbc-button-lg.kbc-button-secondary.hover,
-button.kbc-button-lg.kbc-button-secondary.focus,
+button.kbc-button-lg.kbc-button-secondary:hover, button.kbc-button-lg.kbc-button-secondary:focus, button.kbc-button-lg.kbc-button-secondary.hover, button.kbc-button-lg.kbc-button-secondary.focus,
 a.kbc-button-lg.kbc-button-secondary:hover,
 a.kbc-button-lg.kbc-button-secondary:focus,
 a.kbc-button-lg.kbc-button-secondary.hover,
 a.kbc-button-lg.kbc-button-secondary.focus {
-  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2,
-    0 3px #939ba2, 0 4px #939ba2, 0 5px #939ba2, 0 6px #939ba2, 0 7px #939ba2,
-    2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
+  box-shadow: 0 0 #939ba2, 0 0px #939ba2, 0 1px #939ba2, 0 2px #939ba2, 0 3px #939ba2, 0 4px #939ba2, 0 5px #939ba2, 0 6px #939ba2, 0 7px #939ba2, 2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
   background-color: #868e96;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-lg.kbc-button-secondary:active,
-button.kbc-button-lg.kbc-button-secondary.active,
+button.kbc-button-lg.kbc-button-secondary:active, button.kbc-button-lg.kbc-button-secondary.active,
 a.kbc-button-lg.kbc-button-secondary:active,
 a.kbc-button-lg.kbc-button-secondary.active {
   background-color: #868e96;
@@ -2703,33 +2347,25 @@ a.kbc-button-lg.kbc-button-secondary::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-lg.kbc-button-success,
 a.kbc-button-lg.kbc-button-success {
-  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368,
-    0 3px #48d368, 0 4px #48d368, 0 5px #48d368, 0 6px #48d368, 0 7px #48d368,
-    0 8px #48d368, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368, 0 3px #48d368, 0 4px #48d368, 0 5px #48d368, 0 6px #48d368, 0 7px #48d368, 0 8px #48d368, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
   background-color: #28a745;
   border-color: #34ce57;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-lg.kbc-button-success:hover,
-button.kbc-button-lg.kbc-button-success:focus,
-button.kbc-button-lg.kbc-button-success.hover,
-button.kbc-button-lg.kbc-button-success.focus,
+button.kbc-button-lg.kbc-button-success:hover, button.kbc-button-lg.kbc-button-success:focus, button.kbc-button-lg.kbc-button-success.hover, button.kbc-button-lg.kbc-button-success.focus,
 a.kbc-button-lg.kbc-button-success:hover,
 a.kbc-button-lg.kbc-button-success:focus,
 a.kbc-button-lg.kbc-button-success.hover,
 a.kbc-button-lg.kbc-button-success.focus {
-  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368,
-    0 3px #48d368, 0 4px #48d368, 0 5px #48d368, 0 6px #48d368, 0 7px #48d368,
-    2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
+  box-shadow: 0 0 #48d368, 0 0px #48d368, 0 1px #48d368, 0 2px #48d368, 0 3px #48d368, 0 4px #48d368, 0 5px #48d368, 0 6px #48d368, 0 7px #48d368, 2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
   background-color: #34ce57;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-lg.kbc-button-success:active,
-button.kbc-button-lg.kbc-button-success.active,
+button.kbc-button-lg.kbc-button-success:active, button.kbc-button-lg.kbc-button-success.active,
 a.kbc-button-lg.kbc-button-success:active,
 a.kbc-button-lg.kbc-button-success.active {
   background-color: #34ce57;
@@ -2746,33 +2382,25 @@ a.kbc-button-lg.kbc-button-success::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-lg.kbc-button-info,
 a.kbc-button-lg.kbc-button-info {
-  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6,
-    0 3px #36cee6, 0 4px #36cee6, 0 5px #36cee6, 0 6px #36cee6, 0 7px #36cee6,
-    0 8px #36cee6, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6, 0 3px #36cee6, 0 4px #36cee6, 0 5px #36cee6, 0 6px #36cee6, 0 7px #36cee6, 0 8px #36cee6, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
   background-color: #17a2b8;
   border-color: #1fc8e3;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-lg.kbc-button-info:hover,
-button.kbc-button-lg.kbc-button-info:focus,
-button.kbc-button-lg.kbc-button-info.hover,
-button.kbc-button-lg.kbc-button-info.focus,
+button.kbc-button-lg.kbc-button-info:hover, button.kbc-button-lg.kbc-button-info:focus, button.kbc-button-lg.kbc-button-info.hover, button.kbc-button-lg.kbc-button-info.focus,
 a.kbc-button-lg.kbc-button-info:hover,
 a.kbc-button-lg.kbc-button-info:focus,
 a.kbc-button-lg.kbc-button-info.hover,
 a.kbc-button-lg.kbc-button-info.focus {
-  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6,
-    0 3px #36cee6, 0 4px #36cee6, 0 5px #36cee6, 0 6px #36cee6, 0 7px #36cee6,
-    2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
+  box-shadow: 0 0 #36cee6, 0 0px #36cee6, 0 1px #36cee6, 0 2px #36cee6, 0 3px #36cee6, 0 4px #36cee6, 0 5px #36cee6, 0 6px #36cee6, 0 7px #36cee6, 2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
   background-color: #1fc8e3;
   color: #343a40;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-lg.kbc-button-info:active,
-button.kbc-button-lg.kbc-button-info.active,
+button.kbc-button-lg.kbc-button-info:active, button.kbc-button-lg.kbc-button-info.active,
 a.kbc-button-lg.kbc-button-info:active,
 a.kbc-button-lg.kbc-button-info.active {
   background-color: #1fc8e3;
@@ -2789,33 +2417,25 @@ a.kbc-button-lg.kbc-button-info::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-lg.kbc-button-warning,
 a.kbc-button-lg.kbc-button-warning {
-  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00,
-    0 3px #ba8b00, 0 4px #ba8b00, 0 5px #ba8b00, 0 6px #ba8b00, 0 7px #ba8b00,
-    0 8px #ba8b00, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00, 0 3px #ba8b00, 0 4px #ba8b00, 0 5px #ba8b00, 0 6px #ba8b00, 0 7px #ba8b00, 0 8px #ba8b00, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
   background-color: #ffc107;
   border-color: #d39e00;
   color: #343a40;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-lg.kbc-button-warning:hover,
-button.kbc-button-lg.kbc-button-warning:focus,
-button.kbc-button-lg.kbc-button-warning.hover,
-button.kbc-button-lg.kbc-button-warning.focus,
+button.kbc-button-lg.kbc-button-warning:hover, button.kbc-button-lg.kbc-button-warning:focus, button.kbc-button-lg.kbc-button-warning.hover, button.kbc-button-lg.kbc-button-warning.focus,
 a.kbc-button-lg.kbc-button-warning:hover,
 a.kbc-button-lg.kbc-button-warning:focus,
 a.kbc-button-lg.kbc-button-warning.hover,
 a.kbc-button-lg.kbc-button-warning.focus {
-  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00,
-    0 3px #ba8b00, 0 4px #ba8b00, 0 5px #ba8b00, 0 6px #ba8b00, 0 7px #ba8b00,
-    2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
+  box-shadow: 0 0 #ba8b00, 0 0px #ba8b00, 0 1px #ba8b00, 0 2px #ba8b00, 0 3px #ba8b00, 0 4px #ba8b00, 0 5px #ba8b00, 0 6px #ba8b00, 0 7px #ba8b00, 2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
   background-color: #d39e00;
   color: #343a40;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-lg.kbc-button-warning:active,
-button.kbc-button-lg.kbc-button-warning.active,
+button.kbc-button-lg.kbc-button-warning:active, button.kbc-button-lg.kbc-button-warning.active,
 a.kbc-button-lg.kbc-button-warning:active,
 a.kbc-button-lg.kbc-button-warning.active {
   background-color: #d39e00;
@@ -2832,33 +2452,25 @@ a.kbc-button-lg.kbc-button-warning::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-lg.kbc-button-danger,
 a.kbc-button-lg.kbc-button-danger {
-  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681,
-    0 3px #e77681, 0 4px #e77681, 0 5px #e77681, 0 6px #e77681, 0 7px #e77681,
-    0 8px #e77681, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681, 0 3px #e77681, 0 4px #e77681, 0 5px #e77681, 0 6px #e77681, 0 7px #e77681, 0 8px #e77681, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
   background-color: #dc3545;
   border-color: #e4606d;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-lg.kbc-button-danger:hover,
-button.kbc-button-lg.kbc-button-danger:focus,
-button.kbc-button-lg.kbc-button-danger.hover,
-button.kbc-button-lg.kbc-button-danger.focus,
+button.kbc-button-lg.kbc-button-danger:hover, button.kbc-button-lg.kbc-button-danger:focus, button.kbc-button-lg.kbc-button-danger.hover, button.kbc-button-lg.kbc-button-danger.focus,
 a.kbc-button-lg.kbc-button-danger:hover,
 a.kbc-button-lg.kbc-button-danger:focus,
 a.kbc-button-lg.kbc-button-danger.hover,
 a.kbc-button-lg.kbc-button-danger.focus {
-  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681,
-    0 3px #e77681, 0 4px #e77681, 0 5px #e77681, 0 6px #e77681, 0 7px #e77681,
-    2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
+  box-shadow: 0 0 #e77681, 0 0px #e77681, 0 1px #e77681, 0 2px #e77681, 0 3px #e77681, 0 4px #e77681, 0 5px #e77681, 0 6px #e77681, 0 7px #e77681, 2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
   background-color: #e4606d;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-lg.kbc-button-danger:active,
-button.kbc-button-lg.kbc-button-danger.active,
+button.kbc-button-lg.kbc-button-danger:active, button.kbc-button-lg.kbc-button-danger.active,
 a.kbc-button-lg.kbc-button-danger:active,
 a.kbc-button-lg.kbc-button-danger.active {
   background-color: #e4606d;
@@ -2875,33 +2487,25 @@ a.kbc-button-lg.kbc-button-danger::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-lg.kbc-button-light,
 a.kbc-button-lg.kbc-button-light {
-  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da,
-    0 3px #cbd3da, 0 4px #cbd3da, 0 5px #cbd3da, 0 6px #cbd3da, 0 7px #cbd3da,
-    0 8px #cbd3da, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da, 0 3px #cbd3da, 0 4px #cbd3da, 0 5px #cbd3da, 0 6px #cbd3da, 0 7px #cbd3da, 0 8px #cbd3da, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
   background-color: #f8f9fa;
   border-color: #dae0e5;
   color: #343a40;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-lg.kbc-button-light:hover,
-button.kbc-button-lg.kbc-button-light:focus,
-button.kbc-button-lg.kbc-button-light.hover,
-button.kbc-button-lg.kbc-button-light.focus,
+button.kbc-button-lg.kbc-button-light:hover, button.kbc-button-lg.kbc-button-light:focus, button.kbc-button-lg.kbc-button-light.hover, button.kbc-button-lg.kbc-button-light.focus,
 a.kbc-button-lg.kbc-button-light:hover,
 a.kbc-button-lg.kbc-button-light:focus,
 a.kbc-button-lg.kbc-button-light.hover,
 a.kbc-button-lg.kbc-button-light.focus {
-  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da,
-    0 3px #cbd3da, 0 4px #cbd3da, 0 5px #cbd3da, 0 6px #cbd3da, 0 7px #cbd3da,
-    2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
+  box-shadow: 0 0 #cbd3da, 0 0px #cbd3da, 0 1px #cbd3da, 0 2px #cbd3da, 0 3px #cbd3da, 0 4px #cbd3da, 0 5px #cbd3da, 0 6px #cbd3da, 0 7px #cbd3da, 2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
   background-color: #dae0e5;
   color: #343a40;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-lg.kbc-button-light:active,
-button.kbc-button-lg.kbc-button-light.active,
+button.kbc-button-lg.kbc-button-light:active, button.kbc-button-lg.kbc-button-light.active,
 a.kbc-button-lg.kbc-button-light:active,
 a.kbc-button-lg.kbc-button-light.active {
   background-color: #dae0e5;
@@ -2918,33 +2522,25 @@ a.kbc-button-lg.kbc-button-light::after {
 /* line 85, src/scss/components/_button.scss */
 button.kbc-button-lg.kbc-button-dark,
 a.kbc-button-lg.kbc-button-dark {
-  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a,
-    0 3px #56606a, 0 4px #56606a, 0 5px #56606a, 0 6px #56606a, 0 7px #56606a,
-    0 8px #56606a, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a, 0 3px #56606a, 0 4px #56606a, 0 5px #56606a, 0 6px #56606a, 0 7px #56606a, 0 8px #56606a, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
   background-color: #343a40;
   border-color: #4b545c;
   color: #f8f9fa;
 }
 
 /* line 185, src/scss/abstracts/_mixins.scss */
-button.kbc-button-lg.kbc-button-dark:hover,
-button.kbc-button-lg.kbc-button-dark:focus,
-button.kbc-button-lg.kbc-button-dark.hover,
-button.kbc-button-lg.kbc-button-dark.focus,
+button.kbc-button-lg.kbc-button-dark:hover, button.kbc-button-lg.kbc-button-dark:focus, button.kbc-button-lg.kbc-button-dark.hover, button.kbc-button-lg.kbc-button-dark.focus,
 a.kbc-button-lg.kbc-button-dark:hover,
 a.kbc-button-lg.kbc-button-dark:focus,
 a.kbc-button-lg.kbc-button-dark.hover,
 a.kbc-button-lg.kbc-button-dark.focus {
-  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a,
-    0 3px #56606a, 0 4px #56606a, 0 5px #56606a, 0 6px #56606a, 0 7px #56606a,
-    2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
+  box-shadow: 0 0 #56606a, 0 0px #56606a, 0 1px #56606a, 0 2px #56606a, 0 3px #56606a, 0 4px #56606a, 0 5px #56606a, 0 6px #56606a, 0 7px #56606a, 2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
   background-color: #4b545c;
   color: #f8f9fa;
 }
 
 /* line 194, src/scss/abstracts/_mixins.scss */
-button.kbc-button-lg.kbc-button-dark:active,
-button.kbc-button-lg.kbc-button-dark.active,
+button.kbc-button-lg.kbc-button-dark:active, button.kbc-button-lg.kbc-button-dark.active,
 a.kbc-button-lg.kbc-button-dark:active,
 a.kbc-button-lg.kbc-button-dark.active {
   background-color: #4b545c;
@@ -2959,8 +2555,7 @@ a.kbc-button-lg.kbc-button-dark::after {
 }
 
 /* line 98, src/scss/components/_button.scss */
-button.kbc-button:disabled,
-button.kbc-button.disabled,
+button.kbc-button:disabled, button.kbc-button.disabled,
 a.kbc-button:disabled,
 a.kbc-button.disabled {
   cursor: not-allowed;
@@ -2969,10 +2564,7 @@ a.kbc-button.disabled {
 }
 
 /* line 105, src/scss/components/_button.scss */
-button.kbc-button:hover,
-button.kbc-button:focus,
-button.kbc-button.hover,
-button.kbc-button.focus,
+button.kbc-button:hover, button.kbc-button:focus, button.kbc-button.hover, button.kbc-button.focus,
 a.kbc-button:hover,
 a.kbc-button:focus,
 a.kbc-button.hover,
