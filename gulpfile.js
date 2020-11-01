@@ -61,7 +61,8 @@ var banner = {
     ' <%= package.author.name %>' +
     ' | <%= package.license %> License' +
     ' | <%= package.repository.url %>' +
-    ' */\n',
+    ' */\n' +
+    '/* stylelint-disable */\n',
 };
 
 /**
