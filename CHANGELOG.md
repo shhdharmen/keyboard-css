@@ -1,3 +1,14 @@
+## [1.2.4](https://github.com/shhdharmen/keyboard-css/compare/v1.2.3...v1.2.4) (2020-11-01)
+
+
+### Bug Fixes
+
+* **.releaserc.json:** format fix ([5253cdf](https://github.com/shhdharmen/keyboard-css/commit/5253cdfa776e9d227f9b2cf768382ab3e625d265))
+* **.releaserc.json:** semantic-release related fixes ([3bcef0d](https://github.com/shhdharmen/keyboard-css/commit/3bcef0d4aa279be7ff9c114205a92a01d87afdce))
+* **.releaserc.json:** semantic-release related fixes ([4640f97](https://github.com/shhdharmen/keyboard-css/commit/4640f9798082fd6a23b056c16e62d7f34dd24832))
+* **dist:** fix dist delete issue ([fb1ed6d](https://github.com/shhdharmen/keyboard-css/commit/fb1ed6d01da91fcf43d8afa5520c8b619f6d3ba3))
+* **release:** release related fixes ([a3e7fd8](https://github.com/shhdharmen/keyboard-css/commit/a3e7fd85a4ba13ec7d75c11d981123d6249e3aa8))
+
 ## [1.2.4-beta.1](https://github.com/shhdharmen/keyboard-css/compare/v1.2.3...v1.2.4-beta.1) (2020-11-01)
 
 
