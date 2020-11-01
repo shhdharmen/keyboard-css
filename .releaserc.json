@@ -17,15 +17,15 @@
       }
     ],
     [
-      "@qiwi/semantic-release-gh-pages-plugin",
+      "@semantic-release/git",
       {
-        "src": "dist"
+        "assets": ["package.json", "npm-shrinkwrap.json", "CHANGELOG.md", "README.md", "dist/**/*.*", "src/**/*.*"]
       }
     ],
     [
-      "@semantic-release/git",
+      "@qiwi/semantic-release-gh-pages-plugin",
       {
-        "assets": ["package.json", "npm-shrinkwrap.json", "CHANGELOG.md"]
+        "src": "dist"
       }
     ]
   ]

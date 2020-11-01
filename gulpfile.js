@@ -41,6 +41,10 @@ var paths = {
     input: 'src/copy/**/*',
     output: 'dist/',
   },
+  version: {
+    input: '{README.md,src/**/*.*}',
+    output: './',
+  },
   reload: './dist/',
 };
 
@@ -57,7 +61,8 @@ var banner = {
     ' <%= package.author.name %>' +
     ' | <%= package.license %> License' +
     ' | <%= package.repository.url %>' +
-    ' */\n',
+    ' */\n' +
+    '/* stylelint-disable */\n',
 };
 
 /**
@@ -84,6 +89,9 @@ var svgmin = require('gulp-svgmin');
 
 // BrowserSync
 var browserSync = require('browser-sync');
+
+// Version regexp
+const packageVersionRegExp = /keyboard-css@([0-9]+)\.([0-9]+)\.([0-9]+)(?:-([0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*))?(?:\+[0-9A-Za-z-]+)?/g;
 
 /**
  * Gulp Tasks
@@ -152,7 +160,9 @@ var copyFiles = function (done) {
   if (!settings.copy) return done();
 
   // Copy static files
-  return src(paths.copy.input).pipe(dest(paths.copy.output));
+  return src(paths.copy.input)
+    .pipe(replace(packageVersionRegExp, `${package.name}@${package.version}`))
+    .pipe(dest(paths.copy.output));
 };
 
 // Copy static files into output folder
@@ -162,6 +172,17 @@ var copyScss = function (done) {
 
   // Copy static files
   return src(paths.copyScss.input).pipe(dest(paths.copyScss.output));
+};
+
+// Update version in files
+var updateVersion = function (done) {
+  // Make sure this feature is activated before running
+  if (!settings.copy) return done();
+
+  // Copy static files
+  return src(paths.version.input)
+    .pipe(replace(packageVersionRegExp, `${package.name}@${package.version}`))
+    .pipe(dest(paths.version.output));
 };
 
 // Watch for changes to the src directory
@@ -201,7 +222,7 @@ var watchSource = function (done) {
 // gulp
 exports.default = series(
   cleanDist,
-  parallel(buildStyles, buildSVGs, copyFiles, copyScss)
+  parallel(buildStyles, buildSVGs, updateVersion, copyFiles, copyScss)
 );
 
 // Watch and reload

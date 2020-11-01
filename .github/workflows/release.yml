@@ -18,14 +18,7 @@ jobs:
         with:
           node-version: 12.x
       - run: npm ci
-      - run: npm run build
       - run: npx semantic-release
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      # - uses: stefanzweifel/git-auto-commit-action@v4
-      #   with:
-      #     commit_message: "chore(static): update static files [skip ci]"
-      #     commit_user_name: Mr. Dharmen's Bot
-      #     commit_user_email: shhdharmen@gmail.com
-      #     commit_author: Mr. Dharmen's Bot <shhdharmen@github.com>
