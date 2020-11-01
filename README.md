@@ -49,7 +49,7 @@ Keyboard CSS is a library of ready-to-use, cross-browser compatible keyboard lik
 Add it directly to your webpage using a `link` tag, thanks to <https://unpkg.com>:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/keyboard-css/dist/css/main.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/keyboard-css@1.2.2/dist/css/main.min.css" />
 ```
 
 or install it with npm:
