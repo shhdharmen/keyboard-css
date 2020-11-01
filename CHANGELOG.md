@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/shhdharmen/keyboard-css/compare/v1.2.2...v1.2.3) (2020-11-01)
+
+
+### Bug Fixes
+
+* package version in link tag ([6c6c576](https://github.com/shhdharmen/keyboard-css/commit/6c6c5763b3587b2ea128171afa2aa9e1cef8102e))
+
 ## [1.2.2](https://github.com/shhdharmen/keyboard-css/compare/v1.2.1...v1.2.2) (2020-11-01)
 
 
