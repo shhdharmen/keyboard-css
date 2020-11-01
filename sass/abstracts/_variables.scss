@@ -129,7 +129,6 @@ $kbc-font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI',
   'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
 $kbc-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
   'Liberation Mono', 'Courier New', monospace !default;
-$kbc-font-family-base: $kbc-font-family-sans-serif !default;
 
 $kbc-font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $kbc-font-size-lg: $kbc-font-size-base * 1.25 !default;
@@ -179,9 +178,36 @@ $kbc-btn-hover-bg-color: adjust-color(
   $lightness: -10%
 ) !default;
 // stylelint-enable
+
 $kbc-btn-focus-bg-color: $kbc-btn-hover-bg-color !default;
 $kbc-btn-active-bg-color: $kbc-btn-hover-bg-color !default;
 $kbc-btn-active-box-shadow: 0 0 1px 1px #c7c7c7 !default;
+
+// KBD stuff
+$kbc-kbd-font-size-base: inherit !default;
+$kbc-kbd-line-height-base: inherit !default;
+$kbc-kbd-depth: 3 !default;
+$kbc-kbd-border-radius: $kbc-btn-border-radius !default;
+$kbc-kbd-font-family: $kbc-font-family-monospace !default;
+
+// KBD size
+$kbc-kbd-size-base: () !default;
+// stylelint-disable
+$kbc-kbd-size-base: map-merge(
+  (
+    'padding-y': 0.1rem,
+    'padding-x': 0.4rem,
+    'font-size': $kbc-kbd-font-size-base,
+    'line-height': $kbc-kbd-line-height-base,
+    'depth': $kbc-kbd-depth,
+    'after-border-width': 0.125rem,
+    'after-adjust-x': -0.0625rem,
+    'after-adjust-y': -6,
+    'after-border-radius': $kbc-kbd-border-radius + 0.25rem,
+  ),
+  $kbc-kbd-size-base
+);
+// stylelint-enable
 
 // Button sizing
 
