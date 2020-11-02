@@ -60,7 +60,7 @@ var banner = {
     new Date().getFullYear() +
     ' <%= package.author.name %>\n' +
     ' * Licensed under <%= package.license %>\n' +
-    ' * <%= package.repository.url %>' +
+    ' * <%= package.repository.url %>\n' +
     ' */\n' +
     '/* stylelint-disable */\n',
 };
