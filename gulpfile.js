@@ -54,13 +54,13 @@ var paths = {
 
 var banner = {
   main:
-    '/*!' +
-    ' <%= package.name %> v<%= package.version %>' +
-    ' | (c) ' +
+    '/*!\n' +
+    ' * <%= package.name %> v<%= package.version %> (<%= package.homepage %>)\n' +
+    ' * Copyright ' +
     new Date().getFullYear() +
-    ' <%= package.author.name %>' +
-    ' | <%= package.license %> License' +
-    ' | <%= package.repository.url %>' +
+    ' <%= package.author.name %>\n' +
+    ' * Licensed under <%= package.license %>\n' +
+    ' * <%= package.repository.url %>' +
     ' */\n' +
     '/* stylelint-disable */\n',
 };
@@ -70,8 +70,7 @@ var banner = {
  */
 
 // General
-var gulp,
-  { src, dest, watch, series, parallel, task } = require('gulp');
+var { src, dest, watch, series, parallel } = require('gulp');
 var del = require('del');
 var rename = require('gulp-rename');
 var header = require('gulp-header');
