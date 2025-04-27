@@ -5,7 +5,7 @@
 // Shadow
 @mixin button-shadow($depth, $shadow-color) {
   box-shadow: calculate-box-shadow($depth, $shadow-color),
-    2px #{$depth / 2}px 4px $kbc-gray-500, 0 -1px #{$depth / 2}px $kbc-gray-500;
+    2px #{calc($depth / 2)}px 4px $kbc-gray-500, 0 -1px #{calc($depth / 2)}px $kbc-gray-500;
 }
 
 // Button sizes
@@ -51,7 +51,7 @@
 
   font-size: $font-size;
   line-height: $line-height;
-  margin-bottom: 0.25rem + $depth / 16;
+  margin-bottom: 0.25rem + calc($depth / 16);
   margin-left: 0.25rem;
   margin-right: 0.25rem;
   margin-top: 0.25rem;
@@ -110,7 +110,7 @@
 
   font-size: $font-size;
   line-height: $line-height;
-  margin-bottom: ($after-border-width + 0.25rem + $depth / 16);
+  margin-bottom: ($after-border-width + 0.25rem + calc($depth / 16));
   margin-left: ($after-border-width + 0.25rem);
   margin-right: ($after-border-width + 0.25rem);
   margin-top: ($after-border-width + 0.25rem);
